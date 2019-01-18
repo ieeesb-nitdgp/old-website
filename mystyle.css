@@ -1,0 +1,417 @@
+.back3{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    
+    background-image: url(http://i.xp.io/1l5eD3bl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+#calendar-wrap{position:absolute;
+    left:68%;
+    top:5%;
+    margin-left:0;
+    width:30%;
+    height:50%}
+
+
+
+#calendar{height:100%;
+    width:100%;
+    box-sizing:border-box;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    font-family: 'Anonymous Pro', monospace;
+    background-color:rgba(0,0,0,0.5);
+    color:#41ADD8;
+    border:3px solid #004e6d;
+    border-radius:10px}
+
+
+
+.calendar__head{min-width:100%;
+    height:21%;
+    text-align:center;
+    padding:2px;
+    box-sizing:border-box;
+    cursor:default}
+
+
+
+.calendar__nav{display:flex;
+    justify-content:space-between;
+    -ms-align-items:center;
+    align-items:center;
+    padding:2% 2%}
+
+
+
+.calendar__head-text{font-size:22px}
+
+
+.calendar__arrow{cursor:pointer}
+
+
+.calendar__head-days{width:100%;
+    text-decoration:none}
+
+.calendar__head-days-item{position:relative}
+
+.calendar__head-days-item:after{
+    content:'';
+    display:block;
+    position:absolute;
+    left:100%;
+    top:50%;
+    margin-top:-10px;
+    width:2px;
+    height:20px;
+    background-color:#00172d}
+
+
+.calendar__head-days-item:last-child:after{
+    display:none}
+
+.calendar__body{width:100%;
+    height:79%;
+    border-spacing:4px 3px;
+    padding:3px 0;
+    text-align:center}
+
+.calendar-cell{margin-left:10px;
+    border-radius:20%;
+    cursor:pointer;
+    transition:box-shadow .22s ease-in}
+
+.calendar-cell:hover{
+    box-shadow:0 4px 0 #000e1c,0 -4px 0 #000e1c,3px 0 0 #000e1c,-3px 0 0 #000e1c}
+
+.calendar-cell-selected{
+    border-radius:9px;
+    background:#00172d;
+    box-shadow:0 7px 13px -1px #000e1c}
+.calendar-cell-gray{
+    color:#4b5457;
+    cursor:default}
+.calendar-cell-gray:hover{
+    box-shadow:none}
+.calendar-cell-green{
+    color:#F04050}
+.calendar-cell-today{
+    background-color:#4b5457}
+/*#*/ 
+
+
+
+
+
+.eventbutton{
+     position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+    top: 10%;
+    left: 10%;
+    display: block;
+    margin-bottom:0%;
+    cursor: pointer;
+    background-color: #000;
+    background: radial-gradient(circle at 20% 20%, #f46, #000);
+    animation: zigzgmove 16s infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+   
+}
+.eventbutton.fist{
+    animation-delay: 0.3s;
+}
+.eventbutton.scnd{
+    animation-delay: 3s;
+}
+.eventbutton.thrd{
+    animation-delay: 6s;
+}
+.eventbutton.frth{
+    animation-delay: 8s;
+}
+
+
+
+
+@keyframes zigzgmove{
+    
+    0%{
+        left: 10%;
+        top: 10%;
+    }
+   
+    6%{
+        left: 10%;
+        top: 95%;
+    }
+     15%{
+        left: 15%;
+        top: 14%;
+    }
+    20%{
+        left: 20%;
+        top: 95%;
+    }
+      26%{
+        left: 25%;
+        top: 16%;
+    }
+    30%{
+        left: 30%;
+        top: 95%;
+    }
+    37%{
+        left: 35%;
+        top: 18%;
+    }
+    41%{
+        left: 42%;
+        top: 95%;
+    }
+    47%{
+        left: 55%;
+        top: 20%;
+    }
+    51%{
+        left: 62%;
+        top: 95%;
+    }
+    60%{
+        left: 64%;
+        top: 24%;
+    }
+     63%{
+        left: 66%;
+         top: 95%;}
+    
+    70%{
+        left: 68%;
+        top: 26%;
+    }
+    76%{
+        left: 72%;
+        top: 95%;
+    }
+    85%{
+        left: 75%;
+        top: 28%;
+    }
+    100%{
+        left: 76%;
+        top: 95%;
+    }
+    
+}
+.eventbutton:hover{
+    animation-play-state: paused;
+}
+.eventbutton.fist::after{
+    position: relative;
+    content: 'event name';
+    color: #fff;
+    padding: 10%;
+    opacity: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 15%;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.5);
+    left: 90%;
+    top: 25%;
+    border-radius: 15px;
+
+}
+.eventbutton.fist:hover::after{
+    opacity: 1;
+    left: 110%;
+    transition: left 200ms ease-out , opacity 250ms ease-out;
+}
+
+
+.eventbutton.scnd::after{
+    position: relative;
+    content: 'event name';
+    color: #fff;
+    padding: 10%;
+    opacity: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 15%;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.5);
+    left: 90%;
+    top: 25%;
+    border-radius: 15px;
+
+}
+.eventbutton.scnd:hover::after{
+    opacity: 1;
+    left: 110%;
+    transition: left 200ms ease-out , opacity 250ms ease-out;
+}
+
+.eventbutton.thrd::after{
+    position: relative;
+    content: 'event name';
+    color: #fff;
+    padding: 10%;
+    opacity: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 15%;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.5);
+    left: 90%;
+    top: 25%;
+    border-radius: 15px;
+
+}
+.eventbutton.thrd:hover::after{
+    opacity: 1;
+    left: 110%;
+    transition: left 200ms ease-out , opacity 250ms ease-out;
+}
+
+
+.eventbutton.frth::after{
+    position: relative;
+    content: 'event name';
+    color: #fff;
+    padding: 10%;
+    opacity: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 15%;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.5);
+    left: 90%;
+    top: 25%;
+    border-radius: 15px;
+
+}
+.eventbutton.frth:hover::after{
+    opacity: 1;
+    left: 110%;
+    transition: left 200ms ease-out , opacity 250ms ease-out;
+}
+.eventdet{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    left: 20%;
+    top: 10%;
+    background-color: rgba(240,240,240,0.5);
+    display: block;
+    color: #fff;
+
+}
+.eventbutton:hover{
+    transform: scale(1.2);
+    background-color: #35ABE9;
+}
+.mini{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    bottom: 2%;
+    left: 90%;
+    display: block;
+    cursor: pointer;
+}
+.mini:hover{
+    transform: scale(1.1);
+}
+.mini::before{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    transform: rotate(60deg);
+    background-color: #000;
+    display: block;
+    left: 0%;
+}
+.mini::after{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    transform: rotate(-60deg);
+    background-color: #000;
+    display: block;
+    left: 42%
+}
+.eventdet.one{
+    opacity: 0;
+}
+.eventdet.two{
+    opacity: 0;
+}
+.eventdet.three{
+    opacity: 0;
+}
+.eventdet.four{
+    opacity: 0;
+}
+
+ @media(max-width: 1080px) {
+  
+#calendar-wrap{position:absolute;
+    left:28%;
+    top:5%;
+    margin-left:0;
+    width:35vh;
+    height:55%;
+        z-index: 1;}
+        .eventbutton{
+        z-index: 5;
+        animation: none;
+        margin-bottom: 6vh;
+            position: relative;
+        }
+        .eventdet{
+            z-index: 5;
+            top: 60%;
+            height: 35%;
+            width: 80%;
+            left: 8%;
+        }
+    }
+@media(max-width: 380px) and (min-width: 370px){
+   #calendar-wrap{position:absolute;
+    left:30%;
+    top:5%;
+    margin-left:0;
+    width:30vh;
+    height:50%;
+        z-index: 1;} 
+}
+@media(max-width: 315px) and (min-width: 324px){
+   #calendar-wrap{position:absolute;
+    left:30%;
+    top:5%;
+   
+    margin-left:0;
+    width:30vh;
+    height:50%;
+        z-index: 1;} 
+    .calendar__head-days{width:100%;
+    font-size: 11px;
+    text-decoration:none}
+}
