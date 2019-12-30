@@ -1,0 +1,607 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>IEEE-SB</title>
+        <link rel = "icon" href ="http://i.xp.io/LJNAk3w.png" type = "image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+
+<link href="https://fonts.googleapis.com/css?family=Arvo|Inconsolata|Merriweather+Sans|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <style>
+            body {
+            font-family: 'Raleway',Arial, sans-serif;
+            font-size: 17px;
+            background-color: #fdfdfd;
+        }
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #f00000;
+            border-color: #dc281e;
+        }
+        .masthead {
+            background: #3398E1;
+            height: auto;
+            padding-bottom: 15px;
+            box-shadow: 0 16px 48px #E3E7EB;
+            padding-top: 10px;
+        }
+
+
+        body::-webkit-scrollbar {
+
+  background-color: #252525;
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #a4a4a4; 
+  border-radius: 1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*///////////contact info footer////////////*/
+
+
+.contact_info{
+  
+  right: 0; 
+  max-width: 99%;
+  top: 20px;
+  color: #fff;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-gap: 20px;
+  
+
+    
+  
+}
+.contact_info p{
+  font-size: 13px;
+  
+}
+.contact_info h3{
+ color: #365dc2;
+ font-size: 19px;
+ font-weight: bolder;
+}
+.contact_info p a{
+  color: #fff;
+  margin-top: -2px;
+  font-size: 13px;
+}
+ @media only screen and (max-width: 1200px){
+      
+    }
+ @media only screen and (max-width: 800px){
+      .contact_info{
+        grid-template-columns: 1fr;
+
+      }
+      .contact_info h3{
+        font-size: 1.8em !important;
+      }
+      .contact_info p{
+        font-size: 1.2em !important;
+      }
+      .contact_info p a{
+        font-size: 1.2em !important;
+      }
+      .contact_info .contact-details div, .contact_info .about-contact-details div{
+        margin-left: 30px !important;
+        
+      }
+      .switch_container{
+        transform: scale(1.5);
+      }
+    }
+
+
+
+
+/*header*/
+header{
+  position: relative;
+  top: 0;
+  color: #fff;
+  z-index: 22222;
+  
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"!important;
+  letter-spacing: 2px;
+  transition: all 0.4s ease-in-out;
+  background-color: #363dc2 !important;
+  height: 120px;
+  overflow: hidden;
+
+}
+header ul{
+list-style: none;
+position: relative;
+right: 70px;
+cursor: pointer;
+z-index: 22222;
+left: ;
+margin-top: 0px;
+text-decoration: none;
+padding-left: 0;
+padding-top: 0;
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+
+}
+header ul li{
+  display: inline-block;
+  margin: 3px;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+  border-radius: 0px;
+  padding: 2px;
+  padding-right: 10px;
+  transition: all 0.15s ease-in-out;
+
+}
+header ul li a:after {
+  
+ content: "";
+  height: 1.5px;
+  width: 20px;
+  display: block;
+  background-color: #fff;
+  position: relative;
+  top: 3px;
+  left: -4px;
+  opacity: 1;
+  transform: rotate(3deg);
+  transition: all 0.3s ease-in-out;
+}
+header ul li:hover> a:after{
+  opacity: 1;
+  width: 100%;
+  left: 0;
+  
+}
+header ul li:hover{
+  background-color: rgba(0,0,0,0);
+  
+  letter-spacing: 0.15em;
+}
+header ul li a{
+    text-decoration: none;
+  color: #fff;
+}
+
+header ul li a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+/*hamburger*/
+.hamburger-menu{
+  height: 40px;
+  width: 40px;
+  right: 10px;
+  top: 40px;
+  display: none;
+  overflow: visible;
+  background-color: rgb(0,0,0,0.7);
+  position: absolute;
+  z-index: 2222888888;
+}
+.hamburger-menu::before{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+  margin-top: 11px;
+  margin-left: 2px;
+  transition: all 0.6s ease-in-out;
+
+}
+.hamburger-menu::after{
+  content: "";
+  display: block;
+  margin-top: 11px;
+  height: 3px;
+  width: 35px;
+  margin-left: 2px;
+  background-color: #fff;
+  transition: all 0.6s ease-in-out;
+
+}
+
+
+.clicked::after{
+   transform: rotate(-225deg);
+   margin-top: 0px;
+}
+.clicked::before{
+   transform: rotate(225deg);
+  margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:880px) {
+
+  section {
+    
+    margin: 0 auto;
+
+  }
+  main{
+     margin: 0 auto;
+     padding: 0;
+     box-sizing: border-box;
+  }
+  
+
+header{
+  }
+
+
+
+
+
+
+header{
+  margin: 0;
+  letter-spacing: 0;
+  position: relative;
+  height: auto;
+  background-color: #000 !important;
+  transition: height 0.5s ease-in-out;
+}
+
+header ul{
+ margin: 0;
+list-style: none;
+position: unset;
+left: 0px;
+cursor: pointer;
+float: none !important;
+margin-top: 0;
+padding-top: 0 !important;
+/*z-index: 22222;
+text-decoration: none;
+padding-left: 0;
+  color: #fff;
+  background-color: rgb(0,0,0,0.9);
+  padding-top: 89px;*/
+
+}
+header ul li{
+  display: block;
+  margin: 2px;
+  width: ;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  left: 0;
+  padding-left: 0;
+  margin-left: 0;
+  background-color: transparent;
+ border-radius: 0px;
+  padding: 4px;
+  font-size: 17px;
+  padding-top: 18px;
+
+}
+header ul li:after {
+  content : "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+ bottom  : 0;
+  width  : 70%;
+  height   : 0.3px;  /* or 100px */
+  background: linear-gradient(to left ,rgba(0,0,0,0), #444 , rgba(0,0,0,0));
+  border-radius: 5px;
+}
+header .logo{
+  float: none !important;
+}
+
+
+.hamburger-menu{
+    display: block;
+}
+
+
+
+
+
+
+
+}
+.event-header{
+  background:linear-gradient(rgba(54, 131, 224,0.5), rgba(54, 61, 194,0.5)), linear-gradient(rgba(0, 0, 0,0.8), rgba(0, 0, 0,0.8)),url('/media/images/seminarC.jpg') !important;
+  background-position: 30% 50% !important;
+  background-size: cover;
+  overflow: hidden;
+  height: 60vh;
+  width: 100%;
+}
+
+.event-header p{
+  cursor: crosshair;
+  color: #fff;
+  font-size: 40px;
+  align-items: center;align-self: center;
+  align-content: center;
+  padding-top: 20vh;
+}
+.event-header p::after{
+  content: "";
+  height: 2px;
+  width: 175px;
+  position: absolute;
+  display: block;
+  left: 56%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+
+}
+.event-header p:hover::after{
+  width: 275px;
+  left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+<div class="hamburger-menu"></div>
+
+    <header style="display: block;">
+  <div class="logo" style="float: left; padding-left: 30px;"><img src= "http://i.xp.io/yO2IRLu.svg+xml" height="140px"></div>
+  <ul id="header-list" style="float: right; padding-top: 42px;">
+    <!--/media/images/ieeesb_logo.svg-->
+
+          <li><a class="" href="{% url 'index' %}">Home</a></li>
+           <li><a class="" href="{% url 'thereg:events' %}">Events</a></li>
+           <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
+           <li><a class="" href="{% url 'index' %}">Contact us</a></li>
+          <!--<li><a class="" href="{% url 'admin:index' %}">Admin</a></li>-->
+               
+          {# Some logic on what to display for last item#}
+          <!--{% if user.is_authenticated %}
+            <li><a href="#">Welcome {{ user.username }}!</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+            
+          {% else %}
+          <li><a class="" href="{% url 'thereg:register' %}">Register</a></li>
+            <li><a class="" href="{% url 'thereg:user_login' %}">Login</a></li>
+          {% endif %}-->
+    </ul>
+</header>
+
+       <div class="jumbotron event-header" style="background:linear-gradient(to bottom left,#ccc,#eee);text-align: center; font-size: 38px; color: #444 ; font-weight: 500; font-family: arial;"><p>OU<font style="">R EVENTS </font></p></div>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+        <!-- Footer -->
+
+
+        <footer style="height: auto;padding:10px;background-color: #000; font-family: 'Raleway',Arial, sans-serif; background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/media/graphics/99.svg'); background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 70% 50%;">
+  <div class="contact_info" style=" ">
+  <div class="our-details">
+    <h3><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -30px;">IEEE SB <i class="fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3>
+    <p style="padding:2px;padding-left: 30px; font-size: 15px; font-weight: lighter;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
+  </div>
+  <div class="contact-details" style="margin: 0 auto; width: 100%;">
+    <div style="margin: 0 auto;
+    margin-left:35%;">
+    <h3 style="padding-top: 16px; padding-bottom: 20px">Contact Us</h3>
+  <p><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i> IEEE-SB@nitdgp.com</p>
+  <p><i class="fa fa-phone" aria-hidden="true" style="padding-right: 5px;"></i>
+ 9754524763</p>
+  <p><i class="fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i> <a href="http://facebook/ieee-sb/54hcbu7t.com" style="text-decoration: none; color: #fff;">facebook/ieeesbnitdgp</a></p>
+  <p><i class="fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i> Instagram/ieeesbnitdgp</p>
+  </div>
+  </div>
+<div class="about-contact-details" style="margin: 0 auto; width: 100%;">
+  <div style="margin: 0 auto;
+    margin-left: 40%;
+    ">
+    <h3 style="padding-bottom: 20px; padding-top: 16px;">About Us</h3>
+  <p><i class="fa fa-users" aria-hidden="true" style="padding-right: 5px;"></i><a style="font-size: 16px" href="{% url 'thereg:members' %}">Members</a></p>
+  <p><i class="fa fa-calendar" aria-hidden="true" style="padding-right: 5px;"></i>
+<a href="{% url 'thereg:events' %}" style="font-size: 16px">Events</a></p>
+  <p><i class="fa fa-chrome" aria-hidden="true" style="padding-right: 5px;"></i> <a style="font-size: 16px" href="#">Join-Us</a></p>
+  
+  </div>
+  </div>
+
+</div>
+ 
+  <p style="text-align: center; color: #fff; font-size: 16px;">&copy; IEEENITDgp</p>
+  
+</footer>
+        
+    </body>
+
+
+
+
+
+
+
+
+    <!--hamburger menu-->
+
+
+
+<script type="text/javascript">
+  
+
+jQuery(document).ready(function ($){
+  
+
+  
+
+  var offsetHeightheaderul = document.getElementById('header-list').offsetHeight;
+
+
+  if (window.matchMedia("(max-width: 800px)").matches) {
+  /* The viewport is less than, or equal to, 900 pixels wide */
+  thresh =-3;
+      $(".hamburger-menu").css("transform","translateX(0%)");
+      $("header").css("height","140px");
+      
+  } else {
+  /* The viewport is greater than 900 pixels wide */
+     /*$("header ul").removeClass("header-off");*/
+     $("header ul").css("background-color","transparent").css("right","").css("padding-top","42px");
+  thresh=50;}
+    
+
+
+
+  $(window).scroll(function(){
+    var scrollTop = $(window).scrollTop();
+   if(scrollTop>=thresh){
+    $("header").css("background-color","rgba(0,0,0,0.9)")
+      
+   
+   }
+   else{
+    $("header").css("background-color","rgba(0,0,0,1)")
+    
+   }
+
+  });
+
+   
+
+
+
+  $(".hamburger-menu").click(function(){
+    if($(".hamburger-menu").hasClass("clicked")){
+      
+      $(".hamburger-menu").removeClass("clicked");
+      $("header").css("height","140px");
+         }
+     else{
+      $(".hamburger-menu").addClass("clicked");
+      $("header").css("height",offsetHeightheaderul+144+10+"px");}
+  })
+
+
+
+    
+
+});
+
+
+
+
+
+
+</script>
+<script type="text/javascript">
+  
+  $(document).ready(function() {
+  clockUpdate();
+  setInterval(clockUpdate, 1000);
+})
+
+function clockUpdate() {
+  var date = new Date();
+  
+  function addZero(x) {
+    if (x < 10) {
+      return x = '0' + x;
+    } else {
+      return x;
+    }
+  }
+
+  function twelveHour(x) {
+    if (x > 12) {
+      return x = x - 12;
+    } else if (x == 0) {
+      return x = 12;
+    } else {
+      return x;
+    }
+  }
+
+  var h = addZero(twelveHour(date.getHours()));
+  var m = addZero(date.getMinutes());
+  var s = addZero(date.getSeconds());
+  if(date.getHours()>12){
+    var t = "PM"
+
+  }
+  else{
+    var t = "AM"
+  }
+
+  $('.digital-clock').text(h + ':' + m + ':' + s + " " +t)
+}
+</script>
+
+
+</html>

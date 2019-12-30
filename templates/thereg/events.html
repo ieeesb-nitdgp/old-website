@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+{% extends "thereg/eventbase.html" %} 
+{% block content %}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style type="text/css">
+body{
+    overflow-x: hidden;
+}
+.container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+}
+    .card{
+        flex: 32.33%;
+        margin-top: 20px;
+        max-width: 32.33% !important;
+        margin:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+
+    }
+    .card-title{
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    .card-text{
+        font-size: 18px;
+        
+    }
+
+    .text-muted{
+        font-size: 13px;
+        padding: 0;
+    }
+    .back-style{
+        height: 190vh;
+        width: 99.99vw;
+        display: block;
+        position: absolute;
+        margin-left: 0vw;
+        margin-top: 0vh;
+        border-radius: 100% 63% 100% 0% / 100% 14% 17% 37%  ;
+        background-color: #363dc2; 
+    }
+
+    @media only screen and (max-width: 1200px){
+      .card{
+        flex: 48%;
+        margin-top: 22px;
+        max-width: 48% !important;
+    }
+    }
+    @media only screen and (max-width: 800px){
+      .card{
+        flex: 100%;
+        margin-top: 40px;
+        max-width: 100% !important;
+    }
+    }
+    .card-img-top{
+        opacity: 0.75;
+    }
+</style>
+</head>
+<body>
+    <div style="position: relative; width: 0px;overflow: visible;">
+    <div class="back-style"></div></div>
+<div class="container" style="margin-bottom: 120px; margin-top: 60px;">
+    
+    {% for post in post_list %}
+    <div class="card">
+        {% if not post.image.isempty %}
+        <div style="overflow: hidden;max-height: 250px;">
+             <img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image.url }}" alt="img" style="">
+             </div>
+        {% endif %}
+    
+    <div class="card-body">
+      <h5 class="card-title">{{post.title }}</h5>
+      <p class="card-text"><small class="text-muted"><i class="fa fa-calendar-check-o" style="padding-right: 3px;"></i>  {{ post.event_date}}</small></p>
+      <p class="card-text"><small class="text-muted"><i class="fa fa-map-marker" style="padding-right: 5px;"></i>    NIT Durgapur,India</small></p>
+      
+      <p class="card-text">{{post.content|slice:":200" }}...</p>
+      
+      <p class="card-text"><small class="text-muted"><a href="{% url 'thereg:event_detail' post.slug  %}" class="text-secondary" style="color: #fff !important;background-color: #363dc2; font-weight: 200; font-size: 14px; padding: 5px; border: 1px solid #363dc2; border-radius: 0.333rem;">Read More<i class="fa fa-arrow">
+                </i></a></small></p>
+      
+      
+    </div>
+  </div>
+  {% endfor %}
+</div>
+    
+{%endblock%}
+</body>
+
+</html>

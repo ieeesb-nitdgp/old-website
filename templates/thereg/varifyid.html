@@ -1,0 +1,157 @@
+{% extends 'thereg/base.html' %}
+{% block body_block %}
+
+<style type="text/css">
+body{
+  background-color: #fff !important;
+  
+
+}
+.switch_container{
+  
+}
+header{
+
+}
+body.dark_body{
+  background-color: #656565 !important;
+}
+  span.input-data{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+  span.input-data label{
+    padding: 3px;
+    padding-right: 9px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+  }
+  span.input-data label i{
+    font-size: 18px;
+    color: #849;
+
+  }
+  #top{
+    position: unset !important;
+    display: none;
+  }
+  .dark_body span.input-data label i{
+    color: #fff;
+  }
+  span.input-data input{
+    background-color: transparent;
+    width: 80%;
+    border: none !important;
+    border-bottom: 1px solid #849 !important;
+    overflow-x: unset;
+  }
+  .dark_body span.input-data input{
+    border-color: #fff !important;
+
+  }
+  body::-webkit-scrollbar {
+
+  width: 6px;
+}
+  i{
+    overflow-x: unset !important;
+  }
+  span.input-data input:focus{
+    border: none;
+    border-bottom: 1px solid #849;
+  }
+  .log-in-block{
+    max-width: 500px;
+  }
+  .reg-container{
+    border-radius: 0.33rem;
+    padding: 0 !important;
+    margin-top: 50px;
+    max-width: 500px;
+    background-color: #fafafa;
+    font-family:'Raleway',Arial, sans-serif;
+    -webkit-box-shadow: 4px 11px 47px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 11px 47px -8px rgba(0,0,0,0.75);
+box-shadow: 4px 11px 47px -8px rgba(0,0,0,0.75);
+margin-bottom: 20px;
+  }
+  .jumbotron{
+    background-color: transparent !important;
+  }
+  .top-bar-log-in{
+    border-radius: 0.33rem;
+    min-height: 120px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    padding-top: 32px;
+    background-color: #849;
+  }
+  .dark_body .top-bar-log-in{
+    background-color: #65f;
+    
+  }
+  input[type="submit"]{
+    min-width: unset !important;
+  }
+  .login{
+    transition:all 0.3s ease-in-out !important;
+  }
+  .dark_body .login{
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+  .login:hover{
+    background-color: #849 !important;
+    color: #fff !important;
+  }
+  .dark_body .reg-container{
+    background-color: #454545;
+    color: #fff !important;
+  }
+  .dark_body .reg-container .log-in-block{
+    background-color: #454545;
+    color: #fff !important;
+  }
+  .dark_body .reg-container .log-in-block a{
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+  .container{
+    padding-bottom: 40px;
+  }
+</style>
+  <div class="container reg-container">
+    <div class="top-bar-log-in">Varification is must for a event regsistration to be completed.</div>
+    <!--<div class="jumbotron log-in-block">
+      
+<form method="post" action="{% url 'thereg:varification' %}">
+          {% csrf_token %}
+          {# A more "HTML" way of creating the login form#}
+          <span class="input-data">
+          <label for="username"><i class="fa fa-user"></i></label>
+          <input type="text" name="username" placeholder="Username"></span>
+          <span class="input-data">
+          <label for="password"><i class="fa fa-lock"></i></label>
+          <input type="password" name="password" placeholder="Password"></span>
+          <span class="input-data">
+          <label for="varificationid"><i class="fa fa-lock"></i></label>
+          <input type="number" name="Varificationid" placeholder="Varificationid">
+          </span>
+<input type="submit" name="" value="Confirm" style="background-color: transparent; border: 1px solid #849; border-radius: 0.44rem; margin-top: 15px; color: #849; width: 120px;" class="login">
+</form>
+
+
+   <br>
+  <p></p>
+  <br>
+</div>-->
+
+
+  </div>
+{% endblock %}

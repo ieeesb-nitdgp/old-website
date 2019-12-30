@@ -1,0 +1,167 @@
+{% extends 'thereg/eventbase.html' %} {% block content %}
+
+
+<style type="text/css">
+.card-body h1{
+  text-transform: uppercase;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-main{
+  flex: 68%;
+  width: 68%;
+
+}
+.container-sidebar{
+ flex: 28%;
+ width: 28%;
+}
+  .list-item{
+    width: 95%;
+    height: 130px;
+    border: 1px solid #dedede;
+    margin: 4px;
+    color: #000;
+    display:flex;
+    flex-direction: column;
+  }
+  .list-header{
+    height: 60px;
+    display:flex;
+    flex-direction: row;
+  }
+  .list-img-cont{
+    flex: 33.33%;
+    width: 33.33%;
+
+
+  }
+  .list-img{
+    height: 60px;
+    
+
+
+  }
+   .list-title{
+    padding-left: 10px;
+   flex: 66.66%;
+   width:66.66%;
+   
+    
+  }
+  .list-content{
+    padding: 5px;
+    padding-top: 6px;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .card.left{
+    width: 90%;
+  }
+  .card-img-bottom{
+    width: 100%;
+    margin-top: 50px;}
+    .img-fluid{
+      max-width: 30%;
+      margin: 5px;
+    }
+
+
+
+   @media only screen and (max-width: 800px){
+      
+       .img-fluid{
+      max-width: 45.5%;
+      margin: 5px;
+    }
+      .container{
+        flex-direction: column;
+      }
+      .container-main{
+  
+  flex: 100%;
+  width: 100%;
+
+}
+.container-sidebar{
+ flex: 100%;
+ width: 100%;
+}
+.card{
+  width: 99%;
+  margin: 0 auto;
+}
+.card-body h1{
+  font-size: 28px;
+}
+.list-item{
+  width: 98%;
+}
+    }
+</style>
+<div class="container" style="width: 95%; max-width: unset; margin-bottom: 50px;">
+
+<div class="container-main">
+  <div class="row">
+    <div class="card left  top">
+      <div class="card-body" style="overflow: hidden;">
+        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+        <p class=" text-muted" style="font-size: 13px;">IEEE SB NIT Dgp  | {{ post.created_on }}</p>
+        <p class="card-text " style="word-spacing: 0.4em; font-size: 15px;">{{ object.content | safe }}</p>
+        <div class="card-img-bottom">
+         {% if not post.image.isempty %}
+                     
+                    
+              <img class="img-fluid" style="opacity: 0.78" src="{{ MEDIA_URL }}{{ post.image.url }}" alt="img" height="">
+         {% endif %}
+         {% if not post.image_1.isempty %}
+                     
+                    
+              <img class="img-fluid" style="opacity: 0.78" src="{{ MEDIA_URL }}{{ post.image_1.url }}" alt="img" height="">
+         {% endif %}
+         {% if not post.image_2.isempty %}
+                     
+                    
+              <img class="img-fluid" style="opacity: 0.78" src="{{ MEDIA_URL }}{{ post.image_2.url }}" alt="img" height="">
+         {% endif %}
+         {% if not post.image_3.isempty %}
+                     
+                    
+              <img class="img-fluid" style="opacity: 0.78" src="{{ MEDIA_URL }}{{ post.image_3.url }}" alt="img" height="">
+         {% endif %}
+         
+       </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div class="container-sidebar" style="">
+    
+    {% for event in post_list %}
+    
+      <div class="list-item">
+    <div class="list-header">
+        {% if not event.image.isempty %}
+        <div class="list-img-cont" style="overflow: hidden;">
+             <img class="list-img" style="opacity: 0.8;" src="{{ MEDIA_URL }}{{ event.image.url }}" alt="img" style="">
+             </div>
+        {% endif %}
+        <a class="list-title" href="{% url 'thereg:event_detail' event.slug  %}" style="text-decoration: none; color: #000; padding: 0; margin: 0; text-align: unset;"><h5 style="text-align: center; font-weight: 400;">{{event.title }}</h5></a>
+      </div>
+        <div class="list-content">
+        
+        <p class="card-text"><small class="text-muted"><i class="fa fa-pencil"></i> {{event.content|slice:":100" }}...</small></p>
+        </div>
+    
+    
+  </div>
+  
+  {% endfor %}
+</div>
+</div>
+{% endblock content %}

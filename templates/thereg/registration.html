@@ -1,0 +1,101 @@
+{% extends "thereg/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<style type="text/css">
+body{
+ background-image: url("http://i.xp.io/15EZVaQh.jpg") !important;
+ background-size: 100% !important;
+ background-attachment: unset !important;
+
+}
+.reg-container{
+  display: none;
+}
+.jumbotron{
+  background-color: transparent !important;
+}
+  .jumbotron p label{
+    color: #617 !important;
+  }
+  .dark_body .jumbotron p label{
+    color: #fff !important;
+  }
+  .reg-container{
+    border-radius: 0.33rem;
+    padding: 0 !important;
+    margin-top: 50px;
+    max-width: 500px;
+    background-color: #fafafa;
+    font-family:'Raleway',Arial, sans-serif;
+    -webkit-box-shadow: 4px 11px 47px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 11px 47px -8px rgba(0,0,0,0.75);
+box-shadow: 4px 11px 47px -8px rgba(0,0,0,0.75);
+
+margin-bottom: 35px;
+  }
+   .reg-container input{
+    
+    margin-left: 5px; 
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 7px;
+    min-width: 300px;
+   }
+   .dark_body .reg-container{
+    background-color: #353535;
+   }
+  .top-bar-reg{
+    border-radius: 0.33rem;
+    min-height: 120px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    padding-top: 32px;
+    background-color: #849;
+  }
+  .dark_body .top-bar-reg{
+    background-color: #65f;
+    
+  }
+  .jumbotron{
+   
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+</style>
+  <div class="jumbotron" style=" color: #fff;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7) !important;
+    height: 200px;
+    margin-top: 40px;
+    ">
+    No event registration is open now.
+  </div>
+  <div class="container reg-container">
+    <div class="top-bar-reg"><h1 style="line-height: unset !important;">Register Here</h1></div>
+    <div class="jumbotron">
+      {% if registered %}
+        <h1>Thank you for registering!</h1>
+      {% else %}
+        
+<form enctype="multipart/form-data" method="POST">
+          {% csrf_token %}
+          {{ user_form.as_p }}
+          {% if flag == 0 %}
+              <h4>This mail adress is already used!</h4>
+          {% endif %}
+          {{ profile_form.as_p }}
+          <input type="submit" name="" value="Register" class="regis-sub" style="color: #617;">
+        </form>
+        
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
