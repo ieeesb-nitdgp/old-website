@@ -572,6 +572,7 @@ transform: translateY(-50%) scaleY(1.2) translateX(15px);
  font-weight: lighter;
  overflow: visible;
  padding: 19px;
+ padding-bottom: 0px;
 
 }
 .main-slide button{
@@ -593,18 +594,16 @@ transform: translateY(-50%) scaleY(1.2) translateX(15px);
 @media only screen and (max-width: 1090px){
 	.main-content-slider{
 		margin-left: 2vw;
-		border-radius: 100% 100% 100% 100% / 100% 7% 100% 7% ;
-		height: 55vh;
-		margin-top: 30vh;
+		/*border-radius: 100% 100% 100% 100% / 100% 7% 100% 7% ;*/
 		width: 95vw;
 	}
   .main-slide h3{
     font-size: 25px!important;
-    margin-top: 15vh;
+    margin-top: 45vh!important;
+    transform: translateY(-50%)!important;
     text-align: center;
   }
   .main-slide div{
-  	margin-top: 18vh;
   }
    .main-slide div h3{
     font-size: 45px!important;
@@ -4319,7 +4318,7 @@ section.stats-ieee{
     <h3 style="white-space: nowrap; margin-bottom: 0; padding: 0; font-size: 60px; margin-top: 20vh;">IEEE</h3> <h2 style="color: #dedede;"> Student branch</h2><h4 style="color: #dedede;">NIT Durgapur</h4>
 
     <button class="explore">Explore</button>
-  </div>
+  </div>  
 </div>
   <div class="main-slide" style=" background-size: cover;">
     <div class="slide-background-image" style="background:linear-gradient(rgba(54, 61, 194,0.001), rgba(54, 61, 194,0.001)),linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)), url('/media/images/sdv-1.jpg');background-size: cover; height: 100%; width: 100%; transform: none;position: absolute; z-index: -1;top: 0; left: 0;-webkit-filter: blur(1px);-moz-filter: blur(1px);-o-filter: blur(1px);-ms-filter: blur(1px);filter: blur(1px) contrast(-20%) brightness(-5%);margin: 0;padding: 0;"></div>
@@ -5509,7 +5508,7 @@ function clockUpdate() {
 			var offsetHeight_2 = document.getElementById('about').offsetHeight + document.getElementById('about-video').offsetHeight;
 			var offsetHeight_3 = document.getElementById('commu').offsetHeight; 
       var offsetHeight_4 = document.getElementById('ieee-team').offsetHeight; 
-       var offsetHeight_7 = document.getElementById('gallery-event').offsetHeight +document.getElementById('stats-ieee').offsetHeight; 
+      var offsetHeight_7 = document.getElementById('gallery-event').offsetHeight +document.getElementById('stats-ieee').offsetHeight; 
 			var offsetHeight_5 = document.getElementById('members').offsetHeight;
 			var offsetHeight_6 = document.getElementById('joinieee').offsetHeight;
 			var scrollTop = $(window).scrollTop();
@@ -6180,18 +6179,18 @@ slides.first().before(slides.last());
     slides.last().after(slides.first());
    
     activeSlide.removeClass('themainactive').next('.main-slide').addClass('themainactive');
-  
-
-  
-
-}, 10000);
+ 
+ 
+ 
+ 
+  }, 5000);
 
 
 
 $('.button').on('click', function() {
-
+ 
   slides = $('.main-slide');
-
+  
   var button = $(this);
  
   var activeSlide = $('.themainactive');
@@ -6200,7 +6199,7 @@ $('.button').on('click', function() {
   if (button.attr('id') == 'main-next') {
      slides.last().after(slides.first());
      activeSlide.removeClass('themainactive').next('.main-slide').addClass('themainactive');
-  }
+    }
 
   
   if (button.attr('id') == 'main-previous') {
@@ -6208,7 +6207,7 @@ $('.button').on('click', function() {
     slides.first().before(slides.last());
    
     activeSlide.removeClass('themainactive').prev('.main-slide').addClass('themainactive');
-  }
+  }  
 });
 </script>
 
