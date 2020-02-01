@@ -4,7 +4,25 @@
 <head>
 
    <meta charset="utf-8">
-    <title>IEEE_NIT_Dgp</title>
+    <title>IEEE Student Branch NIT Durgapur</title>
+	
+	<script language="JavaScript">
+	<!--
+	var space = " ";
+	var pos = 0;
+	var msg = "IEEE Student Branch NIT Durgapur";
+
+	function Scroll()
+	{
+	document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+	pos++;
+	if (pos > msg.length) pos = 0;
+	window.setTimeout("Scroll()", 100);
+	}
+	Scroll();
+	-->
+	</script>
     <link rel = "icon" href ="http://i.xp.io/LJNAk3w.png" type = "image/x-icon">
     <meta name="description" content="">
     <meta name="IEEE-sb" content="">
@@ -4250,11 +4268,7 @@ section.stats-ieee{
 	<ul id="header-list" style="float: right; padding-top: 30px;">
     <!--/media/images/ieeesb_logo.svg-->
           <li><a class="" href="#home">Home</a></li>
-			     <li><a href="{% url 'thereg:events' %}">Events</a></li>
-
-            
-          
-          <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
+			    
           <li class=""><a href="#ieee-team">Team</a></li>
                
           {# Some logic on what to display for last item#}
@@ -4282,7 +4296,6 @@ section.stats-ieee{
 	<ul>
 		<li class="side_bar_about"><a class="active_side_bar" href="#about">about</a></li>
 		<li class="side_bar_commu"><a href="#commu">community</a></li>
-		<li class="side_bar_events"><a href="#members">events</a></li>
 		<li class="side_bar_members"><a href="#ieee-team">members</a></li>
     <li class="side_bar_glimps"><a href="#gallery-event">glimpses</a></li>
 		<li class="side_bar_join"><a href="#joinieee">join IEEE</a></li>
@@ -5111,7 +5124,6 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
     <h3 style="padding-bottom: 20px; padding-top: 16px;">About Us</h3>
   <p><i class="fa fa-users" aria-hidden="true" style="padding-right: 5px;"></i><a href="{% url 'thereg:members' %}">Members</a></p>
   <p><i class="fa fa-calendar" aria-hidden="true" style="padding-right: 5px;"></i>
-<a href="{% url 'thereg:events' %}">Events</a></p>
   <p><i class="fa fa-chrome" aria-hidden="true" style="padding-right: 5px;"></i> <a href="#">Join-Us</a></p>
   
   </div>
