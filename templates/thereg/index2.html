@@ -714,7 +714,7 @@ header{
   height: 120px;
   overflow: hidden;
 
-
+g
 }
 header ul{
 list-style: none;
@@ -4289,6 +4289,8 @@ section.stats-ieee{
           {% endif %}-->
          
           <li class=""><a href="#contact-us">Contact us</a></li>
+          <li class=""><a href="{% url 'thereg:events' %}">Events</a></li>
+          <li class=""><a href="#gallery2">Gallery</a></li>
 		</ul>
 </header>
 
@@ -4499,43 +4501,40 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
 </section>
 
 <section class="about-video" id="about-video" style="height: 100vh; width: 99.5vw; background-color: transparent; margin: 0 auto; overflow: hidden;">
-	<div style="position: relative; overflow: visible;">
-	<div class="back-style-about"></div></div>
+  <div style="position: relative; overflow: visible;">
+  <div class="back-style-about"></div></div>
    <div class="container" >
+
 
     <div class="title-video" style="">About Us &rarr;</div>
 
-        <div class="m-player" style="border-top:1px solid; border-bottom: 1px solid; background-color: #454549;">
-            <iframe width="1000" height="500" src="https://www.youtube.com/embed/lsgGKaHNoNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="controls">
-                <div class="vdb">
-                    <div>
-                        <p class="vdc" id="vsd"></p>
-                    </div>
-                    <div class="fright">
-                        <p class="vdc" id="vd"></p>
-                    </div>
-                </div>
-                <div class="m-b">
-                    <div class="m-b-j"></div>
-                </div>
-                <div class="buttons-video">
-                    <div id="l">
-                        <button id="play-pause"><i id="btni" class="fas fa-play"></i></button>
-                        <button id="vol-btn"><i id="vol-i" class="fas fa-volume-up"></i></button>
-                        <input id="vol-control" type="range" min="0" max="100" step="1" style="height: 15px; margin-top: 5px;"></input>
-                    </div>
-                    <div id="r">
-                        <button id="fs-btn"><i id="fs-i" class="fas fa-expand"></i></button>
-                    </div>
-                </div>
-            </div>
+
+       <div class="m-player" style="border-top:1px solid; border-bottom: 1px solid; background-color: #454549;">
+          <video
+    id="my-video"
+    class="video-js vjs-big-play-centred"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="/media/video/hello.jpg"
+    data-setup="{}"
+  >
+    <source src="/media/video/ieeetrailer.mp4" type="video/mp4" />
+    <source src="/media/video/ieeetrailer.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>            
         </div>
 
       </div>
     
 </section>
-
 
 
 
@@ -4825,7 +4824,7 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
         <div class="swiper-slide"style=" background-image: url();">
           <div class="our-team">
                 <div class="pic">
-                    <img src="/media/members/nophotomale.png">
+                    <img src="/media/members/anumoy.jpeg">
                     
                 </div>
                 <div class="team-content">
@@ -4905,7 +4904,7 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
 </section>
 
 
-
+<a name="gallery2">
 <section class="gallery-event" id="gallery-event" style="width: 99.5vw; margin-top:0; margin-left: 0; background-color: #fff; padding-bottom: 0.5px;">
     <div class="row">
   <div class="col-md-12">
@@ -4985,7 +4984,7 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
 </div>
 </section>
 
-
+</a>
 
 
 
@@ -5030,7 +5029,7 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
  <section id="contact-us" class="contact_ieee" >
    
  	<div class="contact_container">
-
+<a name="feedb">
 <div id="contactForm" class="contactForm">
 	<div id="formHeader" class="formHeader">
 		<h1></h1>
@@ -5043,7 +5042,9 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
 </form>
 	
 	</div>
+
 </div>
+</a>
 
 
 
@@ -5103,8 +5104,8 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
   <p><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i>ieeesb.nitdgp@gmail.com</p>
   <p><i class="fa fa-phone" aria-hidden="true" style="padding-right: 5px;"></i>
  8584970760</p>
-  <p><i class="fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i> <a href="https://www.facebook.com/nitdgpieeesociety/" style="text-decoration: none; color: #fff;">facebook/nitdgpieeesociety/</a></p>
-  <p><i class="fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i><a href="https://www.instagram.com/ieeesb_nitdgp/" style="text-decoration: none; color: #fff;"> Instagram/ieeesbnitdgp</a></p>
+  <p><i class="fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i> <a href="https://www.facebook.com/nitdgpieeesociety/" style="text-decoration: none; color: #fff;">fb/nitdieeesb/</a></p>
+  <p><i class="fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i><a href="https://www.instagram.com/ieeesb_nitdgp/" style="text-decoration: none; color: #fff;"> Insta/ieeesbnitd</a></p>
   </div>
   </div>
 <div class="about-contact-details" style="margin: 0 auto; width: 100%;">
@@ -5114,6 +5115,8 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
     <h3 style="padding-bottom: 20px; padding-top: 16px;">About Us</h3>
   <p><i class="fa fa-users" aria-hidden="true" style="padding-right: 5px;"></i><a href="{% url 'thereg:members' %}">Members</a></p>
   <p><i class="fa fa-chrome" aria-hidden="true" style="padding-right: 5px;"></i> <a href="#joinieee">Join-Us</a></p>
+  <p><i class="fa fa-chrome" aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'thereg:events' %}">Events</a></p>
+  <p><i class="fa fa-chrome" aria-hidden="true" style="padding-right: 5px;"></i> <a href="#feedb">Feedback</a></p>
   
   </div>
   </div>
@@ -5124,8 +5127,9 @@ IEEE Student Branch helps lead students to a goal of re-designing their future. 
   <div class="digital-clock" style="font-size: 13px;">00:00:00</div>
   <div style="position: relative; overflow: visible;">
    <div class="switch_container" style="position: absolute; z-index: 99999;cursor: pointer;bottom: 50px; left:60px; background-color: rgba(100,100,100,0);border-radius: 5px ;font-size: 8px; color: #fff; font-family: monospace; display: grid; grid-template-columns: 1fr 1fr; ">
-	<div id="dark" style="color: #f54595;display: block; width: 25px; text-align: center; border-bottom: 1px solid #f54595">dark</div>
-<div id="light" style="color: #fff;display: block; width: 25px; border-bottom: 1px solid #249; text-align: center;"></div>
+    
+	<div id="dark" style="color: #f54595;display: block; width: 50px; text-align: center; border-bottom: 1px solid #f54595">dark</div>
+<div id="light" style="color: #fff;display: block; width: 50px; border-bottom: 1px solid #249; text-align: center;"></div>
 </div>
 </div>
 </footer>
