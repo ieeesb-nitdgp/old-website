@@ -3432,9 +3432,107 @@ overflow: hidden;
 }
 
 .gallery-fluid .column img {
-  
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
   vertical-align: middle;
+  filter: brightness(105%);
   width: 100%;
+}
+.gallery-fluid .column div:hover img{
+  opacity: 0.6;
+}
+
+.gallery-fluid .column div:hover:before{
+  opacity: 1;
+  z-index: 11;
+}
+
+
+.column .IntelliSys:before{
+    content: "IntelliSys 2020";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 7.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .IntelliSys-2:before{
+    content: "IntelliSys 2020";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 6.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .studyjam:before{
+    content: "StudyJam 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 15.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .studyjam-2:before{
+    content: "StudyJam 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 7.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+
+.column .gameengineering-2:before{
+    content: "Game Engineering Workshop 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 6vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .gameengineering:before{
+    content: "Game Engineering Workshop 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    font-weight: 400px;
+    position: absolute;
+    margin-top: 5.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .bootcamp:before{
+    content: "Internship Bootcamp 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 9.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -4876,26 +4974,38 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
 
 
 
-<section class="gallery-fluid" style="background-color: #191919;">
+<section class="gallery-fluid" id="gallery-event" style="background-color: #191919;">
   <div class="row">
     
     <div class="column">
-       <img src="/media/images/seminarC.jpg">
-      
-      <img style="padding-top: 20px;" src="/media/images/bootcamp3.jpg">
-
+      <div class="gameengineering">
+       <img class="" src="/media/images/seminarC.jpg">
+       </div>
+      <div class="bootcamp">
+      <img class="" style="padding-top: 20px;" src="/media/images/bootcamp3.jpg">
+      </div>
     </div>
     <div class="column">
-    <img src="/media/images/studyjams7.jpg">
+    <div class="studyjam">
+    <img class="studyjam" src="/media/images/studyjams7.jpg">
+    </div>
   </div>
     <div class="column">
+      <div class="IntelliSys">
       <img src="/media/images/intelli-3.jpg">
+      </div>
+      <div class="gameengineering-2">
       <img style="padding-top: 20px;" src="/media/images/gameengineering3.jpg">
+      </div>
     </div>
 
     <div class="column">
+      <div class="IntelliSys-2">
      <img src="/media/images/intelli-1.jpg">
+     </div>
+     <div class="studyjam-2">
      <img src="/media/images/studyjams.jpg">
+     </div>
   </div>
    
   
