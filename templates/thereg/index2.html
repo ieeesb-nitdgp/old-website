@@ -538,7 +538,7 @@ transform: translateY(0px) scale(0.5);
   position: absolute;
   /*background-color: rgb(54, 61, 194);*/
   padding: 5%;
-  transition:transform 0.1s ease-in-out;
+  transition:transform 0.5s ease-in-out;
   opacity: 1;
   overflow-y: hidden;
   transform: translate(-100%, 0);
@@ -3186,19 +3186,28 @@ overflow: hidden;
     padding-top: 30px;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     }
     .events-row{
       display: grid;
       grid-template-rows: 0.5fr 1fr;
-     max-width: 40vw;
+     max-width: 400px;
+     
+
+      margin: 0 auto;
+    }
+    .events-row-satsiege{
+      display: grid;
+      grid-template-rows: 0.5fr 1fr;
+     max-width: 400px;
+     
 
       margin: 0 auto;
     }
     .event-pic{
       min-height: 240px;
-      padding: 20px;
+      padding: 0px;
       display: grid;
       grid-template-columns: 1fr 0.3fr;
       max-height: 40vh;
@@ -3214,15 +3223,18 @@ overflow: hidden;
       background-repeat: no-repeat;
     }
     .event-data{
-      padding: 5%;
+      padding:0px 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     .events-row-reverse{
     
       display: grid;
       grid-template-rows: 1fr 0.5fr;
       background-color: #fff;
-      max-width: 40vw;
+      max-width: 400px;
       margin: 0 auto;
+      
       
     
     }
@@ -3232,6 +3244,10 @@ overflow: hidden;
  .dark_body .events-row{
      background-color: rgba(32, 38, 42,0.7);
     }
+    .dark_body .events-row-satsiege{
+     background-color: rgba(32, 38, 42,0.7);
+    }
+    
 
     .dark_body .events-row-reverse .event-data a{
       color: #363dc2!important;
@@ -3239,6 +3255,10 @@ overflow: hidden;
     .dark_body .events-row .event-data a{
       color:#363dc2 !important;
     }
+    .dark_body .events-row-satsiege .event-data a{
+      color:#363dc2 !important;
+    }
+    
     .events-row-reverse .event-data{
       text-align: right;
     }
@@ -3820,7 +3840,7 @@ header .logo{
   }
   .events-row-reverse{
     border-left: 0px !important;
-    border-top: #363dc2 1px solid !important;
+    border: 0px!important;
   }
   .ieee_join_block p{
     border-left: 0px !important;
@@ -3961,18 +3981,26 @@ section.events_ieee span{
       grid-template-rows: 0.5fr 1fr;
       grid-gap: 30px;
       max-width: unset;
-
+      max-height: unset;
+      margin-right: 0px;
+      margin: 0 auto;
+    }
+    .events-row-satsiege{
+      display: grid;
+      grid-template-rows: 0.5fr 1fr;
+      grid-gap: 30px;
+      max-width: unset;
+      max-height: unset;
       margin-right: 0px;
       margin: 0 auto;
     }
     .event-pic{
       min-height: 240px;
-      padding: 20px;
+      
       display: grid;
       grid-template-columns: 1fr 0.3fr;
       max-height: 40vh;
-      max-width: 300px;
-      margin-left: 10%
+  
     }
     .pic-list{
       display: grid;
@@ -3985,7 +4013,7 @@ section.events_ieee span{
       background-repeat: no-repeat;
     }
     .event-data{
-      padding: 5%;
+      padding: 0px 20px;
     }
     .events-row-reverse{
     
@@ -3995,6 +4023,7 @@ section.events_ieee span{
       max-width: unset;
       margin: 0 auto;
       margin-top: 30px;
+      max-height: unset;
       border-left: 1px solid #29bbf2;
     
     }
@@ -4691,14 +4720,14 @@ section.stats-ieee{
     <div class="slide-background-image second" style="background:linear-gradient(rgba(54, 61, 194,0.001), rgba(54, 61, 194,0.001)),linear-gradient(rgba(0, 0, 0,0.1), rgba(0, 0, 0,0.1)),radial-gradient(circle farthest-corner at 40px 50vh,#49f 20%, transparent), url('http://i.xp.io/1gwkpqhk.jpg');background-size: cover; height: 100%; width: 100%; transform: none;position: absolute; z-index: -1;top: 0; left: 0;-webkit-filter: blur(1px);-moz-filter: blur(1px);-o-filter: blur(1px);-ms-filter: blur(1px);filter: blur(1px);margin: 0;padding: 0;">
       
     </div>
-    <h3 style="font-size: 20px;">Promotes <br> <font style="font-size: 28px;">Research Activities</font></h3>
+    <h3 style="font-size: 35px;">Where <br> <font style="font-size: 1.8em; color: #ffff49;">Inspiration</font> <font style="font-size: 1.1em;"> breeds</font> <font style="font-size: 1.8em;"> Success</font></h3>
     <button class="text explore">Explore</button>
   </div>
   <div class="text main-slide" style=" background-size: cover;">
     <div class="text slide-background-image third" style="background:linear-gradient(rgba(54, 61, 194,0.001), rgba(54, 61, 194,0.001)),linear-gradient(rgba(0, 0, 0,0.15), rgba(0, 0, 0,0.15)),radial-gradient(circle farthest-corner at 40px 50vh,#49f 20%, transparent), url('/media/images/sdv-3bw.jpg');background-size: cover; height: 100%; width: 100%; transform: none;position: absolute; z-index: -1;top: 0; left: 0;-webkit-filter: blur(1px);-moz-filter: blur(1px);-o-filter: blur(1px);-ms-filter: blur(1px);filter: blur(1px) contrast(-20%) brightness(-5%);margin: 0;padding: 0;">
       
     </div>
-    <h3>Workshops <font style="font-size: 0.5em;">and</font> <br>Interactive Sessions</h3>
+    <h3><font style="font-size: 35px;">Where</font> <br><font style="font-size: 1.5em;">Technology</font> <font style="font-size: 0.6em;">and</font> <font style="font-size: 1.5em; color: #ffff49;">Research</font> <font style="font-size: 1em;"> brews</font></h3>
     <button class="text explore">Explore</button>
   </div>
 
@@ -4901,7 +4930,7 @@ section.stats-ieee{
 
 
 <section class="text wrapper" id="joinieee" style=" margin-left: 0px; overflow: hidden; width: 98vw!important; height: auto!important; margin: 0 auto;">
-  <div class="text container" style="position: absolute;  height: auto; background:#fff; width: 90%;-webkit-box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); border-radius: 0.222rem;
+  <div class="text container" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000" style="position: absolute;  height: auto; background:#fff; width: 90%;-webkit-box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); border-radius: 0.222rem;
 -moz-box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75);
 box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 5vw;margin-top: 20vh;">
   
@@ -5012,21 +5041,21 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
               </div>
             </div>
           <div class="text event-data" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000" style="text-align: left;">
-            <span style="font-size: 35px">SDV 2.0</span>
-            <p style="font-size: 13px;">Self Driving Vehicle Workshop: In this era of advancement and competing efficiency where society expects autonomous vehicles to be held to a higher standard than human drivers, IEEE Student Branch, NIT Durgapur in collaboration with the Society of Automotive Engineers organized a two-day workshop on 31 August and 1 September 2019 to introduce students to the world of autonomous driving. </p>
+            <span style="font-size: 35px;font-weight: 300;">SDV 2.0</span>
+            <p style="font-size: 12px;margin-bottom: 15px;">Self Driving Vehicle Workshop: In this era of advancement and competing efficiency where society expects autonomous vehicles to be held to a higher standard than human drivers, IEEE Student Branch, NIT Durgapur in collaboration with the Society of Automotive Engineers organized a two-day workshop on 31 August and 1 September 2019 to introduce students to the world of autonomous driving. </p>
               
             <a href="{% url 'thereg:events' %}" style="float: right; text-decoration: none; color: #4090f0;">Read more</a>
           </div>
         </div>
         <div class="text events-row-reverse shadow card">
           <div class="text event-data" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000">
-            <span style="font-size: 35px">IntelliSys</span>
-            <p style="font-size: 13px;">
+            <span style="font-size: 35px;font-weight: 300;">IntelliSys</span>
+            <p style="font-size: 12px; margin-bottom: 15px;">
               IntelliSys: Machine Learning Symposium was a huge success with a colossal turnout of over 150 enthusiasts who were too eager to learn and explore.IEEE SB NIT Durgapur extends its heartfelt gratitude to our guest speakers, Dr. Fakhral Yusoff and Mr. Shivam Abhilash for leaving us all dazzled and especially to all the participants for their overwhelming response and helping us in our endeavors to spread the IEEE vision - Advancing technology for humanity.</p>
             <a href="{% url 'thereg:events' %}" style="float: left; text-decoration: none; color: #4090f0;">Read more</a>
           </div>
           <div class="text event-pic" id="event-2">
-            <div class="text picture-active" style="background-image: url('/media/images/intelli-2.jpg');  background-size: cover; background-position:center; background-repeat: no-repeat; "></div>
+            <div class="text picture-active" style="background-image: url('/media/images/intelli-4.jpg');  background-size: cover; background-position:center; background-repeat: no-repeat; "></div>
             <div class="text pic-list">
               <div class="text event-img one-event" style="background-image: url('/media/images/intelli-3.jpg');"></div>
               <div class="text event-img two-event active" style="background-image: url('/media/images/intelli-2.jpg');"></div>
@@ -5034,6 +5063,24 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
             </div>
           </div>
       
+        </div>
+
+         <div class="text events-row-satsiege shadow card" style="overflow-y: hidden;">
+          <div class="text event-pic" id="event-3">
+              <div class="text picture-active" style="background-image: url('/media/images/satseige-1.jpg');  background-size: cover; background-position:center; background-repeat: no-repeat; "></div>
+              <div class="text pic-list">
+                <div class="text event-img one-event" style="background-image: url('/media/images/satseige-2.jpg');"></div>
+                <div class="text event-img two-event active" style="background-image: url('/media/images/satseige-1.jpg');"></div>
+                <div class="text event-img three-event" style="background-image: url('/media/images/satseige-3.jpg');"></div>
+              </div>
+            </div>
+          <div class="text event-data" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000" style="text-align: left;">
+            <span style="font-size: 35px;font-weight: 300;">Sat-Siege</span>
+            <p style="font-size: 12px;margin-bottom: 15px;">Sat-Siege: A Satellite Communication Symposium was conducted by IEEE SB NIT Durgapur on January 18, 2020, to incite inquisitiveness in the young minds of our college for Satellite Communication.
+            We were honored to have Dr. Anindya Bose of ASI and Dr. Chandrakanta Kumar of ISRO, two experts of this field to discuss and explain Satellite Communications and its intricacies. The students were exceedingly excited and privileged to meet these great personalities and learn about their endeavors including the launch of Chandrayan-I and Chandrayan-II.</p>
+              
+            <a href="{% url 'thereg:events' %}" style="float: right; text-decoration: none; color: #4090f0;">Read more</a>
+          </div>
         </div>
       </div>
    
@@ -6488,8 +6535,7 @@ jQuery(document).ready(function ($){
     var leftPos =0;
     slideWidth = sliderUlWidth/slideCount ;
     $("button.thebtn").click(function(){
-      alert(slideCount);
-      alert(slideHeight);
+    
     })
 
     //$('.the-list').css({ width: sliderUlWidth, marginLeft: 0 });
@@ -6582,7 +6628,7 @@ slides.first().before(slides.last());
  
  
  
-  }, 800000);
+  }, 15000);
 
 
 
@@ -6648,7 +6694,7 @@ $('.button').on('click', function() {
       var url = name.split('/').pop().replace(cleanup, '')
       var parentid = this.parentElement;
       var parent2id = parentid.parentElement;
-      alert(parent2id)
+      
       var tergetid = "#" + parent2id.id +" " + ".picture-active";
       
         $(tergetid).css("background-image","url('/media/images/"+ url +"')");
