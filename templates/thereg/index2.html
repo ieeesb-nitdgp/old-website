@@ -237,7 +237,7 @@ body.dark_body .swiper-button-prev ,body.dark_body .swiper-button-next{
     		padding: 0;
     	}
     	section{
-    		width: 95vw;
+    		width: 99vw;
     	  overflow-x: hidden;
     		box-sizing: border-box;
     	}
@@ -2479,7 +2479,7 @@ section.contact_ieee{
 }
 
 .formBody form .submit:hover{
-  background-color: #202692;
+  background-color: #3486e9;
   color: #fff;
 }
 .light_body form input{
@@ -2489,7 +2489,7 @@ section.contact_ieee{
   color: #000;
 }
 .dark_body .formBody form .submit:hover{
-  background-color: #202692;
+  background-color: #3486e9;
   color: #fff;
 }
 .formBody form #userName:hover,.formBody form #userEmail:hover,.formBody form #userMessage:hover{
@@ -3398,6 +3398,162 @@ overflow: hidden;
   top: 20vh !important;
  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////gallery-fluid/////////////////////////////////*/
+
+.gallery-fluid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-fluid .column {
+  flex: 25%;
+  max-width: 25%;
+
+}
+.gallery-fluid .column.column-2{
+  flex: 50%;
+  max-width: 50%;
+
+}
+
+.gallery-fluid .column img {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  vertical-align: middle;
+  filter: brightness(105%);
+  width: 100%;
+}
+.gallery-fluid .column div:hover img{
+  opacity: 0.6;
+}
+
+.gallery-fluid .column div:hover:before{
+  opacity: 1;
+  z-index: 11;
+}
+
+
+.column .IntelliSys:before{
+    content: "IntelliSys 2020";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 7.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .IntelliSys-2:before{
+    content: "IntelliSys 2020";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 6.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .studyjam:before{
+    content: "StudyJam 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 15.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .studyjam-2:before{
+    content: "StudyJam 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 7.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+
+.column .gameengineering-2:before{
+    content: "Game Engineering Workshop 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 6vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .gameengineering:before{
+    content: "Game Engineering Workshop 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    font-weight: 400px;
+    position: absolute;
+    margin-top: 5.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+.column .bootcamp:before{
+    content: "Internship Bootcamp 2019";
+   transition: all 0.3s ease-in-out;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    margin-top: 9.5vw;
+    margin-left: 12.5vw;
+    color: #fff;
+    transform: translateX(-50%);
+    
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+ .gallery-fluid .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-fluid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
 
 
 
@@ -4409,6 +4565,46 @@ section.stats-ieee{
   max-height: unset !important;
 }
 }
+.intro-info{
+  width: 99vw;
+  padding: 2rem 0px;
+  margin: 0 auto;
+}
+.intro-info .row .col-lg-3{
+  padding-left: 0px;
+  
+  max-width: 23%;
+  margin:  10px;
+}
+.intro-info .row .text-box{
+  font-size: 10px;
+  text-align: center;
+}
+.intro-info .row .text-box h5{
+  font-size: 14px;
+  padding: 10px;
+  word-spacing: 0.23em;
+  font-weight: 400px!important;
+
+}
+.intro-info .row{
+  width: 95%;
+  margin: 0 auto;
+}
+.intro-info .row .col-lg-3 .img-box{
+  padding: 2rem;
+}
+.intro-info .row img{
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+
+.title{
+    font-size: 3.0rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
 
     </style>
 
@@ -4420,9 +4616,9 @@ section.stats-ieee{
 	<ul id="header-list" style="float: right; padding-top: 30px;">
     <!--/media/images/ieeesb_logo.svg-->
           <li><a class="text " href="#home">Home</a></li>
-			    
+			    <li class="text"><a href="#about-us">About Us</a></li>
           <li class="text "><a href="#ieee-team">Team</a></li>
-          <li class="text"><a href="#about-us">About Us</a></li>
+          
                
           {# Some logic on what to display for last item#}
           <!--{% if user.is_authenticated %}
@@ -4441,9 +4637,10 @@ section.stats-ieee{
             <li><a class="text navbar-link" href="{% url 'thereg:user_login' %}">Login</a></li>
           {% endif %}-->
          
-          <li class="text "><a href="#contact-us">Contact us</a></li>
-            <li class=""><a href="{% url 'thereg:events' %}">Events</a></li>
+          
+            <li class=""><a href="{% url 'thereg:events' %}">Activities</a></li>
           <li class=""><a href="#gallery-event">Gallery</a></li>
+          <li class="text "><a href="#contact-us">Contact us</a></li>
 		</ul>
 </header>
 
@@ -4548,9 +4745,9 @@ section.stats-ieee{
 
 
 
-<div class="text loading-start" style="height: 100vh;width: 100vw; position: fixed; top: 0; left: 0; z-index: 8888888888888888; background-color: #000; ">
+<div class="loading-start" style="height: 100vh;width: 100vw; position: fixed; top: 0; left: 0; z-index: 8888888888888888; background-color: #000; ">
 
-  <div class="text loader loader--style1" title="0" style="margin: 0 auto; width: 100%; ">
+  <div class="loader loader--style1" title="0" style="margin: 0 auto; width: 100%; ">
 
 
 <svg width="100" height="100" viewBox="0 0 300 300">
@@ -4565,16 +4762,16 @@ section.stats-ieee{
       </stop>
     </linearGradient>
     <clipPath id="clip">
-      <rect class="text square s1" x="0" y="0" rx="12" ry="12" height="90" width="90"></rect>
-      <rect class="text square s2" x="100" y="0" rx="12" ry="12" height="90" width="90"></rect>
-      <rect class="text square s3" x="200" y="0" rx="12" ry="12" height="90" width="90"></rect>
-      <rect class="text square s4" x="0" y="100" rx="12" ry="12" height="90" width="90"></rect>
-      <rect class="text square s5" x="200" y="100" rx="12" ry="12" height="90" width="90"></rect>
-      <rect class="text square s6" x="0" y="200" rx="12" ry="12" height="90" width="90"></rect>
-      <rect class="text square s7" x="100" y="200" rx="12" ry="12" height="90" width="90"></rect>
+      <rect class="square s1" x="0" y="0" rx="12" ry="12" height="90" width="90"></rect>
+      <rect class="square s2" x="100" y="0" rx="12" ry="12" height="90" width="90"></rect>
+      <rect class="square s3" x="200" y="0" rx="12" ry="12" height="90" width="90"></rect>
+      <rect class="square s4" x="0" y="100" rx="12" ry="12" height="90" width="90"></rect>
+      <rect class="square s5" x="200" y="100" rx="12" ry="12" height="90" width="90"></rect>
+      <rect class="square s6" x="0" y="200" rx="12" ry="12" height="90" width="90"></rect>
+      <rect class="square s7" x="100" y="200" rx="12" ry="12" height="90" width="90"></rect>
     </clipPath>
   </defs>
-  <rect class="text gradient" clip-path="url('#clip')" height="300" width="300"></rect>
+  <rect class="gradient" clip-path="url('#clip')" height="300" width="300"></rect>
 </svg>
 </div>
 
@@ -4586,7 +4783,45 @@ section.stats-ieee{
 
 
 
-<section class="intro-info" style="height: 50vh; width: 99vh; margin: 0 auto; "></section>
+<section class="intro-info" style="margin: 0 auto; overflow: hidden; ">
+
+  
+  <div class="row" style="overflow: hidden;">
+    <div class="col-md-3 col-lg-3 shadow-sm" data-aos="fade-up" data-aos-duration="900" data-aos-offset="20" dadata-aos-delay="10">
+      <div class="img img-box">
+        <img style="opacity: 0.6;" src="/media/images/innovationicon.png">
+      </div>
+      <div class="text-box">
+        <h5 style="font-weight: 400px!important;" class="display">Providing the perfect platform for all to collaborate and innovate.</h5>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3 shadow-sm" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="20" data-aos-delay="110">
+      <div class="img img-box">
+        <img src="/media/images/seminaricon.png">
+      </div>
+       <div class="text-box">
+        <h5 style="font-weight: 400px!important;" class="display">Attend seminars and workshops on the most trending and interesting topics led by leading scientists and industry personnel</h5>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3 shadow-sm" data-aos="fade-up" data-aos-duration="1300" data-aos-offset="20" data-aos-delay="210">
+      <div class="img img-box">
+        <img src="/media/images/researchicon.png">
+      </div>
+      <div class="text-box">
+        <h5 style="font-weight: 400px!important;" class="display">Collaborate with the best minds to take your projects to the next level.</h5>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3 shadow-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="20" data-aos-delay="310">
+      <div class="img img-box">
+        <img style="opacity: 0.6;" src="/media/images/networkingicon.png">
+      </div>
+      <div class="text-box">
+        <h5 style="font-weight: 400px!important;" class="display">Expand your network by connecting with the best minds in the field.</h5>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 
 
@@ -4608,31 +4843,31 @@ section.stats-ieee{
 
 
 <section class="text about-us" id="about-us" style="width: 100vw; height: auto; 
-     background-color: #fff; background-size:contain; color: #000; margin: 0 auto; padding: 10px; overflow-x: hidden;">
+     background-color: #fff; background-size:contain; color: #000; margin: 0 auto; padding: 10px; overflow-x: hidden;" >
     <div class="text row contain">
  <div class="text col-lg-6 contains" style="
-    padding: 0px;
+    padding: 0px; overflow: hidden;
 ">
-    <h2 style="color:#49f;
+    <h2 class="title" style="color:#49f;
     padding: 1rem 0px;
     width: 95%;
     border-bottom: 1.5px solid #49f;
-    margin-bottom: 1rem;
-">About Us</h2>
+    margin-bottom: 1rem;" data-aos="fade-up" data-aos-duration="700" data-aos-offset="20" dadata-aos-delay="10">
+  About Us</h2>
        
-        <div class="text row content">
+        <div class="text row content" data-aos="fade-up" data-aos-duration="900" data-aos-offset="20" dadata-aos-delay="10">
           The IEEE Student Branch , NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus. We are a direct handshake to IEEE, an international body that allows countless young researchers the opportunity to present &amp; publish their innovations every year. Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.
         </div>
        
-        <div class="text row content">
+        <div class="text row content" data-aos="fade-up" data-aos-duration="900" data-aos-offset="20" dadata-aos-delay="10">
           We organise an array of events ranging from seminars to workshops to ideathon, that opens a world of possibilities existing in research to young minds. We bring strong-minded people together as they work on their personal interests thus ameliorating the quality of research activities going on in the campus.
         </div>
         
-        <div class="text row content">
+        <div class="text row content" data-aos="fade-up" data-aos-duration="900" data-aos-offset="20" dadata-aos-delay="10">
           IEEE Student Branch helps lead students to a goal of re-designing their future. We plant the thought- the possibility of research and discovery- that could serve to fulfil what we stand for. Knowledge is power. The more you know the more you can possibly invent and build. And for the upcoming topsy-turvy tech-revolution underway, it is of utmost importance that we rebuild our society with improved and efficient technologies. And so we begin!
         </div>
       </div>
-      <div class="text col-lg-6 video" style="overflow: hidden; padding-left: 80px;">
+      <div class="text col-lg-6 video" style="overflow: hidden; padding-left: 80px;" data-aos="fade-left" data-aos-duration="900" data-aos-offset="20" dadata-aos-delay="10">
         <div class="text backstyle" style=" "><h2 style="width: 88%;
     padding-bottom: 20px;
     border-bottom: 1.5px solid;">Trailer</h2></div>
@@ -4750,16 +4985,17 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
 
  <section class="text gallery" id="members" style="text-align: right;">
   
-  <h2 style="
+  <h2 class="title" style="
     text-align: left;
     margin-left: 55px;
     color: #49f;
-    width: 60%;
+    width: 90%;
     padding-bottom: 20px;
     margin-bottom: 50px;
     margin-top: 60px;
     border-bottom: 1.5px solid #49f;
     ">Our Activities
+    <font class="text text card-text" style="float: right;padding: 2px; font-size: 0.4em; margin-top: 1.5rem" ><a href="{% url 'thereg:events' %}" style="">see all activities→</a></font>     </h2>
   </h2>
   
       <div class="text events-row-container">
@@ -4811,6 +5047,43 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
 
 
 
+<section class="gallery-fluid" id="gallery-event" style="background-color: #191919;">
+  <div class="row">
+    
+    <div class="column">
+      <div class="gameengineering">
+       <img class="" src="/media/images/seminarC.jpg">
+       </div>
+      <div class="bootcamp">
+      <img class="" style="padding-top: 20px;" src="/media/images/bootcamp3.jpg">
+      </div>
+    </div>
+    <div class="column">
+    <div class="studyjam">
+    <img class="studyjam" src="/media/images/studyjams7.jpg">
+    </div>
+  </div>
+    <div class="column">
+      <div class="IntelliSys">
+      <img src="/media/images/intelli-3.jpg">
+      </div>
+      <div class="gameengineering-2">
+      <img style="padding-top: 20px;" src="/media/images/gameengineering3.jpg">
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="IntelliSys-2">
+     <img src="/media/images/intelli-1.jpg">
+     </div>
+     <div class="studyjam-2">
+     <img src="/media/images/studyjams.jpg">
+     </div>
+  </div>
+   
+  
+  </div>
+</section>
 
 
 
@@ -4819,7 +5092,10 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
 
 
 
-<section class="text gallery-event" id="gallery-event" style="width: 99.5vw; margin-top:0; margin-left: 0; background-color: #fff; padding-bottom: 0.5px;">
+
+
+
+<!---<section class="text gallery-event" id="gallery-event" style="width: 99.5vw; margin-top:0; margin-left: 0; background-color: #fff; padding-bottom: 0.5px;">
     <div class="text row">
   <div class="text col-md-12">
 
@@ -4896,7 +5172,7 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
 
   </div>
 </div>
-</section>
+</section>-->
 
 
 
@@ -4911,11 +5187,11 @@ box-shadow: 22px 24px 69px -22px rgba(0,0,0,0.75); margin: 0 auto; margin-left: 
     text-align: left;
     margin-left: 55px;
     color: #49f;
-    width: 60%;
+    width: 90%;
     padding-bottom: 20px;
     margin-bottom: 50px;
     margin-top: 60px;
-    border-bottom: 1.5px solid #49f;">Our Team</h2>
+    border-bottom: 1.5px solid #49f;">Our Team    <font class="text text card-text" style="float: right;padding: 2px; font-size: 0.4em; margin-top: 1.5rem" ><a href="{% url 'thereg:members' %}" style="">all members→</a></font>     </h2>
   <div class="text swiper-container">
     <!-- Additional required wrapper -->
     <div class="text swiper-wrapper">
