@@ -29,12 +29,6 @@
     </head>
 
     <body>
-
-
-
-
-
-
         <style>
             body {
             font-family: 'Raleway',Arial, sans-serif;
@@ -393,6 +387,12 @@ header .logo{
 
 }
 
+.title{
+  font-size: 3.0rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 .jumbotron{
   height: 200px;
 }
@@ -408,37 +408,23 @@ header .logo{
 
 
 
-
-
-
     </style>
+
 
     <div class="hamburger-menu"></div>
 
     <header style="display: block;">
-<<<<<<< HEAD
       <div class="logo" style="float: left; padding-left: 30px;"><img style="margin-top: -20px;" src= "http://i.xp.io/yO2IRLu.svg+xml" height="140px"></div>
       <ul id="header-list" style="float: right; padding-top: 30px;">
         <!--/media/images/ieeesb_logo.svg-->
     
-              <li><a class="" href="{% url 'index' %}">Home</a></li>
-    
-               <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
-               <li><a href="{% url 'thereg:events' %}">Events</a></li>
-             
-               <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
-=======
-  <div class="logo" style="float: left; padding-left: 30px;"><img src= "http://i.xp.io/yO2IRLu.svg+xml" height="140px"></div>
-  <ul id="header-list" style="float: right; padding-top: 42px;">
-    <!--/media/images/ieeesb_logo.svg-->
+        <li><a class="" href="{% url 'index' %}">Home</a></li>
 
-          <li><a class="" href="{% url 'index' %}">Home</a></li>
-           <li><a class="" href="{% url 'thereg:events' %}">Events</a></li>
            <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
            <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
+           <li><a href="{% url 'thereg:events' %}">Events</a></li>
+         
            <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
-          <!--<li><a class="" href="{% url 'admin:index' %}">Admin</a></li>-->
->>>>>>> 19a89c6a18539791fdc0fbefd10a284d903215d5
                
               
               
@@ -466,27 +452,6 @@ header .logo{
       
       "><font class="display-4" style=" font-weight: 500; text-transform: uppercase; font-size:50px ">Our Activities</font>
     </span>
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
 
 
         {% block content %}
@@ -663,4 +628,4 @@ function clockUpdate() {
 </script>
 
 
-</html>
+</html>	         
