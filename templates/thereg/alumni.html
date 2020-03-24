@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Alumni</title>
+    <link rel="icon" href="http://i.xp.io/LJNAk3w.png" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Inconsolata|Merriweather+Sans|ZCOOL+QingKe+HuangYou"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function() {
+        // Misc code for demo purposes
+        // ----- \\
+        //});
+      });
+    </script>
+
+    <style type="text/css">
+      *{
+          scroll-behavior: smooth;
+          box-sizing: border-box;
+      }
+      /*#363dc2*/
+      body{
+          scroll-behavior: smooth;
+          background-color: #fff;
+          max-width: 99.99vw;
+          overflow-x: hidden;
+          padding: 0;
+           }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .facad-adv .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .facad-adv .container .card{
+        flex: 31.33%;
+        width: 31.33%;
+      }
+      .facad-adv .container .card .card-body{
+        text-align: center;
+      }
+
+      .facad-adv .container .card .card-body i{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      @media only screen and (max-width: 980px){
+      .facad-adv .container .card{
+        font-size: 2em!important;
+        flex: 100% !important;
+        width: 100%;
+        border: 1px solid #efefef;
+      }
+      .facad-adv .container .card .card-title{
+        font-size: 2em;
+
+      }
+      }
+
+
+
+
+
+
+
+
+
+
+      .team-list{
+        width: 90vw;
+        margin: 0 auto;
+      }
+
+      .team-list .diff-teams{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-around;
+        color: #4090f0;
+        font-size: 19px;
+
+
+      }
+      .team-list .diff-teams li{
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .team-list .diff-teams li:hover{
+        color: #f59;
+        letter-spacing: 0.12em;
+
+      }
+
+
+
+
+
+
+        .our-team-mem{
+        display: none;
+
+        width: 95vw;
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        position: absolute;
+        z-index: -333;
+
+        transition: all 0.1s ease-in-out;
+
+        margin-bottom: 20px;
+      }
+      .active-mem{
+        display: unset!important;
+        z-index: 3;
+
+      }
+      .wrapper-it{
+        opacity: 0;
+        transform: translateX(-200vw);
+        transition: transform 0.3s ease-in-out 0.3s ,opacity 0.5s ease-in-out 0s ;
+
+      }
+      .active-mem .wrapper-it{
+        opacity: 1;
+        transform: none;
+      }
+
+      .our-team-mem p{
+
+        float: right;
+        margin-right: 15px;
+
+      }
+      .our-team-mem p a{
+       text-decoration: none;
+       font-family: monospace;
+
+      }
+
+      .container{
+
+
+
+      }
+      .our-team{
+          clear:both;
+         background:#fff;
+          max-height: 300px;
+          text-align: center;
+          transition: all 0.5s ease 0s;
+          margin: 10px;
+          max-width: 20vw;
+          border-radius: 0.333rem !important;
+          margin-bottom: 40px;
+          border: 1px solid #969696;
+
+
+      }
+      .container .row{
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+      }
+      .container .thrd-years-row{
+
+        display: flex;
+
+
+      }
+      .our-team:hover{
+          box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      }
+      .our-team .pic{
+          clear:both;
+          max-width: 100%;
+          max-height: 300px;
+          overflow: hidden;
+          position: relative;
+          opacity: 0.91;
+
+
+      }
+      .our-team .pic img{
+        width: 100% !important;
+        filter: grayscale(0);
+        opacity: 0.87;
+      }
+      .row .col-md-4{
+         max-width: unset;
+         flex: 24%;
+        /*display: flex;
+        flex-direction: column;*/
+
+      }
+      .our-team .pic:before,
+      .our-team .pic:after{
+          content: "";
+          width: 380%;
+          height:130%;
+          background: rgba(37,37,39,0.5);
+          position: absolute;
+          top: -100%;
+          left: -4%;
+          transform: rotate(45deg);
+          transition: all 0.5s ease 0s;
+      }
+      .our-team .pic:before{
+        background: rgba(37,66,79,0.8) !important;
+        opacity: 1!important
+      }
+
+      .our-team .pic:after{
+          background: rgba(8,75,77,0.6);
+          top: auto;
+          left: auto;
+          bottom: -100%;
+          right: -4%;
+      }
+      /*/////////hover////////////////*/
+      .our-team:hover .pic:before{ top: 20%;left: -50%; }
+      .our-team:hover .pic:after{ bottom: -5%; right: -50%; }
+      .our-team .pic img{
+          width: 280px;
+          height: auto;
+
+      }
+      .our-team:hover .pic img{
+        filter: grayscale(0);
+      }
+      .our-team .social{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          position: absolute;
+          bottom: 45%;
+          left: 0;
+          opacity: 0;
+          z-index: 2;
+          transition: all 0.5s ease 0.3s;
+          overflow: visible;
+      }
+      .our-team:hover .social{ opacity: 1; }
+      .our-team .social li{ display: inline-block;
+      overflow: visible;  align-items: center;
+          justify-content: center;
+          text-align: center;
+           }
+      .our-team .social li a{
+        overflow: visible;
+          display: block;
+          width: 30px;
+          height: auto;
+          line-height: 15px;
+          font-size: 14px;
+          color: #fff;
+          align-items: center;
+          justify-content: center;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          margin-right: 10px;
+          position: relative;
+          transition: all 0.3s ease 0s;
+          text-decoration: none;
+      }
+      .our-team .social li a:after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: #db162f;
+          border-radius: 0 20px 20px 20px;
+          position: absolute;
+
+          top: 0px;
+          left: 0px;
+          z-index: -1;
+          transition: all 0.3s ease 0s;
+      }
+      .our-team .social li a:hover:after{ transform: scale(0.9) rotate(180deg); }
+      .our-team .team-content{
+        display: none;
+        opacity: 0;
+        position: relative;
+        margin: 0 auto;
+        z-index: 1119;
+        top: -100px;
+
+        max-width: unset;
+       }
+       .our-team:hover  .team-content{ opacity: 1; display: block; }
+      .our-team .title{
+          font-size: 19px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: #fff;
+          font-family: 'Roboto' ,sans-serif;
+          text-transform: uppercase;
+          margin-bottom: 7px;
+      }
+      .our-team .post{
+          display: block;
+          font-size: 15px;
+          font-weight: 600;
+          color: #fefefe;
+           font-family: 'Roboto' ,sans-serif;
+          text-transform: capitalize;
+      }
+      .buttons-container{
+        display:flex;
+          flex-direction: row;
+          width: 90%;
+          justify-content: space-between;
+      }
+      button{
+        background-color: transparent;
+        border:none;
+        font-size: 20px;
+        vertical-align: text-top;
+        text-decoration: none;
+        color: #047168;
+        font-family: monospace;
+
+        letter-spacing: 0.2em;
+      }
+      button a{
+        color: #047168;
+        text-decoration: none;
+      }
+      button#next{
+        margin-left: 70vw;
+        display: inline-block;
+      }
+      button#prev{
+        transition: none;
+
+      }
+      button#all{
+
+       margin-left: ;
+      }
+      @media only screen and (max-width: 990px){
+          .our-team{ margin-bottom: 0px; max-height: 350px; }
+          button#next{
+        margin-left: 50vw;
+        display: inline-block;
+      }
+      .our-team .pic:before{ top: 20%;
+      display: none; }
+      .our-team .pic:after{ bottom: -5%; right: -20%; }
+      .our-team .social li a:after{ transform: scale(0.9) rotate(180deg); }
+
+      .our-team .social{ opacity: 1; bottom: 5%;}
+      .our-team .team-content{ opacity: 1; display: block; }
+      .our-team .pic:before{ top: 20%;
+      display: none; }
+      .our-team:hover .pic:after{ bottom: -5%; right: -50%; }
+
+      }
+      .our-team :hover.social li a:after{ transform: scale(0.9) rotate(180deg); }
+
+      .our-team:hover .social{ opacity: 1; }
+      .our-team:hover .team-content{ opacity: 1; display: block; }
+      }
+
+
+      #thrd-year::before{
+        content: "";
+        height: 6px;
+        width: 20vw;
+        display: block;
+        position: relative;
+        background-color: #4090f0;
+        margin-left: 75%;
+        margin-bottom: 20px;
+        z-index: 777;
+      }
+
+      #scnd-year::before{
+        content: "";
+        height: 6px;
+        width: 20vw;
+        display: block;
+        position: relative;
+        background-color: #4090f0;
+        margin-left: 75%;
+        margin-bottom: 20px;
+        z-index: 777;
+      }
+
+
+
+
+      body{
+        margin: 0;
+        padding: 0;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*///////////contact info footer////////////*/
+
+
+      .contact_info{
+        position: relative;
+
+        right: 0;
+        max-width: 99%;
+        bottom: 0px;
+        color: #fff;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-gap: 20px;
+
+
+
+
+      }
+      .contact_info p{
+        font-size: 13px;
+
+      }
+      .contact_info h3{
+       color: #365dc2;
+       font-size: 19px;
+       font-weight: bolder;
+      }
+      .contact_info p a{
+        color: #fff;
+        margin-top: -2px;
+        font-size: 13px;
+      }
+       @media only screen and (max-width: 1200px){
+
+          }
+       @media only screen and (max-width: 800px){
+            .contact_info{
+              grid-template-columns: 1fr;
+
+            }
+            .contact_info h3{
+              font-size: 1.8em !important;
+            }
+            .contact_info p{
+              font-size: 1.2em !important;
+            }
+            .contact_info p a{
+              font-size: 1.2em !important;
+            }
+            .contact_info .contact-details div, .contact_info .about-contact-details div{
+              margin-left: 30px !important;
+
+            }
+            .switch_container{
+              transform: scale(1.5);
+            }
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*header*/
+      header{
+        position: relative;
+        top: 0;
+        color: #fff;
+        z-index: 22222;
+
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"!important;
+        letter-spacing: 2px;
+        transition: all 0.4s ease-in-out;
+        background-color: #4090f0 !important;
+        height: 100px;
+        overflow: hidden;
+
+      }
+      header ul{
+      list-style: none;
+      position: relative;
+      right: 30px;
+      cursor: pointer;
+      z-index: 22222;
+      left: ;
+      margin-top: 0px;
+      text-decoration: none;
+      padding-left: 0;
+      padding-top: 0;
+        color: #fff;
+        transition: all 0.8s ease-in-out;
+      margin-top: -10px!important;
+
+      }
+      header ul li{
+      display: inline-block;
+        margin: 3px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        border-radius: 0px;
+        padding: 12px;
+        transition: all 0.15s ease-in-out;
+
+      }
+
+
+      header ul li:hover{
+        background-color: rgba(0,0,0,0);
+
+        letter-spacing: 0.15em;
+      }
+      header ul li a{
+           text-decoration: none;
+        color: #fdfdfd;
+        transition: all 0.3s ease-in-out;
+      }
+
+      header ul li a:hover{
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /*hamburger*/
+      .hamburger-menu{
+        height: 40px;
+        width: 40px;
+        right: 10px;
+        top: 40px;
+        display: none;
+        overflow: visible;
+        position: absolute;
+        z-index: 2222888888;
+      }
+      .hamburger-menu::before{
+        content: "";
+        display: block;
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+        margin-top: 11px;
+        margin-left: 2px;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .hamburger-menu::after{
+        content: "";
+        display: block;
+        margin-top: 11px;
+        height: 3px;
+        width: 35px;
+        margin-left: 2px;
+        background-color: #fff;
+        transition: all 0.6s ease-in-out;
+
+      }
+
+
+      .clicked::after{
+         transform: rotate(-225deg);
+         margin-top: 0px;
+      }
+      .clicked::before{
+         transform: rotate(225deg);
+        margin-top: 16px;
+      }
+
+
+
+
+
+
+
+
+
+
+      @media only screen and (max-width:880px) {
+
+        section {
+
+          margin: 0 auto;
+
+        }
+        main{
+           margin: 0 auto;
+           padding: 0;
+           box-sizing: border-box;
+        }
+
+
+      header{
+        }
+
+
+
+
+
+
+      header{
+        margin: 0;
+        letter-spacing: 0;
+        position: relative;
+        height: auto;
+        background-color: #000 !important;
+        transition: height 0.5s ease-in-out;
+      }
+
+      header ul{
+       margin: 0;
+      list-style: none;
+      position: unset;
+      left: 0px;
+      cursor: pointer;
+      float: none !important;
+      margin-top: 0;
+      padding-top: 0 !important;
+      /*z-index: 22222;
+      text-decoration: none;
+      padding-left: 0;
+        color: #fff;
+        background-color: rgb(0,0,0,0.9);
+        padding-top: 89px;*/
+
+      }
+      header ul li{
+        display: block;
+        margin: 2px;
+        width: ;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        left: 0;
+        padding-left: 0;
+        margin-left: 0;
+        background-color: transparent;
+       border-radius: 0px;
+        padding: 4px;
+        font-size: 17px;
+        padding-top: 18px;
+
+      }
+
+      header .logo{
+        float: none !important;
+      }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .row .col-md-4.col-sm-6{
+        flex: 33.33%;
+      }
+      @media only screen and (max-width:1180px) {
+        .row .col-md-4{
+          flex: 32%;
+        }
+        .our-team{
+          max-width:29vw;
+        }
+
+      }
+
+
+      @media only screen and (max-width:880px) {
+      header{
+        width: 100vw;
+      }
+
+      header ul{
+      background-color: #202692;
+
+      }
+      header ul li{
+       font-size: 9px;
+       float: right;
+      }
+
+      header img{
+        width: 90px;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+
+      .hamburger-menu{
+        height: 40px;
+        width: 40px;
+        right: 10px;
+        top: 0px;
+        overflow: visible;
+        background-color: rgb(0,0,0,0.7);
+        position: absolute;
+        z-index: 2222888888;
+      }
+      .hamburger-menu::before{
+        content: "";
+        display: block;
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+        margin-top: 11px;
+        margin-left: 2px;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .hamburger-menu::after{
+        content: "";
+        display: block;
+        margin-top: 11px;
+        height: 3px;
+        width: 35px;
+        margin-left: 2px;
+        background-color: #fff;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .row .col-md-4{
+          flex: 100%;
+        }
+        .our-team{
+          max-width:90vw;
+          max-height: 300px;
+        }
+
+
+      .clicked::after{
+         margin-top: 0px;
+      }
+      .clicked::before{
+        margin-top: 16px;
+      }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @media only screen and (max-width: 1280px){
+        .row{
+        padding-left: 0!important;
+      }
+      .container{
+        width: 85% !important;
+        max-width: unset !important;
+      }
+
+      .hamburger-menu{
+        height: 50px;
+        width: 50px;
+        top: 20px;
+        cursor: pointer;
+        transform: translateX(300%);
+        overflow: visible;
+        position: absolute;
+        margin-top: 10px;
+        right: 19px;
+        margin-right: 5px;
+        z-index: 2222888888;
+        transition: all 0.5s ease-in-out;
+        border-radius: 50%;
+      }
+      .hamburger-menu:hover{
+
+      }
+      .hamburger-menu::before{
+        content: "";
+        display: block;
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+        margin-top: 16px;
+        margin-left: 10px;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .hamburger-menu::after{
+        content: "";
+        display: block;
+        margin-top: 14px;
+        height: 2.7px;
+        width: 30px;
+        margin-left: 10px;
+        background-color: #fff;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .clicked::before{
+        transform: rotate(-225deg);
+        margin-top: 20px;
+      }
+      .clicked::after{
+        transform: rotate(225deg);
+        margin-top: 0px;
+      }
+      header{
+        margin: 0;
+        letter-spacing: 0;
+        position: relative;
+        height: 100px;
+        transition: height 0.5s ease-in-out;
+      }
+
+      header ul{
+       margin: 0;
+      list-style: none;
+      position: unset;
+      left: 0px;
+      cursor: pointer;
+      float: none !important;
+      margin-top: 0;
+      padding-top: 0 !important;
+      /*z-index: 22222;
+      text-decoration: none;
+      padding-left: 0;
+        color: #fff;
+        background-color: rgb(0,0,0,0.9);
+        padding-top: 89px;*/
+
+      }
+      header ul li{
+        display: block;
+        margin: 2px;
+        width: ;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        left: 0;
+        padding-left: 0;
+        margin-left: 0;
+        background-color: transparent;
+        border-radius: 0px;
+        padding: 4px;
+        font-size: 21px;
+        padding-top: 18px;
+
+
+      }
+
+      header .logo{
+        float: none !important;
+      }
+
+
+
+      }
+
+
+
+
+
+
+      @media only screen and (max-width: 990px){
+      #members-heading{
+        font-size: 67px !important;
+      }
+
+          .container .row{
+           flex-direction: column;
+
+          }
+          .our-team-mem{
+            width: 99vw;
+          }
+          .our-team .title{
+            font-size: 48px!important;
+          }
+          .our-team .post{
+            font-size: 39px!important;
+          }
+
+          .our-team {max-width: unset;
+            max-height: unset;
+            width: 80vw;
+            height: 80vw;
+          }
+          .our-team .pic{
+
+             height: 100%;
+             max-height: unset;
+             max-width: unset;
+          }
+          .our-team .social li a{
+            font-size: 38px;
+            padding-top: 29px;
+            padding-bottom: 29px;
+            width: 90px;
+          }
+          .team-list .diff-teams li{
+            font-size: 35px !important;
+            text-align: center;
+          }
+          .team-list .diff-teams{
+            flex-direction: column;
+          }
+
+          .our-team .pic img{
+              max-width: unset;
+              min-height: 80vw;
+              width: 80vw;
+          }
+      .our-team .team-content{
+        max-width: 99%;
+        top: -15vh;
+      }
+      .row .col-md-4{
+        max-width: 100vw;
+      }
+
+
+      .hamburger-menu{
+        height: 80px;
+        width: 80px;
+        top: 20px;
+        cursor: pointer;
+        transform: translateX(300%);
+        overflow: visible;
+        background-color: rgb(0,0,0,0);
+        position: absolute;
+        margin-top: 15px;
+        right: 19px;
+        margin-right: 25px;
+        z-index: 2222888888;
+        transition: all 0.5s ease-in-out;
+        border-radius: 50%;
+      }
+      .hamburger-menu:hover{
+
+      }
+      .hamburger-menu::before{
+        content: "";
+        display: block;
+        height: 5px;
+        width: 60px;
+        background-color: #fff;
+        margin-top: 16px;
+        margin-left: 10px;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .hamburger-menu::after{
+        content: "";
+        display: block;
+        margin-top: 14px;
+        height: 4.7px;
+        width: 50px;
+        margin-left: 10px;
+        background-color: #fff;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .clicked::before{
+        transform: rotate(-225deg);
+        margin-top: 20px;
+      }
+      .clicked::after{
+        transform: rotate(225deg);
+        margin-top: 0px;
+      }
+      header{
+        margin: 0;
+        letter-spacing: 0;
+        position: relative;
+        height: 100px;
+
+        background-color: #202692 !important;
+        transition: height 0.5s ease-in-out;
+      }
+
+      header ul{
+       margin: 0;
+      list-style: none;
+      position: unset;
+      left: 0px;
+      cursor: pointer;
+      float: none !important;
+      margin-top: 0;
+      padding-top: 0 !important;
+      /*z-index: 22222;
+      text-decoration: none;
+      padding-left: 0;
+        color: #fff;
+        background-color: rgb(0,0,0,0.9);
+        padding-top: 89px;*/
+
+      }
+      header ul li{
+        display: block;
+        margin: 2px;
+        width: ;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        left: 0;
+        padding-left: 0;
+        margin-left: 0;
+        background-color: transparent;
+        border-radius: 0px;
+        padding: 18px;
+        font-size: 52px;
+        padding-top: 38px;
+
+
+      }
+
+      header .logo{
+        float: none !important;
+      }
+      header .logo img{
+        height: 140px !important;
+        margin-top: -20px;
+      }
+
+      }
+
+
+
+
+
+
+
+
+
+      .title-main{
+          color:#49f!important;
+          padding: 1rem 0px;
+          margin-left: 30px;
+          width: 95%;
+          border-bottom: 1.5px solid #49f;
+          margin-bottom: 1rem;
+          background-color: transparent!important;
+          font-size: 2.5rem;
+          font-weight: 300;
+          line-height: 1.2;
+
+      }
+
+      .jumbotron{
+        border-radius: unset!important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hamburger-menu"></div>
+
+    <header style="display: block;">
+      <div class="logo" style="float: left; padding-left: 30px;">
+        <img
+          style="margin-top: -20px;"
+          src="http://i.xp.io/yO2IRLu.svg+xml"
+          height="140px"
+        />
+      </div>
+      <ul id="header-list" style="float: right; padding-top: 30px;">
+        <!--/media/images/ieeesb_logo.svg-->
+
+        <li><a class="" href="{% url 'index' %}">Home</a></li>
+
+        <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
+        <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
+        <li><a class="" href="{% url 'thereg:events' %}">Events</a></li>
+
+        <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
+      </ul>
+    </header>
+
+    <span
+      id="members-heading theitem"
+      class="jumbotron"
+      style=" 
+       
+       text-align: center;
+      
+      color: #fff;
+      font-family: 'Merriweather Sans', sans-serif;
+      font-weight: 900;
+      font-size: 55px;
+      display: block;
+      margin: 0;
+      cursor: crosshair;
+     
+      background:linear-gradient(rgba(54, 61, 194,0.001), rgba(54, 61, 194,0.001)), linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)),radial-gradient(circle ,rgba(64, 144, 240,0.8) 20%,rgba(64, 144, 240,0.8) 100%),url('/media/images/team.jpg') !important;
+       background-position: 20% 23% !important;
+       background-size: cover !important;
+      
+      "
+      ><font
+        class="display-4"
+        style=" font-weight: 400; text-transform: uppercase;"
+        >Alumni</font
+      >
+    </span>
+
+    <h2 class="title-main" style="margin-bottom: 40px;">
+      Executive Committees
+    </h2>
+    <div class="team-container" style="position: relative;">
+      <div class="team-list">
+        <ul class="diff-teams">
+          <li class="2019" style="color: #f49;">2018-2019</li>
+        </ul>
+      </div>
+      <section class="our-team-mem active-mem" id="final-year">
+        <div class="wrapper-it theitem">
+          <div class="container">
+            <div class="row" id="row">
+              <div class="col-md-4 col-sm-6 ignoreMe">
+                <div class="our-team " style="">
+                  <div class="pic ignoreMe">
+                    <img
+                      class="ignoreMe "
+                      src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.0-9/s960x960/49407165_2198887820167773_4030962042931249152_o.jpg?_nc_cat=104&_nc_sid=dd7718&_nc_oc=AQnM4aFzJ0nLMza4mQMRqpc_YqBUHkW6NNBGKghXCehqtbON3BCtZ-E68UzcRPoVLHo&_nc_ht=scontent-maa2-1.xx&_nc_tp=7&oh=1ec7ac7cecd6a9aa36959f112f8fba11&oe=5E9FCC70"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/aniq55"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content ignoreMe">
+                    <h3 class="title ignoreMe">Aniq Ur Rahman</h3>
+                    <span class="post ignoreMe">Chair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 ignoreMe">
+                <div class="our-team">
+                  <div class="pic ignoreMe">
+                    <img
+                      src="https://media-exp1.licdn.com/dms/image/C5103AQGRipMDN4HNpw/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=FjDKy6KPBGMz5plR1Keg_O6iFTcqb29kpFi6Xl9Mubw"
+                      class="ignoreMe"
+                    />
+                    <ul class="social ignoreMe">
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/arunava2210/"
+                          class="fab fa-linkedin"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content ignoreMe">
+                    <h3 class="title ignoreMe">Arunava Manna</h3>
+                    <span class="post ignoreMe">vice Chair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 ignoreMe">
+                <div class="our-team" id="targetCard">
+                  <div class="pic ignoreMe">
+                    <img
+                      src="https://scontent-maa2-2.xx.fbcdn.net/v/t1.0-9/16602615_1245001868886449_2291048865106075271_n.jpg?_nc_cat=107&_nc_sid=7aed08&_nc_oc=AQlQq531KaVtfHF61OQnjrvi_7pWCCZttJ4ah6t8IzpIh7-xTcuONgufqBt3Gk8FhqQ&_nc_ht=scontent-maa2-2.xx&oh=ea5b3d5445f71642975e865f08dab60f&oe=5EA060B2"
+                      class="ignoreMe"
+                    />
+                    <ul class="social ignoreMe">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/jeet.sensarma"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content ignoreMe">
+                    <h3 class="title ignoreMe">Jeet Sensarma</h3>
+                    <span class="post ignoreMe">Secretary</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.0-1/56219897_2233378150260193_1251062795810635776_o.jpg?_nc_cat=100&_nc_sid=dbb9e7&_nc_oc=AQn8_wsmF0WYyxOD_ZNCkImrA63IxPl9cGwRULIDp5imaPTodpeatlOpVLmHrAyJOjw&_nc_ht=scontent-maa2-1.xx&oh=5dce9e8fa6423f94f0a22e804ab9fa81&oe=5EA09A39"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=100007640898995"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Neeraj Kumar Prajapati</h3>
+                    <span class="post">Treasurer</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.0-9/44292602_125081761805855_3333554960032858112_o.jpg?_nc_cat=104&_nc_sid=85a577&_nc_oc=AQl8_qUlzcWCEYOLB1RV-XT4muM0LRvL9C3JxnbI2o6WfmfX9y4gASoP2OzNcbV5vDM&_nc_ht=scontent-maa2-1.xx&oh=78fe9f195c8643662dfdaf81c82cfca5&oe=5E9FBA91"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/sohom.mukherjee.902"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Sohom Mukherjee</h3>
+                    <span class="post">Computing Society Head</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 ignoreMe">
+                <div class="our-team " style="">
+                  <div class="pic ignoreMe">
+                    <img
+                      src="https://scontent-maa2-2.xx.fbcdn.net/v/t1.0-9/87387191_2838317692896877_7992182617363447808_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_oc=AQlMaY3MEDCz347qhqaTQRuQHdfP22iGuqVbg0Wn-83R6EPx6UOBZLy3DYFgMgm0KI4&_nc_ht=scontent-maa2-2.xx&oh=7cecbc21f148a7af7e78712baf11d03f&oe=5E9FDCAF"
+                      class="ignoreMe"
+                    />
+                    <ul class="social ignoreMe">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/arindam.dutta.3766"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content ignoreMe">
+                    <h3 class="title ignoreMe">Arindam Dutta</h3>
+                    <span class="post ignoreMe"
+                      >Power and Control Society Head</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-2.xx.fbcdn.net/v/t31.0-8/p720x720/20368892_1352370064859382_8122288687837199990_o.jpg?_nc_cat=107&_nc_sid=13bebb&_nc_oc=AQn6KRIUYD17MovskivZrXrjdKmNJv-038YODqMf8DPq8-DvRIJpUwIM8fRZPOpMPeg&_nc_ht=scontent-maa2-2.xx&_nc_tp=6&oh=4ae02b596e06ff337e449b82fdc2e845&oe=5E9E1A94"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/phani.ch28"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Phani Ch</h3>
+                    <span class="post">Public Relations Head</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-2.xx.fbcdn.net/v/t1.0-9/s960x960/81038189_2537721066470360_2683106442503782400_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_oc=AQmO7Rtmq76zdtukASjGY48drTGLpNRa50qV-Qb_EyH2MKlLNxQZhO8XaS6WoJOf6R4&_nc_ht=scontent-maa2-2.xx&_nc_tp=7&oh=4796e21088210ff4db4cf2e8baeb3afd&oe=5E9F6355"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/Akashpratim.De"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Akash Pratim De</h3>
+                    <span class="post">Webmaster</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-2.xx.fbcdn.net/v/t1.0-9/p720x720/50835118_2204263359637851_1102548053690155008_o.jpg?_nc_cat=107&_nc_sid=85a577&_nc_oc=AQmuraZHSTSW3NW5LOZk5EjVTV3MIQgl-lVpLLAFekiDMI-GD_jOx-MSCfLYKMUqoiU&_nc_ht=scontent-maa2-2.xx&_nc_tp=6&oh=0745ed5990bd8bae652af9d25a3c48df&oe=5EA0D22A"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/sankalita.chakraborty.3"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Sankalita Chakraborty</h3>
+                    <span class="post">Management Head</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.0-9/s960x960/80992652_4242326389140878_3104675852181307392_o.jpg?_nc_cat=104&_nc_sid=85a577&_nc_oc=AQkretRDFwPg44YtNYA4hVg8CSLlfzxWiCbVy5T1WyOxrcBmzF-DQBHza_6nv3CqRXU&_nc_ht=scontent-maa2-1.xx&_nc_tp=7&oh=38f9bd61344ef7cb0bf9eeee581c5d74&oe=5E9EC495"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/ushasi.ghosh1"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Ushasi Ghosh</h3>
+                    <span class="post">COMSOC Head</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.0-9/p720x720/31073246_1652478018201142_507349419931205632_o.jpg?_nc_cat=105&_nc_sid=85a577&_nc_oc=AQk3NhQr4bPpRr53xtb3iS3GlfwOiTeyeGK5auBZ77KqLDtdCaU5juMHT22gOnSgeg8&_nc_ht=scontent-maa2-1.xx&_nc_tp=6&oh=5f422c1a116eb34d1d7305427983e431&oe=5EA10991"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/tanya.barnwal"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Tanya Barnwal</h3>
+                    <span class="post">Advertisement Head</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                  <div class="pic">
+                    <img
+                      src="https://scontent-maa2-2.xx.fbcdn.net/v/t1.0-9/p720x720/37185148_424945747989020_2412484637696720896_o.jpg?_nc_cat=103&_nc_sid=13bebb&_nc_oc=AQnj5YlYM8lrjS9pZvwmL0QEf5pBtB5KZ4sY2DX-bjhLiYjDn04y4iPoonQGEXE9xig&_nc_ht=scontent-maa2-2.xx&_nc_tp=6&oh=1029a2f05d725b757d378cb55c41a5a2&oe=5E9F9F91"
+                    />
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/madhurima19"
+                          class="fab fa-facebook"
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="team-content">
+                    <h3 class="title">Madhurima Paul</h3>
+                    <span class="post">Publicity Head</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer
+      style="height: auto;padding:10px;padding-left: 18px;background-color: rgb(1, 54, 100); background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: 70% 50%;"
+    >
+      <div class="text contact_info" style=" ">
+        <div class="text our-details">
+          <h3>
+            <img
+              src="http://i.xp.io/LJNAk3w.png"
+              style="max-height: 100px; margin-top: -30px;color:#49f;"
+            />IEEE SB
+            <i
+              class="text fa fa-angle-double-right"
+              style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"
+            ></i>
+          </h3>
+          <p
+            style="padding:2px;padding-left: 30px; font-size: 12px; font-weight: lighter;"
+          >
+            The IEEE Student Branch, NIT Durgapur is a society of enthusiasts
+            aimed at promoting research-related activities in the campus
+            .Comprising of bright researchers, developers, speakers, and other
+            contributors we are a society that welcomes in the era of better
+            research prospects, on the campus.
+          </p>
+        </div>
+        <div class="text contact-details" style="margin: 0 auto; width: 100%;">
+          <div
+            style="margin: 0 auto;
+        margin-left:35%;"
+          >
+            <h3
+              class="card-title"
+              style="padding-top: 16px; padding-bottom: 20px; color:#49f;"
+            >
+              Contact Us
+            </h3>
+            <p>
+              <i
+                class="text fa fa-envelope"
+                aria-hidden="true"
+                style="padding-right: 5px;"
+              ></i
+              >ieeesb.nitdgp@gmail.com
+            </p>
+            <p>
+              <i
+                class="text fa fa-phone"
+                aria-hidden="true"
+                style="padding-right: 5px;"
+              ></i>
+              8584970760
+            </p>
+            <p>
+              <i
+                class="text fa fa-facebook-f"
+                aria-hidden="true"
+                style="padding-right: 5px;"
+              ></i>
+              <a
+                href="https://www.facebook.com/nitdgpieeesociety/"
+                style="text-decoration: none; color: #fff;"
+                >facebook/nitdgpieeesociety/</a
+              >
+            </p>
+            <p>
+              <i
+                class="text fa fa-instagram"
+                aria-hidden="true"
+                style="padding-right: 5px;"
+              ></i
+              ><a
+                href="https://www.instagram.com/ieeesb_nitdgp/"
+                style="text-decoration: none; color: #fff;"
+              >
+                Instagram/ieeesbnitdgp</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="text about-contact-details"
+          style="margin: 0 auto; width: 100%;"
+        >
+          <div
+            style="margin: 0 auto;
+        margin-left: 40%;
+        "
+          >
+            <h3 style="padding-bottom: 20px; padding-top: 16px;color:#49f;">
+              Quick Links
+            </h3>
+            <p>
+              <i
+                class="text fa fa-users"
+                aria-hidden="true"
+                style="padding-right: 5px;"
+              ></i
+              ><a href="{% url 'thereg:members' %}">Our Team</a>
+            </p>
+            <p>
+              <i
+                class="text fa fa-calendar-check-o "
+                aria-hidden="true"
+                style="padding-right: 5px;"
+              ></i>
+              <a href="{% url 'thereg:events' %}">Events</a>
+            </p>
+            <p>
+              <i
+                class="text fa fa-home"
+                aria-hidden="true"
+                style="padding-right: 5px;"
+              ></i>
+              <a href="{% url 'index' %}">Home</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p
+        class="text"
+        style="text-align: center; color: #fff; font-size: 10px; font-weight: 200; padding-top: 40px;"
+      >
+        &copy;Copyright IEEE Student Branch NIT Durgapur. All Rights Reserved
+      </p>
+      <div class="text digital-clock" style="font-size: 13px;">00:00:00</div>
+      <div style="position: relative; overflow: visible;">
+        <div
+          class="text switch_container"
+          style="position: absolute; z-index: 99999;cursor: pointer;bottom: 50px; left:60px; background-color: rgba(100,100,100,0);border-radius: 5px ;font-size: 8px; color: #fff; font-family: monospace; display: grid; grid-template-columns: 1fr 1fr; "
+        >
+          <div
+            id="dark"
+            style="color: #f54595;display: block; width: 25px; text-align: center; border-bottom: 1px solid #f54595"
+          >
+            dark
+          </div>
+          <div
+            id="light"
+            style="color: #fff;display: block; width: 25px; border-bottom: 1px solid #249; text-align: center;"
+          ></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      var teamcardWidth = document.getElementById("targetCard").offsetWidth;
+      var rowWidth = document.getElementById("row").offsetWidth;
+      var card_num = rowWidth / teamcardWidth;
+      card_num = Math.floor(card_num);
+      row_padding = (rowWidth - teamcardWidth * card_num) / 2;
+      $(".row").css("padding-left", row_padding + "px");
+    });
+  </script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".our-team").hover(
+        function() {
+          $("aside")
+            .css("opacity", "0")
+            .css("z-index", "-22");
+        },
+        function() {
+          $("aside")
+            .css("opacity", "1")
+            .css("z-index", "222");
+        }
+      );
+    });
+  </script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      var finalyearHeight = document.getElementById("final-year").offsetHeight;
+      var scndyearHeight = document.getElementById("scnd-year").offsetHeight;
+      var thrdyearHeight = document.getElementById("thrd-year").offsetHeight;
+
+      $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop < finalyearHeight) {
+          $(".final").css("background-color", "rgba(235,0,74,0.99)");
+          $(".thrd").css("background-color", "transparent");
+          $(".scnd").css("background-color", "transparent");
+        } else if (
+          scrollTop > finalyearHeight &&
+          scrollTop < thrdyearHeight + finalyearHeight
+        ) {
+          $(".thrd").css("background-color", "rgba(235,0,74,0.99)");
+          $(".final").css("background-color", "transparent");
+          $(".scnd").css("background-color", "transparent");
+        } else if (scrollTop > thrdyearHeight + finalyearHeight) {
+          $(".scnd").css("background-color", "rgba(235,0,74,0.99)");
+          $(".final").css("background-color", "transparent");
+          $(".thrd").css("background-color", "transparent");
+        }
+      });
+    });
+  </script>
+
+  <script>
+    // Start Rellax
+    //var rellax = new Rellax('.rellax');
+
+    // Destroy and create again parallax with previous settings
+    // rellax.refresh();
+  </script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      var mem_height = $(".active-mem").height();
+      var list_height = $(".team-list").height();
+      $(".team-container").css("height", mem_height + list_height + 200 + "px");
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(".diff-teams .Team-heads").click(function() {
+      $(".our-team-mem").removeClass("active-mem");
+      $("#final-year").addClass("active-mem");
+      $(".diff-teams li").css("color", "#4090f0");
+      $(".diff-teams .Team-heads").css("color", "#f49");
+      var mem_height = $(".active-mem").height();
+      var list_height = $(".team-list").height();
+      $(".team-container").css("height", mem_height + list_height + 200 + "px");
+    });
+    $(".diff-teams .Senior-mem").click(function() {
+      $(".our-team-mem").removeClass("active-mem");
+      $("#thrd-year").addClass("active-mem");
+      $(".diff-teams li").css("color", "#4090f0");
+      $(".diff-teams .Senior-mem").css("color", "#f49");
+      var mem_height = $(".active-mem").height();
+      var list_height = $(".team-list").height();
+      $(".team-container").css("height", mem_height + list_height + 200 + "px");
+    });
+    $(".diff-teams .Junior-mem-1").click(function() {
+      $(".our-team-mem").removeClass("active-mem");
+      $("#scnd-year").addClass("active-mem");
+      $(".diff-teams li").css("color", "#4090f0");
+      $(".diff-teams .Junior-mem-1").css("color", "#f49");
+      var mem_height = $(".active-mem").height();
+      var list_height = $(".team-list").height();
+      $(".team-container").css("height", mem_height + list_height + 200 + "px");
+    });
+    $(".diff-teams .junior-mem-2").click(function() {
+      $(".our-team-mem").removeClass("active-mem");
+      $("#frst-year").addClass("active-mem");
+      $(".diff-teams li").css("color", "#4090f0");
+      $(".diff-teams .junior-mem-2").css("color", "#f49");
+      var mem_height = $(".active-mem").height();
+      var list_height = $(".team-list").height();
+      $(".team-container").css("height", mem_height + list_height + 200 + "px");
+    });
+  </script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $("header").css("background-color", "rgb(64, 144, 240)!important");
+
+      var offsetHeightheaderul = document.getElementById("header-list")
+        .offsetHeight;
+
+      if (window.matchMedia("(min-width: 1280px)").matches) {
+        $("header ul").css("margin-top", "12px");
+      }
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop >= 30) {
+        $("header").css("background-color", "rgb(64, 144, 240)!important");
+      }
+
+      if (window.matchMedia("(max-width: 1280px)").matches) {
+        thresh = -3;
+        $(".hamburger-menu").css("transform", "translateX(0%)");
+        $("header").css("height", "");
+        $(".hamburger-menu").css("display", "block");
+      } else {
+        $("header ul")
+          .css("background-color", "transparent")
+          .css("right", "")
+          .css("padding-top", "30px");
+        $(".hamburger-menu").css("display", "none");
+        thresh = 50;
+      }
+
+      $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop >= thresh) {
+          $("header").css("background-color", "rgb(64, 144, 240)!important");
+        } else {
+          $("header").css("background-color", "rgb(64, 144, 240)!important");
+        }
+      });
+
+      $(".hamburger-menu").click(function() {
+        if ($(".hamburger-menu").hasClass("clicked")) {
+          $(".hamburger-menu").removeClass("clicked");
+          $("header").css("height", "");
+        } else {
+          $(".hamburger-menu").addClass("clicked");
+          $("header").css("height", offsetHeightheaderul + 150 + "px");
+        }
+      });
+    });
+  </script>
+</html>
