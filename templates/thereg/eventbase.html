@@ -29,6 +29,12 @@
     </head>
 
     <body>
+
+
+
+
+
+
         <style>
             body {
             font-family: 'Raleway',Arial, sans-serif;
@@ -142,17 +148,18 @@ header{
   z-index: 22222;
   
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"!important;
+  font-size: medium;
   letter-spacing: 2px;
   transition: all 0.4s ease-in-out;
-  background-color: #363dc2 !important;
-  height: 120px;
+  background-color: #4090f0 !important;
+  height: 100px;
   overflow: hidden;
 
 }
 header ul{
 list-style: none;
 position: relative;
-right: 70px;
+right: 30px;
 cursor: pointer;
 z-index: 22222;
 left: ;
@@ -162,48 +169,29 @@ padding-left: 0;
 padding-top: 0;
   color: #fff;
   transition: all 0.8s ease-in-out;
+margin-top: -10px!important;
 
 }
 header ul li{
-  display: inline-block;
+display: inline-block;
   margin: 3px;
-  font-size: 17px;
   cursor: pointer;
   background-color: rgba(0,0,0,0);
   border-radius: 0px;
-  padding: 2px;
-  padding-right: 10px;
+  padding: 12px;
   transition: all 0.15s ease-in-out;
 
 }
-header ul li a:after {
-  
- content: "";
-  height: 1.5px;
-  width: 20px;
-  display: block;
-  background-color: #fff;
-  position: relative;
-  top: 3px;
-  left: -4px;
-  opacity: 1;
-  transform: rotate(3deg);
-  transition: all 0.3s ease-in-out;
-}
-header ul li:hover> a:after{
-  opacity: 1;
-  width: 100%;
-  left: 0;
-  
-}
+
+
 header ul li:hover{
   background-color: rgba(0,0,0,0);
   
   letter-spacing: 0.15em;
 }
 header ul li a{
-    text-decoration: none;
-  color: #fff;
+     text-decoration: none;
+  color: #fdfdfd;
 }
 
 header ul li a:hover{
@@ -219,7 +207,6 @@ header ul li a:hover{
   top: 40px;
   display: none;
   overflow: visible;
-  background-color: rgb(0,0,0,0.7);
   position: absolute;
   z-index: 2222888888;
 }
@@ -392,6 +379,23 @@ header .logo{
   left: 50%;
 }
 
+.title-main{
+  color:#49f!important;
+  padding: 1rem 0px;
+  margin-left: 30px;
+  width: 95%;
+  border-bottom: 1.5px solid #49f;
+  margin-bottom: 1rem;
+  background-color: transparent!important;
+  font-size: 4.0rem;
+  font-weight: 300;
+  line-height: 1.2;
+
+}
+
+.jumbotron{
+  height: 200px;
+}
 
 
 
@@ -409,75 +413,117 @@ header .logo{
 
     </style>
 
-
-<div class="hamburger-menu"></div>
+    <div class="hamburger-menu"></div>
 
     <header style="display: block;">
-  <div class="logo" style="float: left; padding-left: 30px;"><img src= "http://i.xp.io/yO2IRLu.svg+xml" height="140px"></div>
-  <ul id="header-list" style="float: right; padding-top: 42px;">
-    <!--/media/images/ieeesb_logo.svg-->
-
-          <li><a class="" href="{% url 'index' %}">Home</a></li>
-           <li><a class="" href="{% url 'thereg:events' %}">Events</a></li>
-           <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
-           <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
-          <!--<li><a class="" href="{% url 'admin:index' %}">Admin</a></li>-->
+      <div class="logo" style="float: left; padding-left: 30px;"><img style="margin-top: -20px;" src= "http://i.xp.io/yO2IRLu.svg+xml" height="140px"></div>
+      <ul id="header-list" style="float: right; padding-top: 30px;">
+        <!--/media/images/ieeesb_logo.svg-->
+    
+              <li><a class="" href="{% url 'index' %}">Home</a></li>
+    
+               <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
+               <li><a href="{% url 'thereg:events' %}">Events</a></li>
+             
+               <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
                
-          {# Some logic on what to display for last item#}
-          <!--{% if user.is_authenticated %}
-            <li><a href="#">Welcome {{ user.username }}!</a></li>
-            <li><a href="{% url 'logout' %}">Logout</a></li>
-            
-          {% else %}
-          <li><a class="" href="{% url 'thereg:register' %}">Register</a></li>
-            <li><a class="" href="{% url 'thereg:user_login' %}">Login</a></li>
-          {% endif %}-->
-    </ul>
-</header>
+              
+              
+                   
+              
+              
+        </ul>
+    </header>
+    
+      <span id="members-heading theitem" class="jumbotron" style=" 
+       
+       text-align: center;
+      
+      color: #fff;
+      font-family: 'Merriweather Sans', sans-serif;
+      font-weight: 900;
+      font-size: 55px;
+      display: block;
+      margin-top: 0;
+      cursor: crosshair;
+     
+      background:linear-gradient(rgba(54, 61, 194,0.001), rgba(54, 61, 194,0.001)), linear-gradient(rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.4)),radial-gradient(circle ,rgba(64, 144, 240,0.8) 20%,rgba(64, 144, 240,0.8) 100%),url('/media/media/img/transparent.jpg') !important;
+       background-position: 20% 23% !important;
+       background-size: cover !important;
+      
+      "><font class="display-4" style=" font-weight: 500; text-transform: uppercase; font-size:50px ">Our Activities</font>
+    </span>
 
-       <div class="jumbotron event-header" style="background:linear-gradient(to bottom left,#ccc,#eee);text-align: center; font-size: 38px; color: #444 ; font-weight: 500; font-family: arial;"><p>OU<font style="">R EVENTS </font></p></div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
         <!-- Footer -->
 
 
-        <footer style="height: auto;padding:10px;background-color: #000; font-family: 'Raleway',Arial, sans-serif; background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/media/graphics/99.svg'); background-size: 90%;
+        <footer style="height: auto;padding:10px;padding-left: 18px;background-color: rgb(1, 54, 100); background-size: 90%;
     background-repeat: no-repeat;
     background-position: 70% 50%;">
-  <div class="contact_info" style=" ">
-  <div class="our-details">
-    <h3><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -30px;">IEEE SB <i class="fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3>
-    <p style="padding:2px;padding-left: 30px; font-size: 15px; font-weight: lighter;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
+  <div class="text contact_info" style=" ">
+  <div class="text our-details">
+    <h3><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -30px;color:#49f;">IEEE SB <i class="text fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3>
+    <p style="padding:2px;padding-left: 30px; font-size: 12px; font-weight: lighter;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
   </div>
-  <div class="contact-details" style="margin: 0 auto; width: 100%;">
+  <div class="text contact-details" style="margin: 0 auto; width: 100%;">
     <div style="margin: 0 auto;
     margin-left:35%;">
-    <h3 style="padding-top: 16px; padding-bottom: 20px">Contact Us</h3>
-  <p><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i> IEEE-SB@nitdgp.com</p>
-  <p><i class="fa fa-phone" aria-hidden="true" style="padding-right: 5px;"></i>
- 9754524763</p>
-  <p><i class="fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i> <a href="http://facebook/ieee-sb/54hcbu7t.com" style="text-decoration: none; color: #fff;">facebook/ieeesbnitdgp</a></p>
-  <p><i class="fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i> Instagram/ieeesbnitdgp</p>
+    <h3 class="card-title" style="padding-top: 16px; padding-bottom: 20px; color:#49f;">Contact Us</h3>
+  <p><i class="text fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i>ieeesb.nitdgp@gmail.com</p>
+  <p><i class="text fa fa-phone" aria-hidden="true" style="padding-right: 5px;"></i>
+ 8584970760</p>
+  <p><i class="text fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i> <a href="https://www.facebook.com/nitdgpieeesociety/" style="text-decoration: none; color: #fff;">facebook/nitdgpieeesociety/</a></p>
+  <p><i class="text fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i><a href="https://www.instagram.com/ieeesb_nitdgp/" style="text-decoration: none; color: #fff;"> Instagram/ieeesbnitdgp</a></p>
   </div>
   </div>
-<div class="about-contact-details" style="margin: 0 auto; width: 100%;">
+<div class="text about-contact-details" style="margin: 0 auto; width: 100%;">
   <div style="margin: 0 auto;
     margin-left: 40%;
     ">
-    <h3 style="padding-bottom: 20px; padding-top: 16px;">About Us</h3>
-  <p><i class="fa fa-users" aria-hidden="true" style="padding-right: 5px;"></i><a style="font-size: 16px" href="{% url 'thereg:members' %}">Members</a></p>
-  <p><i class="fa fa-calendar" aria-hidden="true" style="padding-right: 5px;"></i>
-<a href="{% url 'thereg:events' %}" style="font-size: 16px">Events</a></p>
-  <p><i class="fa fa-chrome" aria-hidden="true" style="padding-right: 5px;"></i> <a style="font-size: 16px" href="#">Join-Us</a></p>
+    <h3 style="padding-bottom: 20px; padding-top: 16px;color:#49f;">Quick Links</h3>
+  <p><i class="text fa fa-users" aria-hidden="true" style="padding-right: 5px;"></i><a href="{% url 'thereg:members' %}">Our Team</a></p>
+  <p><i class="text fa fa-calendar-check-o " aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'thereg:events' %}" >Events</a></p>
+  <p><i class="text fa fa-home" aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'index' %}" >Home</a></p>
+
   
   </div>
   </div>
 
 </div>
  
-  <p style="text-align: center; color: #fff; font-size: 16px;">&copy; IEEENITDgp</p>
-  
+  <p class="text" style="text-align: center; color: #fff; font-size: 10px; font-weight: 200; padding-top: 40px;">&copy;Copyright IEEE Student Branch NIT Durgapur. All Rights Reserved</p>
+  <div class="text digital-clock" style="font-size: 13px;">00:00:00</div>
+  <div style="position: relative; overflow: visible;">
+   <div class="text switch_container" style="position: absolute; z-index: 99999;cursor: pointer;bottom: 50px; left:60px; background-color: rgba(100,100,100,0);border-radius: 5px ;font-size: 8px; color: #fff; font-family: monospace; display: grid; grid-template-columns: 1fr 1fr; ">
+  <div id="dark" style="color: #f54595;display: block; width: 25px; text-align: center; border-bottom: 1px solid #f54595">dark</div>
+<div id="light" style="color: #fff;display: block; width: 25px; border-bottom: 1px solid #249; text-align: center;"></div>
+</div>
+</div>
 </footer>
         
     </body>
@@ -513,7 +559,7 @@ jQuery(document).ready(function ($){
   } else {
   /* The viewport is greater than 900 pixels wide */
      /*$("header ul").removeClass("header-off");*/
-     $("header ul").css("background-color","transparent").css("right","").css("padding-top","42px");
+     $("header ul").css("background-color","transparent").css("right","").css("padding-top","30px");
   thresh=50;}
     
 
