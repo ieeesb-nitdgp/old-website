@@ -26,6 +26,7 @@ urlpatterns=[
     url(r'^user_login/$',views.user_login,name='user_login'),
     url(r'^feedback_form/$', views.feedback_form, name='feedback'),
     url(r'^members/$', views.members, name='members'),
+     url(r'^alumni/$', views.alumni, name='alumni'),
     url(r'^varification/$', views.varification, name='varification'),
     path('', views.PostList.as_view(), name='events'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='event_detail'),

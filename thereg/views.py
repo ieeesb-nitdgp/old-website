@@ -113,6 +113,10 @@ def members(request):
     
     return render(request,'thereg/members.html',{})
 
+def alumni(request):
+    
+    return render(request,'thereg/alumni.html',{})
+
 
 class PostList(generic.ListView):
     model = Post
