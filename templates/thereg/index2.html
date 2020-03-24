@@ -4719,6 +4719,111 @@ section.stats-ieee{
   margin-left: 55px;
 }
 
+
+
+.spns-container .row{
+  margin: 0 auto;
+
+  justify-content: center;
+}
+.spns-container .client-logo{
+  background: transparent;
+  margin: 10px;
+  max-width: 22%;
+}
+.spns-container .client-logo{
+  padding: 0px!important;
+  text-align: center;
+  max-height: 300px;
+  overflow: hidden;
+}
+.spns-container .client-logo figure img{
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+/*dark theme update*/
+
+.dark_body .spns-container .client-logo{
+  background: #fff;
+  opacity: 0.8;
+}
+/*event section*/
+
+.dark_body .activities .single-col{
+  background: #191919;
+  color: #fff;
+}
+.dark_body .activities .deails p{
+  color: #e9e9e9!important;
+} 
+.dark_body .activities .deails div p{
+  color: #e9e9e9!important;
+} 
+.dark_body .thecontent{
+  color: #e9e9e9!important;
+}
+.dark_body .activities .card-deck .card{
+  background: #191919!important;
+}
+.dark_body .activities .title{
+  color: #fff!important;
+}
+.dark_body .activities .event-date{
+  color: #e9e9e9!important;
+}
+.dark_body .about-us{
+  background: #191919!important;
+}
+.dark_body .about-us .video{
+  background: #191919!important;
+}
+.dark_body .intro-info .row .col-lg-3{
+  background: #191919!important;
+  color: #e9e9e9!important;
+}
+.dark_body .intro-info .row .col-lg-3 h5{
+  color: #e9e9e9!important;
+}
+.dark_body .thebackgroundieee{
+  background: linear-gradient(0deg, rgba(0,0,0,0.95),rgba(0,0,0,0.95)),url('http://i.xp.io/1iiZZClv.png')!important;
+  filter: brightness(9.5) saturate(0);
+    background-size: 70%!important;
+    background-repeat: no-repeat!important;
+
+}
+.dark_body footer{
+  background: #242426!important;
+}
+.dark_body #contact-us .row{
+  background: #131313!important;
+}
+.dark_body #contact-us .formcontainer{
+  background: #252528!important
+}
+.dark_body #contact-us .formcontainer .contactForm{
+  background-color: transparent!important;
+}
+.dark_body .formBody form input{
+  border-color: #fff!important
+}
+.dark_body .formBody form textarea{
+  border-color: #fff!important;
+}
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
  .activities .smallscreen{
   display: grid!important;
@@ -4730,6 +4835,9 @@ section.stats-ieee{
  }
  .title-ieee{
   margin-left: 0px!important;
+ }
+ .spns-container .client-logo{
+  max-width: unset;
  }
 }
 
@@ -4778,9 +4886,11 @@ section.stats-ieee{
 		
 		
 		<li class="text side_bar_members"><a href="#ieee-team">members</a></li>
-    <li class="text side_bar_glimps"><a href="#gallery-event">glimpses</a></li>
-		<li class="text side_bar_join"><a href="#joinieee">join IEEE</a></li>
-    <li class="text side_bar_about"><a class="text active_side_bar" href="#about-us">about</a></li>
+    <!--<li class="text side_bar_glimps"><a href="#gallery-event">glimpses</a></li>-->
+    
+    <li class="text side_bar_activities"><a href="#side_bar_activities">activities</a></li>
+		<li class="text side_bar_join"><a href="#joinieee">about-IEEE</a></li>
+    <li class="text side_bar_about"><a class="text active_side_bar" href="#about-us">about-us</a></li>
 		
 	</ul>
 </aside>
@@ -4978,30 +5088,30 @@ section.stats-ieee{
     <h2 class="title" style="color:#49f;
     padding: 1rem 0px;
     width: 95%;
-    border-bottom: 1.5px solid #49f;
+    border-bottom: 1.5px solid ;
     margin-bottom: 1rem;" >
   About Us</h2>
        
-        <div class="text row content" style="padding-left: 75px;padding-right: 75px; font-size: 16px; color: #546071; font-weight: 400;">
+        <div class="text row content thecontent" style="padding-left: 75px;padding-right: 75px; font-size: 16px; color: #546071; font-weight: 400;">
           The IEEE Student Branch , NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus. We are a direct handshake to IEEE, an international body that allows countless young researchers the opportunity to present &amp; publish their innovations every year. Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.
         </div>
         <div class="card-deck thestats" style="color: #000;">
           <div class="card firstcard">
             <div class="card-body">
-              <h4 class="card-title">50+</h4>
-              <h6 class="card-text">Branch Members</h6>
+              <h4 class="card-title thecontent">50+</h4>
+              <h6 class="card-text thecontent">Branch Members</h6>
             </div>
           </div>
           <div class="card" style="">
             <div class="card-body">
-              <h4 class="card-title">30+</h4>
-              <h6 class="card-text">Events & Workshops</h6>
+              <h4 class="card-title thecontent">30+</h4>
+              <h6 class="card-text thecontent">Events & Workshops</h6>
             </div>
           </div>
           <div class="card"style="">
             <div class="card-body">
-              <h4 class="card-title">500+</h4>
-              <h6 class="card-text">Participants</h6>
+              <h4 class="card-title thecontent">500+</h4>
+              <h6 class="card-text thecontent">Participants</h6>
             </div>
           </div>
         </div>
@@ -5049,7 +5159,7 @@ section.stats-ieee{
 
 
 <section class="text wrapper" id="joinieee" style=" margin-left: 0px; overflow: hidden; width: 99vw!important; height: auto!important; margin: 0; padding: 60px; padding-bottom: 10px;">
-  <div class="text" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000" style="background:linear-gradient(0deg, rgba(255,255,255,0.95),rgba(255,255,255,0.95)),url('http://i.xp.io/1iiZZClv.png'); height: auto; background-size: 80%;background-repeat: no-repeat;border: none; border-radius: 0.222rem;">
+  <div class="text thebackgroundieee" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000" style="background:linear-gradient(0deg, rgba(255,255,255,0.95),rgba(255,255,255,0.95)),url('http://i.xp.io/1iiZZClv.png'); height: auto; background-size: 80%;background-repeat: no-repeat;border: none; border-radius: 0.222rem;">
   
   <div class="text ieee-container">
   <div class="text ieee-content" style="padding: 40px; font-weight: 400;">
@@ -5109,7 +5219,7 @@ section.stats-ieee{
 
 
 
- <section class="text gallery" id="members" style="overflow: hidden;">
+ <section class="text gallery" id="activities" style="overflow: hidden;">
   <div style="padding: 10px; overflow: hidden;">
   
   <h2 class="title title-one" data-aos="fade-up" data-aos-offset="20" data-aos-duration="800" style="
@@ -5120,7 +5230,7 @@ section.stats-ieee{
     padding-bottom: 20px;
     margin-bottom: 50px;
     margin-top: 60px;
-    border-bottom: 1.5px solid #49f;
+    border-bottom: 1.5px solid ;
     ">Our Activities
     <font class="text text card-text" style="float: right;padding: 2px; font-size: 0.4em; margin-top: 1.5rem" ><a href="{% url 'thereg:events' %}" style="">see all activities→</a></font>     </h2>
   </h2>
@@ -5148,10 +5258,10 @@ section.stats-ieee{
           <img width="130px" src="http://i.xp.io/1rlVEjSc.png" style="filter: brightness(0%);opacity: 0.09;">
         </div>
       <div style="">
-       <h2 class="title" style="font-weight: 300; overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;">TechX 2020
+       <h2 class="title" style="font-weight: 300; overflow: visible; border-bottom: 1px solid ; padding-bottom: 10px;">TechX 2020
         
        </h2>
-     <p style="font-size: 16px;margin-bottom: 15px; color: #546071; padding-top: 20px; ">TechX Congress is the Eastern Indian Techno-Management Leadership Summit hosted by the IEEE computer society SYP MGAB, where it assimilates all IEEE student members, professionals and student chapters associated with the society. </p>
+     <p class="thecontent" style="font-size: 16px;margin-bottom: 15px; color: #546071; padding-top: 20px; ">TechX Congress is the Eastern Indian Techno-Management Leadership Summit hosted by the IEEE computer society SYP MGAB, where it assimilates all IEEE student members, professionals and student chapters associated with the society. </p>
      <div style="font-size: 16px;padding-top: 40px;">
      <a class="btn btn-link" href="https://ieee-techx.com/" style="float: left; padding-top: 0px;">Visit Website</a>
      <span class="event-date" style="float: right;">February 28, 2020</span></div>
@@ -5177,8 +5287,8 @@ section.stats-ieee{
       </div>
       </div>
       <div class="card-body" style="margin: 30px;">
-        <div class="card-title title" style=" font-size: 2.4rem;padding-bottom: 10px; border-bottom: 1px solid #000;">IntelliSys</div>
-        <div class="card-text" style="font-size: 16px; color: #546071;">
+        <div class="card-title title" style=" font-size: 2.4rem;padding-bottom: 10px; border-bottom: 1px solid ;">IntelliSys</div>
+        <div class="card-text thecontent" style="font-size: 16px; color: #546071;">
             
               IntelliSys:Machine Learning Symposium was a huge success with a colossal turnout of over 150 enthusiasts who were too eager to learn and explore.IEEE SB NIT Durgapur extends its heartfelt gratitude to our guest speakers, Dr. Fakhral Yusoff and Mr. Shivam Abhilash for leaving us all dazzled and especially to all the participants for their overwhelming response.
               <div style="font-size: 16px;padding-top: 30px;">
@@ -5202,8 +5312,8 @@ section.stats-ieee{
       </div>
       </div>
       <div class="card-body" style="margin: 30px;">
-        <div class="card-title title" style=" font-size: 2.4rem;padding-bottom: 10px; border-bottom: 1px solid #000;">SDV 2.0</div>
-        <div class="card-text" style="font-size: 16px; color: #546071;">In this era of advancement and competing efficiency where society expects autonomous vehicles to be held to a higher standard than human drivers,we in collaboration with the Society of Automotive Engineers organized a two-day workshop to introduce students to the world of autonomous driving.
+        <div class="card-title title" style=" font-size: 2.4rem;padding-bottom: 10px; border-bottom: 1px solid ;">SDV 2.0</div>
+        <div class="card-text thecontent" style="font-size: 16px; color: #546071;">In this era of advancement and competing efficiency where society expects autonomous vehicles to be held to a higher standard than human drivers,we in collaboration with the Society of Automotive Engineers organized a two-day workshop to introduce students to the world of autonomous driving.
         <div style="font-size: 16px;padding-top: 30px;">
                 <a class="btn btn-link" href="{% url 'thereg:events' %}" style="float: left; padding-top: 0px;">Read more</a>
                 <span class="event-date" style="float: right;color: #546071;">August 31, 2019</span>
@@ -5313,7 +5423,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
     padding-bottom: 20px;
     margin-bottom: 50px;
     margin-top: 60px;
-    border-bottom: 1.5px solid #49f;">Our Team    <font class="text text card-text" style="float: right;padding: 2px; font-size: 0.4em; margin-top: 1.5rem" ><a href="{% url 'thereg:members' %}" style="">all members→</a></font>     </h2>
+    border-bottom: 1.5px solid;">Our Team    <font class="text text card-text" style="float: right;padding: 2px; font-size: 0.4em; margin-top: 1.5rem" ><a href="{% url 'thereg:members' %}" style="">all members→</a></font>     </h2>
   <div class="text swiper-container" style="border: none;">
     <!-- Additional required wrapper -->
     <div class="text swiper-wrapper">
@@ -5521,6 +5631,72 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
 
 
 
+<section class="sponsors" id="sponsors" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000">
+
+  <h2 class="title title-one" style="
+    text-align: left;
+    
+    color: #49f;
+    width: 90%;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border-bottom: 1.5px solid;">
+    Our Collaborations
+  </h2>
+  <div class="spns-container" style="padding: 80px;">
+    <div class="row" style="padding-bottom: 30px;">
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron">
+                    <figure class="image"><a href="http://ewh.ieee.org/r10/calcutta/"><img src="media/images/IEEE_kol_logo.png" width="200"  alt="IEEE Kolkata Section"></a></figure>
+                </div>
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://www.computer.org/"><img src="media/images/cs-logo-2.png" width="200"  alt="IEEE Computer Society"></a></figure>
+                </div>
+               
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://ieee.jaduniv.org/"><img src="media/images/sb1.png" width="200"  alt="IEEE SB JU"></a></figure>
+                </div>
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://unity.com/"><img src="media/images/Official_unity_logo.png" width="200"  alt="Unity"></a></figure>
+                </div>
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://gdgkolkata.org/"><img src="media/images/gdg_kolkata.png" width="200" alt="GDG Kolkata"></a></figure>
+                </div>
+
+
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="media/images/global.png" width="200" style="" alt="Globalshapers"></a></figure>
+                </div>
+                
+                 <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://software.intel.com/en-us/"><img src="media/images/intel.png" width="200" style="" alt="Intel Software"></a></figure>
+                </div>
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://www.cisco.com/"><img src="media/images/cisco.png" width="200" style="" alt="CISCO"></a></figure>
+                </div>
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="max-height: 150px;">
+                    <figure class="image"><a href="https://www.townscript.com/"><img style=" margin-top: 30%;" src="media/images/4.png" width="200" alt="Townscript"></a></figure>
+                </div>
+                
+                
+            </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  <section id="contact-us" class="text contact_ieee" style="overflow: hidden;">
    
@@ -5532,9 +5708,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                 color: #49f;
                 font-family: 'Playfair Display', serif;">
               Leave a Message</h2>
-              <p class="text" style="font-size: 16px; font-weight: 400;margin-left: 100px; padding: 10px 5rem;">Your message means a lot!</p>
+              <p class="text thecontent" style="font-size: 16px; font-weight: 400;margin-left: 100px; padding: 10px 5rem;">Your message means a lot!</p>
       </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1400" style="background-color: #49f;">
+      <div class="col-lg-6 formcontainer" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1400" style="background-color: #49f;">
          <div id="contactForm " class="text contactForm shadow card" style="    max-width: 400px;
             background-color: #fff;
             margin: 50px auto;">
@@ -5617,7 +5793,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
       <div style="margin: 0 auto;
         margin-left: 30px;
         ">
-          <div class="text map-full" style="background-color: rgb(1, 54, 100);">
+          <div class="text map-full shadow" style="background-color: rgb(1, 54, 100);">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5780853572996!2d87.29095021481118!3d23.547672784689695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f772081cede5e9%3A0x33fb9ccb243dfa5!2sNational%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1570224535721!5m2!1sen!2sin"  height="300" frameborder="0" style="width:100%; border:0px solid #222; background-color: #000; -webkit-filter: grayscale(100%);
               -moz-filter: grayscale(100%);
               -ms-filter: grayscale(100%);
@@ -6010,8 +6186,8 @@ function clockUpdate() {
 			var offsetHeight_2 = document.getElementById('about-us').offsetHeight;
 			var offsetHeight_3 = 0; 
       var offsetHeight_4 = document.getElementById('ieee-team').offsetHeight; 
-      var offsetHeight_7 = document.getElementById('gallery-event').offsetHeight; 
-			var offsetHeight_5 = document.getElementById('members').offsetHeight;
+      var offsetHeight_7 = 0; //document.getElementById('gallery-event').offsetHeight; 
+			var offsetHeight_5 = document.getElementById('activities').offsetHeight;
 			var offsetHeight_6 = document.getElementById('joinieee').offsetHeight;
 			var scrollTop = $(window).scrollTop();
 
@@ -6124,7 +6300,7 @@ box-shadow: 23px 3px 7px -14px rgba(85,85,85,0.35);*/
             }
              if(scrollTop>glimpse_height-200){
               $(".side_bar ul li a").removeClass("active_side_bar");
-              $(".side_bar_glimps a").addClass("active_side_bar");
+              $(".side_bar_activities a").addClass("active_side_bar");
             }
                if(scrollTop>team_height-300){
               $(".side_bar ul li a").removeClass("active_side_bar");
@@ -6184,8 +6360,8 @@ jQuery(document).ready(function ($){
       var offsetHeight_2 = 0;
       var offsetHeight_3 = document.getElementById('about-us').offsetHeight; 
       var offsetHeight_4 = document.getElementById('ieee-team').offsetHeight; 
-       var offsetHeight_7 = document.getElementById('gallery-event').offsetHeight +document.getElementById('stats-ieee').offsetHeight; 
-      var offsetHeight_5 = document.getElementById('members').offsetHeight;
+       var offsetHeight_7 = 0; //document.getElementById('gallery-event').offsetHeight; 
+      var offsetHeight_5 = document.getElementById('activities').offsetHeight;
       var offsetHeight_6 = document.getElementById('joinieee').offsetHeight;
 
 
@@ -6274,7 +6450,7 @@ jQuery(document).ready(function ($){
             
             var events_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 ;
             var team_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_5 ;
-            var glimpse_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_4 + offsetHeight_5 ;
+            var glimpse_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_6 ;
             var join_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_4 + offsetHeight_5 + offsetHeight_6 ;
             var contact_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_4 + offsetHeight_5 + offsetHeight_6 +offsetHeight_7 ;
 
@@ -6289,7 +6465,7 @@ jQuery(document).ready(function ($){
             }
             if(scrollTop>glimpse_height-200){
               $(".side_bar ul li a").removeClass("active_side_bar");
-              $(".side_bar_glimps a").addClass("active_side_bar");
+              $(".side_bar_activities a").addClass("active_side_bar");
             }
               if(scrollTop>join_height-50){
               $(".side_bar ul li a").removeClass("active_side_bar");
@@ -6982,174 +7158,7 @@ jQuery(document).ready(function ($){
 
 
 
-<!--/////////////////video///////////////-->
-<script type="text/javascript">
-  var video = document.getElementById('video');
-var vd = document.getElementById('vd');
-var vsd = document.getElementById('vsd');
-var mb = document.querySelector('.m-b');
-var mbj = document.querySelector('.m-b-j');
-var controls = document.querySelector('.controls');
-var vdb = document.querySelector('.vdb');
-var mplayer = document.querySelector('.m-player-2');
-var btn = document.getElementById('play-pause');
-var btni = document.getElementById('btni');
-var vol = document.getElementById('vol-control');
-var volimg = document.getElementById('vol-i');
-var volbtn = document.getElementById('vol-btn');
-var fsbtn = document.getElementById('fs-btn');
-var fsbtni = document.getElementById('fs-i');
 
-function togglePlayPause() {
-    if (video.paused) {
-        btn.classNatext me = "pause";
-        btni.classNatext me = "fas fa-pause"
-        video.play();
-    } else {
-        btn.classNatext me = "play";
-        btni.classNatext me = "fas fa-play";
-        video.pause();
-    }
-}
-
-btn.onclick = function () {
-    togglePlayPause();
-}
-
-video.onclick = function () {
-    togglePlayPause();
-}
-
-
-video.addEventListener('timeupdate', function () {
-    var mbjpos = video.currentTime / video.duration;
-    mbj.style.width = mbjpos * 100 + "%";
-
-    var time = video.currentTime;
-    var s = Math.floor(time);
-    var m = Math.floor(s / 60);
-    m = m >= 10 ? m : '0' + m;
-    s = Math.floor(s % 60);
-    s = s >= 10 ? s : '0' + s;
-
-
-    vsd.innerText = m + ":" + s;
-
-    if (video.ended) {
-        btni.classNatext me = "fas fa-play";
-    }
-
-});
-
-
-video.addEventListener('play', function () {
-
-    var time = video.duration;
-    var s = Math.floor(time);
-    var m = Math.floor(s / 60);
-    m = m >= 10 ? m : '0' + m;
-    s = Math.floor(s % 60);
-    s = s >= 10 ? s : '0' + s;
-
-    vd.innerText = m + ":" + s;
-
-});
-
-//video p bar
-
-mb.onclick = event => {
-    let positionRatio = event.offsetX / mb.offsetWidth;
-    video.currentTime = video.duration * positionRatio;
-}
-
-
-//volume
-vol.oninput = function () {
-    SetVolume(vol.value);
-}
-vol.onchange = function () {
-    SetVolume(vol.value);
-}
-volbtn.onclick = function () {
-    var ovolume = video.volume;
-    if (volimg.classNatext me == "fas fa-volume-mute") {
-        SetVolume(vol.value);
-    } else {
-        SetVolume(0);
-        volimg.classNatext me = "fas fa-volume-mute";
-    }
-
-}
-
-function SetVolume(val) {
-    var value = val;
-    var player = video;
-    player.volume = val / 100;
-
-    if (value == 0) {
-        volimg.classNatext me = "fas fa-volume-off";
-    } else if (value > 0 && value < 50) {
-        volimg.classNatext me = "fas fa-volume-down";
-    } else if (value >= 50) {
-        volimg.classNatext me = "fas fa-volume-up";
-    }
-}
-
-
-
-
-
-/* mousemove */
-var t;
-mplayer.addEventListener("mousemove", function () {
-    clearTimeout(t);
-    if (controls.style.opacity == 0) {
-        controls.style.opacity = 100;
-        vdb.style.opacity = 100;
-        
-    } else {
-
-        t = setTimeout(function () {
-            controls.style.opacity = 0;
-            vdb.style.opacity = 0;
-            
-        }, 4000);
-    }
-
-});
-
-
-
-
-
-/* Fs */
-fsbtn.addEventListener("click", function () {
-    if (!document.fullscreenElement &&
-        !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
-        fsbtni.classNatext me = "fas fa-compress";
-        if (video.requestFullscreen) {
-            video.parentNode.requestFullscreen();
-        } else if (video.msRequestFullscreen) {
-            video.parentNode.msRequestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-            video.parentNode.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) {
-            video.parentNode.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-        }
-    } else {
-        fsbtni.classNatext me = "fas fa-expand";
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.msExitFullscreen) {
-            document.msExitFullscreen();
-        } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        }
-    }
-});
-</script>
 
 
 
