@@ -57,10 +57,50 @@ body{
  
 
 
+body::-webkit-scrollbar {
+
+  width: 10px!important;
+  background: #000!important;
+}
+
+ body.light_body::-webkit-scrollbar {
+
+  opacity: 1; 
+  width: 10px;
+}
+
+/* Handle */
+body.light_body::-webkit-scrollbar-thumb {
+   background: #ddd;
+  border-radius: 5px;
+
+}
+
+/* Handle on hover */
+body.light_body::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+}
 
 
 
+      /*dark theme*/
+      body::-webkit-scrollbar {
+  background: #000;
+  opacity: 1; 
+  width: 20px;
+}
 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #ddd; 
+  border-radius: 5px;
+
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+}
 
 
 
@@ -140,9 +180,7 @@ body{
 }
 
 
-.team-container{
-  height: 260vh;
-  }
+
 
 
 
@@ -693,7 +731,7 @@ header{
   letter-spacing: 0;
   position: relative;
   height: auto;
-  background-color: #000 !important;
+  background-color: #49f !important;
   transition: height 0.5s ease-in-out;
 }
 
@@ -1078,7 +1116,7 @@ header{
   position: relative;
   height: 100px;
 
-  background-color: #202692 !important;
+  background-color: #49f !important;
   transition: height 0.5s ease-in-out;
 }
 
@@ -1153,8 +1191,19 @@ header .logo img{
 .jumbotron{
   border-radius: unset!important;
 }
-  
-   @media only screen and (max-width: 800px){
+
+
+.facad-adv .container .row{
+  width: 100%;
+  justify-content: center;
+}
+.facad-adv .card.shadow{
+  box-shadow: 0 1px 14px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px!important;
+  max-width: 350px!important;
+}
+
+ @media only screen and (max-width: 800px){
       .contact_info{
         grid-template-columns: 1fr;
 
@@ -1175,8 +1224,6 @@ header .logo img{
       .switch_container{
         transform: scale(1.5);
       }
-     .contact-details,.about-contact-details{
-     margin-left:5px!important;}
     }
 </style>
 
@@ -1194,7 +1241,6 @@ header .logo img{
           <li><a class="" href="{% url 'index' %}">Home</a></li>
 
            <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
-           <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
            <li><a href="{% url 'thereg:events' %}">Events</a></li>
          
            <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
@@ -1229,35 +1275,39 @@ header .logo img{
 
 
 <section class="facad-adv">
-  <h2 class="title-main" style="">Faculty Advisors</h2>
-  <div class="container" style="margin-bottom: 120px; margin-top: 60px;">
+  <!--<h2 class="title-main" style="">Faculty Advisors</h2>-->
+  <div class="container" style="margin-bottom: 120px; margin-top: 60px;justify-content: center;">
     
 
- 
-    <div class="card">
+  <div class="row" style="justify-content: center;">
+    <div class="card shadow" style="max-width: 450px; border: none;">
         
         <div style="overflow: hidden;max-height: 250px;">
              <img class="card-img-top" src="/media/members/NKRsir.jpg" alt="img" style="">
              </div>
        
     
-    <div class="card-body">
-      <h5 class="card-title">Nirmal Kumar Roy</h5>
-      <p class="card-text">Professor </p>
-      <p class="card-text"><small class="text-muted">Department of Electrical Engineering </small></p>
-      <p class="card-text"><small class="text-muted"><i class="fa fa-map-university" style="padding-right: 5px;"></i>NIT Durgapur,West Bengal,India</small></p>
+      <div class="card-body">
+        <h5 class="card-title">Nirmal Kumar Roy</h5>
+        <p class="card-text"> Branch Counselor</p>
+        <p class="card-text"><small class="text-muted">Professor,Department of Electrical Engineering </small></p>
+        <p class="card-text"><small class="text-muted"><i class="fa fa-map-university" style="padding-right: 5px;"></i>NIT Durgapur,West Bengal,India</small></p>
       
-      <p class="card-text"><small class="text-muted">
+        <p class="card-text">
+          <small class="text-muted">
         
         
-        <a href="mailto:nirmalkumar.roy@ee.nitdgp.ac.in"><i class="fa fa-envelope-o"></i></a>
-        <a href="https://nitdgp.ac.in/faculty/39ec2a27-7c15-49a0-adf0-69843b8f9a47"><i class="fa fa-university"></i></a>
-      </small></p>
+            <a href="mailto:nirmalkumar.roy@ee.nitdgp.ac.in"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://nitdgp.ac.in/faculty/39ec2a27-7c15-49a0-adf0-69843b8f9a47"><i class="fa fa-university"></i></a>
+          </small>
+        </p>
       
       
+      </div>
     </div>
   </div>
-  <div class="card">
+  <div class="row" style="justify-content: center;">
+    <div class="card shadow" style="max-width: 450px;margin-right: 10px; border: none;">
         
         <div style="overflow: hidden;max-height: 250px;">
              <img class="card-img-top" src="/media/members/CKsir.jpg" alt="img" style="">
@@ -1266,8 +1316,8 @@ header .logo img{
     
     <div class="card-body">
       <h5 class="card-title">Chiranjib Koley</h5>
-      <p class="card-text">Professor </p>
-      <p class="card-text"><small class="text-muted">Department of Electrical Engineering </small></p>
+      <p class="card-text">Faculty Advisor</p>
+      <p class="card-text"><small class="text-muted">Professor ,Department of Electrical Engineering </small></p>
       <p class="card-text"><small class="text-muted"><i class="fa fa-map-university" style="padding-right: 5px;"></i>NIT Durgapur,West Bengal,India</small></p>
       
       <p class="card-text"><small class="text-muted">
@@ -1278,19 +1328,19 @@ header .logo img{
       </small></p>
       
       
+      </div>
     </div>
-  </div>
-  <div class="card">
+    <div class="card shadow" style="max-width: 450px;margin-left: 10px; border: none;">
         
         <div style="overflow: hidden;max-height: 250px;">
              <img class="card-img-top" src="/media/members/ACsir.jpg" alt="img" style="">
              </div>
        
     
-    <div class="card-body">
+     <div class="card-body">
       <h5 class="card-title">Aniruddha Chandra</h5>
-      <p class="card-text">Professor </p>
-      <p class="card-text"><small class="text-muted">Department of Electronics and Communication Engineering </small></p>
+      <p class="card-text">Faculty Advisor</p>
+      <p class="card-text"><small class="text-muted">Professor ,Department of Electronics and Communication Engineering </small></p>
       <p class="card-text"><small class="text-muted"><i class="fa fa-map-university" style="padding-right: 5px;"></i>NIT Durgapur,West Bengal,India</small></p>
       
       <p class="card-text"><small class="text-muted">
@@ -1301,6 +1351,7 @@ header .logo img{
       </small></p>
       
       
+      </div>
     </div>
   </div>
   
@@ -1325,6 +1376,8 @@ header .logo img{
       <li class="junior-mem-2">Junior Coordinators</li>
     </ul>
   </div>
+
+
 
 
 
@@ -1460,7 +1513,7 @@ header .logo img{
             <div class="col-md-4 col-sm-6">
                  <div class="our-team">
                     <div class="pic">
-                        <img src="/media/members/anumoy.jpeg">
+                        <img src="/media/members/nophotomale.png">
                         <ul class="social">
                             <li><a href="https://www.facebook.com/anumoy.ganguly" class="fab fa-facebook"></a></li>
                             <li><a href="https://instagram.com/anumoyganguly/" class="fab fa-instagram"></a></li>
@@ -1479,7 +1532,7 @@ header .logo img{
                         <img src="/media/members/ishani.jpg">
                         <ul class="social">
                             <li><a href="https://www.facebook.com/ishani.nag.75" class="fab fa-facebook"></a></li>
-                            <li><a href="mailto:nagishani2@gmail.com" class="fas fa-envelope-open"></a></li>
+                            <li><a href="mailto:nagishani2@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -1509,7 +1562,7 @@ header .logo img{
                         <img class="ignoreMe " src="/media/members/Akhuli.jpg">
                         <ul class="social">
                             <li><a href="https://www.facebook.com/subhayan.akhuli.316" class="fab fa-facebook"></a></li>
-                            <li><a href="mailto:subhayan.akhuli@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:subhayan.akhuli@gmail.com" class="fa fa-envelope"></a></li>
                             <li><a href="https://www.linkedin.com/in/subhayanakhuli/" class="fab fa-linkedin"></a></li>
                         </ul>
                     </div>
@@ -1526,7 +1579,7 @@ header .logo img{
                         <img src="/media/members/Sugata.jpg" class="ignoreMe">
                         <ul class="social ignoreMe">
                             <li><a href="https://www.facebook.com/sugata.mondal.10" class="fab fa-facebook"></a></li>
-                            <li><a href="mailto:sugata.mondal@outlook.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:sugata.mondal@outlook.com" class="fa fa-envelope"></a></li>
                             <li><a href="https://www.linkedin.com/in/sugata-mondal-24ab2a159/" class="fab fa-linkedin"></a></li>
                         </ul>
                     </div>
@@ -1642,7 +1695,7 @@ header .logo img{
                         <ul class="social">
                             <li><a href="https://www.facebook.com/sayan.chowdhury1997" class="fab fa-facebook"></a></li>
                             <li><a href="https://instagram.com/chowdhury_sutirtha" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:sutirthachow97@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:sutirthachow97@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -1658,7 +1711,9 @@ header .logo img{
       </div>
     
     </section>
-      
+    
+    
+    
     
     
     
@@ -1714,7 +1769,7 @@ header .logo img{
                         <img src="/media/members/gagan2nd.JPG" class="ignoreMe">
                         <ul class="social ignoreMe">
                             <li><a href="https://www.facebook.com/gagan.gautam.35380399" class="fab fa-facebook"></a></li>
-                            <li><a href="mailto:gagangautamaa@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:gagangautamaa@gmail.com" class="fa fa-envelope"></a></li>
                             <li><a href="https://www.linkedin.com/in/gagan-gautam-92a22017a/" class="fab fa-linkedin"></a></li>
                         </ul>
                     </div>
@@ -1815,7 +1870,7 @@ header .logo img{
                         <ul class="social">
                             <li><a href="https://www.facebook.com/vimalkumar.dubey.982" class="fab fa-facebook"></a></li>
                             <li><a href="https://instagram.com/vimal_1922" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:vimalkumardubey10@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:vimalkumardubey10@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -1830,7 +1885,7 @@ header .logo img{
                         <img src="/media/members/dhrubajyoti.jpg">
                         <ul class="social">
                             <li><a href="https://www.facebook.com/dhrubojyoti.roy.1485" class="fab fa-facebook"></a></li>
-                            <li><a href="mailto:dhrubajyotifermat@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:dhrubajyotifermat@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -1857,11 +1912,11 @@ header .logo img{
             <div class="col-md-4 col-sm-6 ignoreMe">
                 <div class="our-team " >
                     <div class="pic ignoreMe">
-                        <img class="ignoreMe " src="/media/members/aditi.jpeg">
+                        <img class="ignoreMe " src="/media/members/nophotofemale.png">
                         <ul class="social">
                             <li><a href="https://www.facebook.com/aditi.sengupta.50364" class="fab fa-facebook"></a></li>
                             <li><a href="https://instagram.com/adicoded71" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:aditisengupta71@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:aditisengupta71@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content ignoreMe">
@@ -1897,7 +1952,7 @@ header .logo img{
                         <ul class="social ignoreMe">
                             <li><a href="https://www.facebook.com/profile.php?id=100037520656634" class="fab fa-facebook"></a></li>
                             <li><a href="http://Instagram.com/ak14aman" class="fab fa-instagram"></a></li>
-                            <li><a href="ak14aman2002@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="ak14aman2002@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content ignoreMe">
@@ -1906,6 +1961,9 @@ header .logo img{
                     </div>
                 </div>
             </div>
+    
+    
+            
     
            <div class="col-md-4 col-sm-6">
                 <div class="our-team">
@@ -1930,7 +1988,7 @@ header .logo img{
                         <img src="/media/members/nophotomale.png">
                         <ul class="social">
                             <li><a href="https://instagram.com/da_neutrino" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:chetan.sheoran.09.08.2001@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:chetan.sheoran.09.08.2001@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -1946,7 +2004,7 @@ header .logo img{
                         <ul class="social">
                             <li><a href="https://www.facebook.com/profile.php?id=100041229787528" class="fab fa-facebook"></a></li>
                             <li><a href="https://www.instagram.com/dshxx._/" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:kgpdishasharma@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:kgpdishasharma@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -1977,7 +2035,7 @@ header .logo img{
                         <img src="/media/members/Payel1st.jpg">
                         <ul class="social">
                             <li><a href="https://www.instagram.com/whimsical_viewfinder" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:payelbose.official@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:payelbose.official@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -1995,7 +2053,7 @@ header .logo img{
                         <ul class="social">
                             <li><a href="https://www.facebook.com/sagar.agarwal.1612" class="fab fa-facebook"></a></li>
                             <li><a href="https://www.instagram.com/sagar_agarwal05/" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:sagaragarwal612@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:sagaragarwal612@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -2030,7 +2088,7 @@ header .logo img{
                         <ul class="social">
                             <li><a href="https://www.facebook.com/sayan.mondal.tech" class="fab fa-facebook"></a></li>
                             <li><a href="https://www.instagram.com/dgp_sayan/" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:sayan.mondal.tech@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:sayan.mondal.tech@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -2043,10 +2101,10 @@ header .logo img{
             <div class="col-md-4 col-sm-6">
                <div class="our-team">
                     <div class="pic">
-                        <img src="/media/members/tanu.jpeg">
+                        <img src="/media/members/nophotomale.png">
                         <ul class="social">
                             <li><a href="https://instagram.com/tanujitghosh" class="fab fa-instagram"></a></li>
-                            <li><a href="mailto:tanujit0611@gmail.com" class="fab fa-envelope"></a></li>
+                            <li><a href="mailto:tanujit0611@gmail.com" class="fa fa-envelope"></a></li>
                         </ul>
                     </div>
                     <div class="team-content">
@@ -2082,18 +2140,19 @@ header .logo img{
     </div>
 
 
+
 <footer style="height: auto;padding:10px;padding-left: 18px;background-color: rgb(1, 54, 100); background-size: 90%;
     background-repeat: no-repeat;
     background-position: 70% 50%;">
   <div class="text contact_info" style=" ">
   <div class="text our-details">
-    <h3><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -30px;color:#49f;">IEEE SB <i class="text fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3>
+    <h3><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -30px;">IEEE SB <i class="text fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3>
     <p style="padding:2px;padding-left: 30px; font-size: 12px; font-weight: lighter;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
   </div>
   <div class="text contact-details" style="margin: 0 auto; width: 100%;">
     <div style="margin: 0 auto;
     margin-left:35%;">
-    <h3 class="card-title" style="padding-top: 16px; padding-bottom: 20px; color:#49f;">Contact Us</h3>
+    <h3 class="card-title" style="padding-top: 16px; padding-bottom: 20px">Contact Us</h3>
   <p><i class="text fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i>ieeesb.nitdgp@gmail.com</p>
   <p><i class="text fa fa-phone" aria-hidden="true" style="padding-right: 5px;"></i>
  8584970760</p>
@@ -2105,7 +2164,7 @@ header .logo img{
   <div style="margin: 0 auto;
     margin-left: 40%;
     ">
-    <h3 style="padding-bottom: 20px; padding-top: 16px;color:#49f;">Quick Links</h3>
+    <h3 style="padding-bottom: 20px; padding-top: 16px;">Quick Links</h3>
   <p><i class="text fa fa-users" aria-hidden="true" style="padding-right: 5px;"></i><a href="{% url 'thereg:members' %}">Our Team</a></p>
   <p><i class="text fa fa-calendar-check-o " aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'thereg:events' %}" >Events</a></p>
   <p><i class="text fa fa-home" aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'index' %}" >Home</a></p>
