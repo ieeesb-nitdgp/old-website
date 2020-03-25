@@ -20,6 +20,7 @@ body{
     justify-content: space-around;
 }
     .card{
+        box-shadow: 0 1px 14px 1px rgba(0, 0, 0, 0.08);
         flex: 32.33%;
         margin-top: 20px;
         max-width: 32.33% !important;
@@ -73,8 +74,9 @@ body{
 </style>
 </head>
 <body>
-    <div style="position: relative; width: 0px;overflow: visible;">
-    <div class="back-style"></div></div>
+    <!--div style="position: relative; width: 0px;overflow: visible;">
+    <div class="back-style"></div></div-->
+    <h2 class="title-main" style="margin-bottom: 40px;">All Activities</h2>
 <div class="container" style="margin-bottom: 120px; margin-top: 60px;">
     
     {% for post in post_list %}
@@ -86,7 +88,7 @@ body{
         {% endif %}
     
     <div class="card-body">
-      <h5 class="card-title">{{post.title }}</h5>
+        <h2 class="title" style="font-weight: 500; font-size:xx-large; overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;">{{post.title }}</h2>
       <p class="card-text"><small class="text-muted"><i class="fa fa-calendar-check-o" style="padding-right: 3px;"></i>  {{ post.event_date}}</small></p>
       <p class="card-text"><small class="text-muted"><i class="fa fa-map-marker" style="padding-right: 5px;"></i>    NIT Durgapur,India</small></p>
       
