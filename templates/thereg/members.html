@@ -140,7 +140,9 @@ body{
 }
 
 
-
+.team-container{
+  height: 260vh;
+  }
 
 
 
@@ -2226,6 +2228,11 @@ header .logo img{
     var mem_height = $(".active-mem").height();
     var list_height = $(".team-list").height();
     $(".team-container").css("height",mem_height+list_height+200+"px");
+    window.setTimeout(function(){
+      var mem_height = $(".active-mem").height();
+      var list_height = $(".team-list").height();
+      $(".team-container").css("height",mem_height+list_height+200+"px");
+  }, 3000);
   })
 </script>
 
