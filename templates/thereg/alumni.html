@@ -486,64 +486,72 @@
 
 
 
-      /*///////////contact info footer////////////*/
+
+/*///////////contact info footer////////////*/
 
 
+.contact_info{
+  position: relative;
+  
+  right: 0; 
+  max-width: 99%;
+  bottom: 0px;
+  color: #fff;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-gap: 20px;
+  
+
+    
+  
+}
+.contact_info p{
+  font-size: 13px;
+  
+}
+.contact_info h3{
+ color: #365dc2;
+ font-size: 19px;
+ font-weight: bolder;
+}
+.contact_info p a{
+  color: #fff;
+  margin-top: -2px;
+  font-size: 13px;
+}
+ @media only screen and (max-width: 1200px){
+      
+    }
+ @media only screen and (max-width: 800px){
       .contact_info{
-        position: relative;
-
-        right: 0;
-        max-width: 99%;
-        bottom: 0px;
-        color: #fff;
-        padding: 2%;
-        display: grid;
-        grid-template-columns: 1.2fr 1fr 1fr;
-        grid-gap: 20px;
-
-
-
-
-      }
-      .contact_info p{
-        font-size: 13px;
+        grid-template-columns: 1fr;
 
       }
       .contact_info h3{
-       color: #365dc2;
-       font-size: 19px;
-       font-weight: bolder;
+        font-size: 1.8em !important;
+      }
+      .contact_info p{
+        font-size: 1.2em !important;
       }
       .contact_info p a{
-        color: #fff;
-        margin-top: -2px;
-        font-size: 13px;
+        font-size: 1.2em !important;
       }
-       @media only screen and (max-width: 1200px){
+      .contact_info .contact-details div, .contact_info .about-contact-details div{
+        margin-left: 30px !important;
+        
+      }
+      .switch_container{
+        transform: scale(1.5);
+      }
+    }
 
-          }
-       @media only screen and (max-width: 800px){
-            .contact_info{
-              grid-template-columns: 1fr;
 
-            }
-            .contact_info h3{
-              font-size: 1.8em !important;
-            }
-            .contact_info p{
-              font-size: 1.2em !important;
-            }
-            .contact_info p a{
-              font-size: 1.2em !important;
-            }
-            .contact_info .contact-details div, .contact_info .about-contact-details div{
-              margin-left: 30px !important;
 
-            }
-            .switch_container{
-              transform: scale(1.5);
-            }
-          }
+
+
+
+
 
 
 
@@ -989,8 +997,14 @@
 
 
       @media only screen and (max-width: 990px){
-      #members-heading{
+      #alumni-heading{
         font-size: 67px !important;
+      }
+
+      .display-4
+
+      {
+      	font-size: 1.6em;
       }
 
           .container .row{
@@ -1203,7 +1217,7 @@
     </header>
 
     <span
-      id="members-heading theitem"
+      id="alumni-heading theitem"
       class="jumbotron"
       style=" 
        
@@ -1224,7 +1238,7 @@
       "
       ><font
         class="display-4"
-        style=" font-weight: 400; text-transform: uppercase;"
+        style="font-weight: 400; text-transform: uppercase;"
         >Alumni</font
       >
     </span>
