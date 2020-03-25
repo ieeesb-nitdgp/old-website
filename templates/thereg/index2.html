@@ -51,6 +51,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway+Dots&display=swap" rel="stylesheet">
@@ -60,6 +61,7 @@
   
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
@@ -4723,34 +4725,85 @@ section.stats-ieee{
 
 .spns-container .row{
   margin: 0 auto;
-
+  align-items: center;
   justify-content: center;
 }
 .spns-container .client-logo{
   background: transparent;
-  margin: 10px;
-  max-width: 22%;
+  margin: 5px;
+  max-width: 15%;
 }
 .spns-container .client-logo{
   padding: 0px!important;
   text-align: center;
-  max-height: 300px;
+  
   overflow: hidden;
 }
+.spns-container .client-logo figure{
+  padding-top: 20px;
+}
 .spns-container .client-logo figure img{
-  margin-top: 50%;
-  transform: translateY(-50%);
+  margin: 0 auto;
 }
 
 
-
-
+.testinomials .swiper-slide{
+ 
+  margin: auto;
+  max-height: unset;
+  
+}
+.testinomials .swiper-slide .card .quoted{
+  padding-top: 50px;
+}
+.testinomials .swiper-slide .card .quoted i{
+  color: #49f;
+}
+.testinomials .swiper-slide .card{
+  margin: 40px;
+  min-height: 400px;
+  overflow: hidden;
+  padding: 20px;
+  vertical-align: middle;
+}
+.testinomials .swiper-slide .card .title{
+  font-size: 1.9em;
+  font-weight: 400;
+}
+.testinomials .swiper-slide h4{
+  overflow: visible;
+}
+.testinomials .swiper-container{
+  justify-content: space-between;
+}
+.testinomials .swiper-slide-prev{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 
 
 
 
 
 /*dark theme update*/
+
+.dark_body .ieee-container .col-lg-5{
+  background: #030303;
+    filter: none;
+}
+.dark_body .testinomials .swiper-slide .card{
+  background: #191919;
+  color: #fff;
+}
+.dark_body .testinomials .swiper-slide .card p{
+  color: #e9e9e9;
+}
+.dark_body .testinomials .swiper-slide .card span font{
+  color: #f9f9f9!important;
+}
+
+
+
 
 .dark_body .spns-container .client-logo{
   background: #fff;
@@ -4872,7 +4925,7 @@ section.stats-ieee{
           <li><a class="text navbar-link" href="{% url 'thereg:register' %}">Register</a></li>
             <li><a class="text navbar-link" href="{% url 'thereg:user_login' %}">Login</a></li>
           {% endif %}-->
-         
+          <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
           
             <li class=""><a href="{% url 'thereg:events' %}">Activities</a></li>
           
@@ -5159,7 +5212,7 @@ section.stats-ieee{
 
 
 <section class="text wrapper" id="joinieee" style=" margin-left: 0px; overflow: hidden; width: 99vw!important; height: auto!important; margin: 0; padding: 60px; padding-bottom: 10px;">
-  <div class="text thebackgroundieee" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000" style="background:linear-gradient(0deg, rgba(255,255,255,0.95),rgba(255,255,255,0.95)),url('http://i.xp.io/1iiZZClv.png'); height: auto; background-size: 80%;background-repeat: no-repeat;border: none; border-radius: 0.222rem;">
+  <div class="text thebackgroundieee" data-aos="fade-up" data-aos-offset="20" data-aos-duration="1000" style="background:linear-gradient(0deg, rgba(255,255,255,0.99),rgba(255,255,255,0.99)),url('http://i.xp.io/1iiZZClv.png'); height: auto; background-size: 80%;background-repeat: no-repeat;border: none; border-radius: 0.222rem;">
   
   <div class="text ieee-container">
   <div class="text ieee-content" style="padding: 40px; font-weight: 400;">
@@ -5170,9 +5223,25 @@ section.stats-ieee{
     background-repeat: no-repeat;
     background-position-x: 70%;
     border-bottom: 1px solid ;">Why to join IEEE?</h3>
-    <h6 class="text row text card-text" style="font-weight: 400; padding-bottom: 40px; font-size: 16px; color: #546071; padding: 40px;">IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.When you join IEEE, you join a community of over 425,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate. IEEE Membership provides you with the resources and opportunities you need to keep on top of changes in technology; get involved in standards development; network with other professionals in your local area or within a specific technical interest; mentor the next generation of engineers and technologists, and so much more. <span class="span" style="overflow: visible;">For more info visit <a href="https://www.ieee.org/" style="color: #49f;line-height: 1.2em;padding: 1px;">www.ieee.org</a></span> <br>
+    <div class="row">
+    <h6 class="text row text card-text" style="font-weight: 400; padding-bottom: 40px; font-size: 16px; color: #546071; padding: 40px;">IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.When you join IEEE, you join a community of over 425,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate. IEEE Membership provides you with the resources and opportunities you need to keep on top of changes in technology; get involved in standards development; network with other professionals in your local area or within a specific technical interest; mentor the next generation of engineers and technologists, and so much more. <span style="overflow: visible;">For more info about IEEE <a href="https://www.ieee.org/" style="color: #49f;padding: 1px; ">visit ieee.org</a></span>
 
     </h6>
+
+    <div class="row" style="max-width: 80%; justify-content: center;margin: 0 auto;">
+      
+      <div class="col-lg-5" style="padding:30px;box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.05); font-size: 16px; margin: 10px;">
+        <h2 class="title" style="border-bottom: 1px solid; padding: 10px 0px;
+            font-size: 1.6em;
+            margin-bottom: 20px;">IEEE Membership</h2>
+        To join this community of over 425,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate <a href="https://www.ieee.org/membership/join/index.html" style="color: #49f;">visit ieee/membership</a> and obtain your membership at the earliest.</div>
+      <div class="col-lg-5" style="padding: 30px;box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.05); font-size: 16px;margin: 10px;">
+        <h2 class="title" style="border-bottom: 1px solid;padding: 10px 0px;
+            font-size: 1.6em;
+            margin-bottom: 20px; ">IEEE Societies</h2>
+        IEEE Society members stay technically current, network with colleagues locally and abroad, and collaborate on research and projects with leading experts -- all while taking advantage of specialized opportunities.To know about the various IEEE societies <a href="https://www.ieee.org/communities/societies/index.html?WT.mc_id=com_lp_soc" style="color: #49f;">visit ieee/societies</a> </div>    
+    </div>
+    </div>
     
   </div>
  
@@ -5610,7 +5679,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
         ...
     </div>
     <!-- If we need pagination -->
-    <div class="text swiper-pagination"></div>
+
 
     <!-- If we need navigation buttons -->
     <div class="text swiper-button-prev" style="overflow: unset;"></div>
@@ -5619,9 +5688,82 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
   
   </div>
 
-   
+   <h6 class="text text card-text" style="font-weight: 400;text-align: right; overflow:visible;padding-bottom: 70px; padding-top: 50px;margin-bottom: 0px; margin-right: 5px;" ><a href="{% url 'thereg:members' %}" style="border-radius:0.333rem!important;background-color: transparent; text-decoration: none;  color: #4090f0; padding: 1rem 2rem; border-radius: 0px;">All Members <font style="font-size: 1.1em;">→</font></a></h6>
 
 </section>
+
+
+
+
+
+
+
+
+
+<section class="testinomials">
+  <!--<div class="testimonials-slider owl-carousel owl-loaded owl-drag owl-theme owl-center">
+    
+    <div class="owl-stage-outer">
+      <div class="owl-stage">
+        <div class="owl-item cloned">hello</div>
+        <div class="owl-item cloned">go </div>
+        <div class="owl-item cloned">new</div>
+        <div class="owl-item cloned">now</div>
+      </div>
+    </div>
+  </div>-->
+<div class="swiper-container">
+  <div class="swiper-wrapper" style="">
+    <div class="swiper-slide" style=" padding: 10px; text-align: center;">
+      <div class="card shadow">
+      <div class="header">
+        <h4 class="title">Arindam Dutta</h4>
+        <small class="text-muted">Alumni 2019</small>
+      </div>
+      <div class="quoted" style="margin-top: 40px;">
+        <span style="text-align: center; ">
+       <font style="font-size: 90px;font-family: 'Jomolhari', serif;color: #49f; margin-top: 10px; padding-top: 20px; line-height: 0.12em;">&#8220;</font></span>
+        <p style="font-size: 14px; margin-top: -20px;">
+        Being a part of the team that got things under way for IEEE SB NITD was indeed an enriching experience for me. We managed to form an outstanding team and organize some amazing events. These social interactions, formal and informal, invariably motivated me to get started with research. Today, I’m addicted to it. 
+      </p></div>
+      </div>
+    </div>  
+    <div class="swiper-slide" style="padding: 10px; text-align: center;">
+      <div class="card shadow">
+      <div class="header">
+        <h4 class="title">Aniq Ur Rahman</h4>
+        <small class="text-muted">Alumni 2019</small>
+      </div>
+      <div class="quoted" style="margin-top: 20px;">
+        <span style="text-align: center; margin-top: 10px;">
+       <font style="font-size: 90px;font-family: 'Jomolhari', serif;color: #49f; margin-top: 10px; line-height: 0.12em;">&#8220;</font></span>
+        <p style="font-size: 14px; margin-top: -30px">
+          "Managing the IEEE Student Branch along with a bunch of enthusiastic people was an experience which cannot be put into words, still I'll mention a few takeaways which I think has helped me develop as a person. It made me realise that "collaboration is the key" and following that we worked together with other societies and clubs on campus, to conduct events focused on research. I apply this finding in my professional life to work on research projects with collaborators across the globe. Working in IEEE SB reinforced my love for research which fuels my daily life."
+        </p></div>
+    </div> 
+  </div>
+    
+    
+    
+   
+  </div>
+  <div class="text swiper-pagination"></div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5646,36 +5788,36 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
   </h2>
   <div class="spns-container" style="padding: 80px;">
     <div class="row" style="padding-bottom: 30px;">
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron">
-                    <figure class="image"><a href="http://ewh.ieee.org/r10/calcutta/"><img src="media/images/IEEE_kol_logo.png" width="200"  alt="IEEE Kolkata Section"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron">
+                    <figure class="image"><a href="http://ewh.ieee.org/r10/calcutta/"><img src="media/images/IEEE_kol_logo.png" width="100"  alt="IEEE Kolkata Section"></a></figure>
                 </div>
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://www.computer.org/"><img src="media/images/cs-logo-2.png" width="200"  alt="IEEE Computer Society"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://www.computer.org/"><img src="media/images/cs-logo-2.png" width="100"  alt="IEEE Computer Society"></a></figure>
                 </div>
                
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://ieee.jaduniv.org/"><img src="media/images/sb1.png" width="200"  alt="IEEE SB JU"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://ieee.jaduniv.org/"><img src="media/images/sb1.png" width="100"  alt="IEEE SB JU"></a></figure>
                 </div>
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://unity.com/"><img src="media/images/Official_unity_logo.png" width="200"  alt="Unity"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://unity.com/"><img src="media/images/Official_unity_logo.png" width="100"  alt="Unity"></a></figure>
                 </div>
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://gdgkolkata.org/"><img src="media/images/gdg_kolkata.png" width="200" alt="GDG Kolkata"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://gdgkolkata.org/"><img src="media/images/gdg_kolkata.png" width="100" alt="GDG Kolkata"></a></figure>
                 </div>
 
 
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="media/images/global.png" width="200" style="" alt="Globalshapers"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="media/images/global.png" width="100" style="" alt="Globalshapers"></a></figure>
                 </div>
                 
-                 <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://software.intel.com/en-us/"><img src="media/images/intel.png" width="200" style="" alt="Intel Software"></a></figure>
+                 <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://software.intel.com/en-us/"><img src="media/images/intel.png" width="100" style="" alt="Intel Software"></a></figure>
                 </div>
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://www.cisco.com/"><img src="media/images/cisco.png" width="200" style="" alt="CISCO"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://www.cisco.com/"><img src="media/images/cisco.png" width="100" style="" alt="CISCO"></a></figure>
                 </div>
-                <div class="client-logo col-lg-3 col-md-6 col-sm-12 shadow jumbotron" style="max-height: 150px;">
-                    <figure class="image"><a href="https://www.townscript.com/"><img style=" margin-top: 30%;" src="media/images/4.png" width="200" alt="Townscript"></a></figure>
+                <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
+                    <figure class="image"><a href="https://www.townscript.com/"><img style=" " src="media/images/4.png" width="100" alt="Townscript"></a></figure>
                 </div>
                 
                 
@@ -5867,7 +6009,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
   if (window.matchMedia("(min-width: 800px)").matches){
     sidescountperview =3;
   }
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.ieee-team .swiper-container', {
     // Optional parameters
     
     //loop: true,
@@ -5893,6 +6035,50 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: sidescountperview,
+
+      
+   
+  })
+  </script>
+
+
+<script>
+  var sidescountperview =1;
+  if (window.matchMedia("(min-width: 800px)").matches){
+    sidescountperview =2;
+  }
+  var mySwiper = new Swiper ('.testinomials .swiper-container', {
+    // Optional parameters
+    
+    loop: true,
+    updateOnWindowResize: true,
+   
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+      },
+      keyboard: {
+        enabled: true,
+      },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+        delay: 8500,
+        disableOnInteraction: false,
+      },
+
+      effect: 'slide',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: sidescountperview,
+
       
    
   })
@@ -6650,9 +6836,12 @@ else {
 
 
 <script type="text/javascript">
+    
   jQuery(document).ready(function ($){
     
-      setTimeout(function(){ $(".loading-start").css("display","none"); }, 3000);
+      setTimeout(function(){ $(".loading-start").css("display","none"); }, 5000);
+
+      
     
     
 
