@@ -534,10 +534,34 @@ body{
   margin-top: -2px;
   font-size: 13px;
 }
- @media only screen and (max-width: 1200px){
-      
-    }
+
  @media only screen and (max-width: 800px){
+      .contact_info{
+        display: block;
+
+      }
+      .contact_info h3{
+        font-size: 1.8em !important;
+      }
+      .contact_info p{
+        font-size: 1.2em !important;
+      }
+      .contact_info p a{
+        font-size: 1.2em !important;
+      }
+      .contact_info .contact-details div, .contact_info .about-contact-details div{
+        margin-left: 30px !important;
+        
+      }
+      .switch_container{
+        transform: scale(1.5);
+      }
+    }
+@media only screen and (max-width: 900px){
+  .facad-adv .card.shadow{
+    max-width: 100%!important;
+    width: unset!important;
+  }
       .contact_info{
         grid-template-columns: 1fr;
 
@@ -559,7 +583,6 @@ body{
         transform: scale(1.5);
       }
     }
-
 
 
 
@@ -782,11 +805,61 @@ header .logo{
 
 
 
+@media only screen and (max-width:980px) {
 
+.facad-adv .card.shadow{
+    max-width: 100%!important;
+    width: unset!important;
+  }
+  header{
+    height: 200px!important;
+  }
+  header .logo img{
+    height: 200px!important;
+  }
+  .facad-adv{
+    overflow-x: hidden!important;
+  }
+  .facad-adv .theadv{
+    display: block!important;
+    overflow-x: hidden;
+  }
+  footer{
+    margin-top: 50px;
+        padding-bottom: 50px;
+  }
+  footer p.text{
+    font-size: 1.6em!important;
+  }
+      .text.contact_info{
+        display: block!important;
+        font-size: 1.9rem;
+        
 
+      }
+      .contact_info h3 img{
+        max-height: 300px!important;
+      }
+      .contact_info h3{
+        font-size: 2.5em !important;
+        border-bottom: 2px solid;
+        margin-bottom: 50px;
+      }
+      .contact_info p{
+        font-size: 1.2em!important;
+      }
+      .contact_info p a{
+        font-size: 1.2em !important;
+      }
+      .contact_info .contact-details div, .contact_info .about-contact-details div{
+        margin-left: 30px !important;
+        
+      }
+      .switch_container{
+        transform: scale(3.5);
+      }
 
-
-
+    }
 .row .col-md-4.col-sm-6{
   flex: 33.33%;
 }
@@ -869,6 +942,16 @@ header img{
 .clicked::before{
   margin-top: 16px;
 }
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -996,6 +1079,11 @@ header .logo{
 
 
 
+
+
+
+
+
 }
 
 
@@ -1064,13 +1152,13 @@ header .logo{
 .hamburger-menu{
   height: 80px;
   width: 80px;
-  top: 20px;
+  top: 40px;
   cursor: pointer;
   transform: translateX(300%);
   overflow: visible;
   background-color: rgb(0,0,0,0);
   position: absolute;
-  margin-top: 15px;
+  margin-top: 35px;
   right: 19px;
   margin-right: 25px;
   z-index: 2222888888;
@@ -1158,10 +1246,11 @@ header ul li{
 
 header .logo{
   float: none !important;
+  margin-top: -10px;
 }
 header .logo img{
-  height: 140px !important;
-  margin-top: -20px;
+  height: 200px !important;
+  margin-top: 0px!important;
 }
 
 }
@@ -1200,31 +1289,10 @@ header .logo img{
 .facad-adv .card.shadow{
   box-shadow: 0 1px 14px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px!important;
-  max-width: 350px!important;
+  
 }
 
- @media only screen and (max-width: 800px){
-      .contact_info{
-        grid-template-columns: 1fr;
 
-      }
-      .contact_info h3{
-        font-size: 1.8em !important;
-      }
-      .contact_info p{
-        font-size: 1.2em !important;
-      }
-      .contact_info p a{
-        font-size: 1.2em !important;
-      }
-      .contact_info .contact-details div, .contact_info .about-contact-details div{
-        margin-left: 30px !important;
-        
-      }
-      .switch_container{
-        transform: scale(1.5);
-      }
-    }
 </style>
 
 
@@ -1234,13 +1302,14 @@ header .logo img{
 <div class="hamburger-menu"></div>
 
 <header style="display: block;">
-  <div class="logo" style="float: left; padding-left: 30px;"><img style="margin-top: -20px;" src= "http://i.xp.io/yO2IRLu.svg+xml" height="140px"></div>
+  <div class="logo" style="float: left; padding-left: 30px;"><a href="{% url 'index' %}"><img style="margin-top: -20px;" src= "http://i.xp.io/yO2IRLu.svg+xml" height="140px"></a></div>
   <ul id="header-list" style="float: right; padding-top: 30px;">
     <!--/media/images/ieeesb_logo.svg-->
 
           <li><a class="" href="{% url 'index' %}">Home</a></li>
 
            <li><a class="" href="{% url 'thereg:members' %}">Team</a></li>
+           <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
            <li><a href="{% url 'thereg:events' %}">Events</a></li>
          
            <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
@@ -1306,7 +1375,7 @@ header .logo img{
       </div>
     </div>
   </div>
-  <div class="row" style="justify-content: center;">
+  <div class="row theadv" style="justify-content: center;">
     <div class="card shadow" style="max-width: 450px;margin-right: 10px; border: none;">
         
         <div style="overflow: hidden;max-height: 250px;">
@@ -2147,7 +2216,7 @@ header .logo img{
   <div class="text contact_info" style=" ">
   <div class="text our-details">
     <h3><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -30px;">IEEE SB <i class="text fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3>
-    <p style="padding:2px;padding-left: 30px; font-size: 12px; font-weight: lighter;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
+    <p style="padding:2px;padding-left: 30px; font-size: 14px; font-weight: lighter;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
   </div>
   <div class="text contact-details" style="margin: 0 auto; width: 100%;">
     <div style="margin: 0 auto;
