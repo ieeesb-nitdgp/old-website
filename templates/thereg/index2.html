@@ -61,7 +61,7 @@
   
 
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
     <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
@@ -4907,6 +4907,7 @@ section.stats-ieee{
           <li><a class="text " href="#home">Home</a></li>
 			    <li class="text"><a href="#about-us">About Us</a></li>
           <li class="text "><a href="#ieee-team">Team</a></li>
+          <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
           
                
           {# Some logic on what to display for last item#}
@@ -4925,7 +4926,7 @@ section.stats-ieee{
           <li><a class="text navbar-link" href="{% url 'thereg:register' %}">Register</a></li>
             <li><a class="text navbar-link" href="{% url 'thereg:user_login' %}">Login</a></li>
           {% endif %}-->
-          <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
+        
           
             <li class=""><a href="{% url 'thereg:events' %}">Activities</a></li>
           
@@ -5396,6 +5397,26 @@ section.stats-ieee{
 
 </section>
 
+
+
+<section class="blog-section" style=" background: #f9f9f9;">
+  
+  <div class="row">
+    <div class="col-lg-8" style="padding: 10% 2rem;">
+      <h4 style="margin-left: 80px; overflow: visible;font-weight: 400;">
+      <font style="">We Presents you</font>
+          <br><font style="padding-left: 50px; font-size: 1.3em;">our official blog <a href="https://insight.ieeesbnitdgp.com"> <font style="font-family: 'Jomolhari', serif; font-size: 1.4em; color: #f24;">insight </font></a>!</font></h4>
+    </div>
+    <div class="col-lg-4" style="padding: 30px;">
+      <div class="card shadow" style="border: none; margin: 0 auto;margin-top: 30px;
+    margin-right: 20px;">
+        <div class="card-img" style="">
+          <img width="100%" src="http://i.xp.io/1uuMUNnp.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!--<section class="TechX-cover"  style="overflow: hidden;
