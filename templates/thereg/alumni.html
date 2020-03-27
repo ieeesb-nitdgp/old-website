@@ -520,10 +520,37 @@
   margin-top: -2px;
   font-size: 13px;
 }
- @media only screen and (max-width: 1200px){
-      
-    }
+
  @media only screen and (max-width: 800px){
+      .contact_info{
+        display: block;
+
+      }
+      .contact_info h3{
+        font-size: 1.8em !important;
+      }
+      .contact_info p{
+        font-size: 1.2em !important;
+      }
+      .contact_info p a{
+        font-size: 1.2em !important;
+      }
+      .contact_info .contact-details div, .contact_info .about-contact-details div{
+        margin-left: 30px !important;
+        
+      }
+      .switch_container{
+        transform: scale(1.5);
+      }
+    }
+
+
+    
+@media only screen and (max-width: 900px){
+  .facad-adv .card.shadow{
+    max-width: 100%!important;
+    width: unset!important;
+  }
       .contact_info{
         grid-template-columns: 1fr;
 
@@ -548,12 +575,64 @@
 
 
 
+@media only screen and (max-width:980px) {
 
+.facad-adv .card.shadow{
+    max-width: 100%!important;
+    width: unset!important;
+  }
+  header{
+    height: 200px;
+  }
+  header .logo img{
+    height: 200px!important;
+  }
+  .facad-adv{
+    overflow-x: hidden!important;
+  }
+  .facad-adv .theadv{
+    display: block!important;
+    overflow-x: hidden;
+  }
+  footer{
+    margin-top: 50px;
+        padding-bottom: 50px;
+  }
+  footer p.text{
+    font-size: 1.6em!important;
+  }
+      .text.contact_info{
+        display: block!important;
+        font-size: 1.9rem;
+        
 
+      }
+      .contact_info h3 img{
+        max-height: 300px!important;
+      }
+      .contact_info h3{
+        font-size: 2.5em !important;
+        border-bottom: 2px solid;
+        margin-bottom: 50px;
+      }
+      .contact_info p{
+        font-size: 1.2em!important;
+      }
+      .contact_info p a{
+        font-size: 1.2em !important;
+      }
+      .contact_info .contact-details div, .contact_info .about-contact-details div{
+        margin-left: 30px !important;
+        
+      }
+      .switch_container{
+        transform: scale(3.5);
+      }
 
-
-
-
+    }
+.row .col-md-4.col-sm-6{
+  flex: 33.33%;
+}
 
 
 
@@ -1006,7 +1085,7 @@
       .display-4
 
       {
-      	font-size: 1.6em;
+      	font-size: 2em;
       }
 
           .container .row{
@@ -1117,7 +1196,7 @@
         position: relative;
         height: 100px;
 
-        background-color: #202692 !important;
+        background-color: #49f !important;
         transition: height 0.5s ease-in-out;
       }
 
@@ -1168,7 +1247,28 @@
       }
 
 
-
+.dark_body footer{
+  background: #242426!important;
+}
+.dark_body #contact-us .row{
+  background: #131313!important;
+}
+.dark_body #contact-us .formcontainer{
+  background: #252528!important
+}
+.dark_body #contact-us .formcontainer .contactForm{
+  background-color: transparent!important;
+}
+.dark_body .formBody form input{
+  border-color: #fff!important
+}
+.dark_body .formBody form textarea{
+  border-color: #fff!important;
+}
+.dark_body .blog-section{
+  color: #fefefe!important;
+  background: #191919!important;
+}
 
 
 
@@ -1670,6 +1770,68 @@
       </div>
     </footer>
   </body>
+
+<!--dark/light theme animation-->
+<script type="text/javascript">
+	
+
+		$("#dark").click(function(){
+
+		  $("body").css("background-color", "#000");
+		  
+		  
+		  $("section.about_ieee #about_division").css("background-color", "transparent");
+		  $("section.about_ieee #about_division .about_content_half").css("color", "#fff");
+		  $(".join_ieee").css("color", "#fff");
+		  $(".events_ieee").css("color", "#fff");
+           $("#dark").css("border-bottom", "1px solid #27f");
+		 document.getElementById("dark").innerHTML="";
+		 document.getElementById("light").innerHTML="light";
+		 $("#light").css("border-bottom", "1px solid #fff");
+   
+         $(".background_main").addClass("dark_main_back").removeClass("light_main_back");
+         $("body").removeClass("light_body").addClass("dark_body");
+
+		});
+	
+		
+		
+	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+	
+
+		$("#light").click(function(){
+		  $("body").css("background-color", "");
+		  $(".background_main::after").css("background-color", "");
+		  $(".background_main::before").css("background-color", "");
+		  $("section.about_ieee #about_division").css("background-color", "");
+		  $("section.about_ieee #about_division .about_content_half").css("color", "");
+		  $(".join_ieee").css("color", "");
+		  $(".events_ieee").css("color", "");
+		   $("#light").css("border-bottom", "1px solid #27f");
+		 document.getElementById("dark").innerHTML="dark";
+		 document.getElementById("light").innerHTML="";
+		 $("#dark").css("border-bottom", "1px solid #f54595");
+		  $(".background_main").removeClass("dark_main_back").addClass("light_main_back");
+             $("body").removeClass("dark_body").addClass("light_body");
+		  
+		 
+		});
+	
+		
+		
+	
+</script>
+
+<!--end theme-->
+
+
   <script type="text/javascript">
     jQuery(document).ready(function($) {
       var teamcardWidth = document.getElementById("targetCard").offsetWidth;

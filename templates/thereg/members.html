@@ -133,6 +133,17 @@ body::-webkit-scrollbar-thumb:hover {
   padding-right: 5px;
 }
 @media only screen and (max-width: 980px){
+
+#members-heading{
+        font-size: 67px !important;
+      }
+
+      .display-4
+
+      {
+        font-size: 2em;
+      }
+
 .facad-adv .container .card{
   font-size: 2em!important;
   flex: 100% !important;
@@ -1258,7 +1269,28 @@ header .logo img{
 
 
 
-
+.dark_body footer{
+  background: #242426!important;
+}
+.dark_body #contact-us .row{
+  background: #131313!important;
+}
+.dark_body #contact-us .formcontainer{
+  background: #252528!important
+}
+.dark_body #contact-us .formcontainer .contactForm{
+  background-color: transparent!important;
+}
+.dark_body .formBody form input{
+  border-color: #fff!important
+}
+.dark_body .formBody form textarea{
+  border-color: #fff!important;
+}
+.dark_body .blog-section{
+  color: #fefefe!important;
+  background: #191919!important;
+}
 
 
 
@@ -2295,6 +2327,69 @@ header .logo img{
 
 
 </body>
+
+<!--dark/light theme animation-->
+<script type="text/javascript">
+  
+
+    $("#dark").click(function(){
+
+      $("body").css("background-color", "#000");
+      
+      
+      $("section.about_ieee #about_division").css("background-color", "transparent");
+      $("section.about_ieee #about_division .about_content_half").css("color", "#fff");
+      $(".join_ieee").css("color", "#fff");
+      $(".events_ieee").css("color", "#fff");
+           $("#dark").css("border-bottom", "1px solid #27f");
+     document.getElementById("dark").innerHTML="";
+     document.getElementById("light").innerHTML="light";
+     $("#light").css("border-bottom", "1px solid #fff");
+   
+         $(".background_main").addClass("dark_main_back").removeClass("light_main_back");
+         $("body").removeClass("light_body").addClass("dark_body");
+
+    });
+  
+    
+    
+  
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  
+
+    $("#light").click(function(){
+      $("body").css("background-color", "");
+      $(".background_main::after").css("background-color", "");
+      $(".background_main::before").css("background-color", "");
+      $("section.about_ieee #about_division").css("background-color", "");
+      $("section.about_ieee #about_division .about_content_half").css("color", "");
+      $(".join_ieee").css("color", "");
+      $(".events_ieee").css("color", "");
+       $("#light").css("border-bottom", "1px solid #27f");
+     document.getElementById("dark").innerHTML="dark";
+     document.getElementById("light").innerHTML="";
+     $("#dark").css("border-bottom", "1px solid #f54595");
+      $(".background_main").removeClass("dark_main_back").addClass("light_main_back");
+             $("body").removeClass("dark_body").addClass("light_body");
+      
+     
+    });
+  
+    
+    
+  
+</script>
+
+<!--end theme-->
+
+
+
 <script type="text/javascript">
     jQuery(document).ready(function ($){
 
