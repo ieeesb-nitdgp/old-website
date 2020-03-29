@@ -441,7 +441,36 @@ button#all{
 
  margin-left: ;
 }
+  
+  
+  
+
+.img-loader-container{
+  overflow: visible;
+}
+.img-loader-container img{
+  animation: pop-up 2s infinite ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes pop-up{
+  0%{
+    transform: scale(1);
+     filter: saturate(0.3);
+  }
+  50%{
+    transform: scale(1.4);
+    filter: saturate(1);
+  }
+  100%{
+    transform: scale(1);
+     filter: saturate(0.3);
+  }
+
+}
 @media only screen and (max-width: 990px){
+  .img-loader-container{
+    margin-top: 96%!important;
+  }
     .our-team{ margin-bottom: 0px; max-height: 350px; }
     button#next{
   margin-left: 50vw;
@@ -2232,6 +2261,13 @@ header .logo img{
     </div>
 
 
+  
+  <div class="loading-start" style="height: 100vh;width: 100vw; position: fixed; top: 0; left: 0; z-index: 8888888888888888; background-color: #000; ">
+  <div class="img-loader-container" style="max-width: 200px;margin-left: 50%;margin-top: 25%;transform: translate(-50%,-50%);">
+    <img src="http://i.xp.io/1zaaDD0W.png" width="190">
+  
+  </div>
+  </div>
 
     <footer style="height: auto;padding:10px;padding-left: 18px;background-color: rgb(1, 54, 100); background-size: 90%;
     background-repeat: no-repeat;
@@ -2470,14 +2506,15 @@ header .logo img{
 
 <script type="text/javascript">
   jQuery(document).ready(function ($){
+      setTimeout(function(){ $(".loading-start").css("display","none"); }, 5000);
     var mem_height = $(".active-mem").height();
     var list_height = $(".team-list").height();
-    $(".team-container").css("height",mem_height+list_height+200+"px");
+    $(".team-container").css("height","200vh");
     window.setTimeout(function(){
       var mem_height = $(".active-mem").height();
       var list_height = $(".team-list").height();
       $(".team-container").css("height",mem_height+list_height+200+"px");
-  }, 3000);
+  }, 9000);
   })
 </script>
 
