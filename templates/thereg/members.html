@@ -954,15 +954,6 @@ header img{
   margin-top: 16px;
 }
 
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -2242,48 +2233,54 @@ header .logo img{
 
 
 
-<footer style="height: auto;padding:10px;padding-left: 18px;background-color: rgb(1, 54, 100); background-size: 90%;
+    <footer style="height: auto;padding:10px;padding-left: 18px;background-color: rgb(1, 54, 100); background-size: 90%;
     background-repeat: no-repeat;
     background-position: 70% 50%;">
   <div class="text contact_info" style=" ">
   <div class="text our-details">
-    <h3><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -30px;">IEEE SB <i class="text fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3>
-    <p style="padding:2px;padding-left: 30px; font-size: 14px; font-weight: lighter;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
+    <h3 class="title-main" ><img src="http://i.xp.io/LJNAk3w.png" style="max-height: 100px; margin-top: -49px; style="margin-top: 0.01px;">IEEE SB <i class="text fa fa-angle-double-right" style="font-weight: lighter; transform: scaleY(1.5); margin-left: -5px; font-size: 11px;"></i></h3><br>
+    <p style="padding:2px;padding-left: 30px; font-size: 16px; font-weight:400;">The IEEE Student Branch, NIT Durgapur is a society of enthusiasts aimed at promoting research-related activities in the campus .Comprising of bright researchers, developers, speakers, and other contributors we are a society that welcomes in the era of better research prospects, on the campus.</p>
   </div>
   <div class="text contact-details" style="margin: 0 auto; width: 100%;">
     <div style="margin: 0 auto;
     margin-left:35%;">
-    <h3 class="card-title" style="padding-top: 16px; padding-bottom: 20px">Contact Us</h3>
-  <p><i class="text fa fa-envelope" aria-hidden="true" style="padding-right: 5px;"></i>ieeesb.nitdgp@gmail.com</p>
-  <p><i class="text fa fa-phone" aria-hidden="true" style="padding-right: 5px;"></i>
- 8584970760</p>
-  <p><i class="text fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i> <a href="https://www.facebook.com/nitdgpieeesociety/" style="text-decoration: none; color: #fff;">facebook/nitdgpieeesociety/</a></p>
-  <p><i class="text fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i><a href="https://www.instagram.com/ieeesb_nitdgp/" style="text-decoration: none; color: #fff;"> Instagram/ieeesbnitdgp</a></p>
+    <h3 class="title-main" style="padding-top: 16px; padding-bottom: 20px; margin-left:3px; font-size:20px">Contact Us</h3>
+        <p style="font-size: 16px;">NIT Durgapur <br>Mahatma Gandhi Avenue, Durgapur, <br> West Bengal,India</p>
+        <p style="font-size: 16px;"><i class="text fa fa-envelope fa-lg" aria-hidden="true" style="padding-right: 5px;"></i>ieeesb.nitdgp@gmail.com</p>
+        <p style="font-size: 16px;"><i class="text fa fa-phone fa-lg" aria-hidden="true" style="padding-right: 5px;"></i>
+        8584970760</p>
+        <div class="socila-sec" style="display: flex;flex-wrap: nowrap;">
+        <p style="float: left;"> <a href="https://www.facebook.com/nitdgpieeesociety/" style="text-decoration: none; color: #fff;"><i class="text fa fa-facebook-f fa-2x" aria-hidden="true" style="padding-right: 5px;"></i></a></p>&ensp;&ensp;
+        <p><a href="https://www.instagram.com/ieeesb_nitdgp/" style="text-decoration: none; color: #fff;"><i class="text fa fa-instagram fa-2x  " aria-hidden="true" style="padding-right: 5px;"></i></a></p>&ensp;&ensp;
+        <p><a href="https://www.linkedin.com/company/ieeesbnitdgp/" style="text-decoration: none; color: #fff;"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true" style="padding-right: 5px;"></i></a></p>  
+      </div>
   </div>
   </div>
 <div class="text about-contact-details" style="margin: 0 auto; width: 100%;">
   <div style="margin: 0 auto;
     margin-left: 40%;
     ">
-    <h3 style="padding-bottom: 20px; padding-top: 16px;">Quick Links</h3>
-  <p><i class="text fa fa-users" aria-hidden="true" style="padding-right: 5px;"></i><a href="{% url 'thereg:members' %}">Our Team</a></p>
-  <p><i class="text fa fa-calendar-check-o " aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'thereg:events' %}" >Events</a></p>
-  <p><i class="text fa fa-home" aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'index' %}" >Home</a></p>
+    <h3 class="title-main" style="padding-bottom: 20px; padding-top: 16px;margin-left:3px; font-size:20px; color:#49f;">Quick Links</h3>
+  <p><i class="text fa fa-users fa-lg" aria-hidden="true" style="padding-right: 5px;"></i><a href="{% url 'thereg:members' %}" style="font-size: 16px;">Our Team</a></p>
+  <p><i class="text fa fa-graduation-cap fa-lg" aria-hidden="true" style="padding-right: 5px;"></i><a href="{% url 'thereg:alumni' %}" style="font-size: 16px;">Alumni</a></p>
+  <p><i class="text fa fa-calendar-check-o fa-lg" aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'thereg:events' %}" style="font-size: 16px;">Activities</a></p>
+  <p><i class="text fa fa-home fa-lg" aria-hidden="true" style="padding-right: 5px;"></i> <a href="{% url 'index' %}" style="font-size: 16px;">Home</a></p>
 
   
   </div>
   </div>
-
 </div>
+
  
-  <p class="text" style="text-align: center; color: #fff; font-size: 10px; font-weight: 200; padding-top: 40px;">&copy;Copyright IEEE Student Branch NIT Durgapur. All Rights Reserved</p>
-  <div class="text digital-clock" style="font-size: 13px;">00:00:00</div>
+  <p class="text" style="text-align: center; color: #fff; font-size: 20px !important; font-weight: 200; padding-top: 40px;">&copy;Copyright IEEE Student Branch NIT Durgapur. All Rights Reserved</p>
+  <div class="text digital-clock" style="font-size: 16px; color:#fff; text-align:center">00:00:00</div><br><br>
   <div style="position: relative; overflow: visible;">
    <div class="text switch_container" style="position: absolute; z-index: 99999;cursor: pointer;bottom: 50px; left:60px; background-color: rgba(100,100,100,0);border-radius: 5px ;font-size: 8px; color: #fff; font-family: monospace; display: grid; grid-template-columns: 1fr 1fr; ">
-  <div id="dark" style="color: #f54595;display: block; width: 25px; text-align: center; border-bottom: 1px solid #f54595">dark</div>
-<div id="light" style="color: #fff;display: block; width: 25px; border-bottom: 1px solid #249; text-align: center;"></div>
+  <div id="dark" style="color: #f54595;display: block; width: 25px; text-align: center; font-size:16px; border-bottom: 1px solid #f54595">dark</div>
+<div id="light" style="color: #fff;display: block; width: 25px; border-bottom: 1px solid #249; font-size:16px; text-align: center;"></div>
 </div>
 </div>
+
 </footer>
 
 
@@ -2606,5 +2603,47 @@ if (window.matchMedia("(max-width: 1280px)").matches) {
 });
 </script>
 
+<script type="text/javascript">
+  
+  $(document).ready(function() {
+  clockUpdate();
+  setInterval(clockUpdate, 1000);
+})
+
+function clockUpdate() {
+  var date = new Date();
+  
+  function addZero(x) {
+    if (x < 10) {
+      return x = '0' + x;
+    } else {
+      return x;
+    }
+  }
+
+  function twelveHour(x) {
+    if (x > 12) {
+      return x = x - 12;
+    } else if (x == 0) {
+      return x = 12;
+    } else {
+      return x;
+    }
+  }
+
+  var h = addZero(twelveHour(date.getHours()));
+  var m = addZero(date.getMinutes());
+  var s = addZero(date.getSeconds());
+  if(date.getHours()>12){
+    var t = "PM"
+
+  }
+  else{
+    var t = "AM"
+  }
+
+  $('.digital-clock').text(h + ':' + m + ':' + s + " " +t)
+}
+</script>
 
 </html>

@@ -53,7 +53,15 @@ body{
         border-radius: 100% 63% 100% 0% / 100% 14% 17% 37%  ;
         background-color: #363dc2; 
     }
-
+    .dark_body .card{
+        background-color: #191919;
+      }
+    .dark_body .card-text{
+        color: #fff;
+    }
+    .dark_body .title{
+        color: #fff;
+    }
     @media only screen and (max-width: 1200px){
       .card{
         flex: 48%;
@@ -61,12 +69,12 @@ body{
         max-width: 48% !important;
     }
     }
-    @media only screen and (max-width: 800px){
+    @media only screen and (min-width: 800px) and (max-width: 1200px){
       .card{
         flex: 100%;
         margin-top: 40px;
         max-width: 100% !important;
-    }
+        }
     }
     .card-img-top{
         opacity: 0.75;
@@ -74,22 +82,21 @@ body{
 </style>
 </head>
 <body>
-    <!--div style="position: relative; width: 0px;overflow: visible;">
-    <div class="back-style"></div></div-->
+    <br>
     <h2 class="title-main" style="margin-bottom: 40px;">All Activities</h2>
 <div class="container" style="margin-bottom: 120px; margin-top: 60px;">
     
     {% for post in post_list %}
     <div class="card">
         {% if not post.image.isempty %}
-        <div style="overflow: hidden;max-height: 250px;">
+        <div style="overflow: hidden;max-height: 100%;">
              <img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image.url }}" alt="img" style="">
              </div>
         {% endif %}
     
     <div class="card-body">
-        <h2 class="title" style="font-weight: 500; font-size:xx-large; overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;">{{post.title }}</h2>
-      <p class="card-text"><small class="text-muted"><i class="fa fa-calendar-check-o" style="padding-right: 3px;"></i>  {{ post.event_date}}</small></p>
+        <h2 class="title" style="font-weight: 500; font-size:xxx-large; overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;">{{post.title }}</h2>
+      <p class="card-text" ><small class="text-muted"><i class="fa fa-calendar-check-o fa-lg" style="padding-right: 3px;"></i>  {{ post.event_date}}</small></p>
       <p class="card-text"><small class="text-muted"><i class="fa fa-map-marker" style="padding-right: 5px;"></i>    NIT Durgapur,India</small></p>
       
       <p class="card-text">{{post.content|slice:":200" }}...</p>
