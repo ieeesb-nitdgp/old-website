@@ -4873,15 +4873,46 @@ section.stats-ieee{
 }
 .dark_body .blog-section{
   color: #fefefe!important;
-  background: #191919!important;
+  
+}
+.dark_body .blog-section .row{
+
+  background: rgba(25,25,25,0.95)!important;
 }
 
 
 
 
 
+.img-loader-container{
+  overflow: visible;
+}
+.img-loader-container img{
+  animation: pop-up 2s infinite ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes pop-up{
+  0%{
+    transform: scale(1);
+     filter: saturate(0.3);
+  }
+  50%{
+    transform: scale(1.4);
+    filter: saturate(1);
+  }
+  100%{
+    transform: scale(1);
+     filter: saturate(0.3);
+  }
+
+}
+
+
 
 @media screen and (max-width: 800px) {
+  .img-loader-container{
+    margin-top: 96%!important;
+  }
  .activities .smallscreen{
   display: grid!important;
   grid-template-columns: 1fr 1fr 1fr!important;
@@ -4912,6 +4943,8 @@ section.stats-ieee{
 			    <li class="text"><a href="#about-us">About Us</a></li>
           <li class="text "><a href="#ieee-team">Team</a></li>
           <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
+         
+
 
           
                
@@ -5016,17 +5049,17 @@ section.stats-ieee{
 
 	    <aside>
 	    	<nav>
-  <a href="https://www.facebook.com/nitdgpieeesociety/?ref=br_rs">
+  <a href="https://www.facebook.com/nitdgpieeesociety/?ref=br_rs" target="_blank">
 	 <p>fecebook</p>
 	<i class="text fa fa-facebook-f"></i>
    
   </a>
-  <a href="https://www.instagram.com/ieeesb_nitdgp/">
+  <a href="https://www.instagram.com/ieeesb_nitdgp/" target="_blank">
 	<p>instagram</p>
 	<i class="text fa fa-instagram"></i>
     
   </a>
-  <a href="https://www.linkedin.com/company/ieeesbnitdgp/about/">
+  <a href="https://www.linkedin.com/company/ieeesbnitdgp/about/" target="_blank">
 	<p>linkedin</p>
   <i class="text fa fa-linkedin"></i>
     
@@ -5043,8 +5076,11 @@ section.stats-ieee{
 
 
 <div class="loading-start" style="height: 100vh;width: 100vw; position: fixed; top: 0; left: 0; z-index: 8888888888888888; background-color: #000; ">
-
-  <div class="loader loader--style1" title="0" style="margin: 0 auto; width: 100%; ">
+  <div class="img-loader-container" style="max-width: 200px;margin-left: 50%;margin-top: 25%;transform: translate(-50%,-50%);">
+    <img src="http://i.xp.io/1zaaDD0W.png" width="190">
+  
+  </div>
+  <!--<div class="loader loader--style1" title="0" style="margin: 0 auto; width: 100%; ">
 
 
 <svg width="100" height="100" viewBox="0 0 300 300">
@@ -5071,6 +5107,7 @@ section.stats-ieee{
   <rect class="gradient" clip-path="url('#clip')" height="300" width="300"></rect>
 </svg>
 </div>
+-->
 
 
 </div>
@@ -5230,7 +5267,7 @@ section.stats-ieee{
     background-position-x: 70%;
     border-bottom: 1px solid ;">Why to join IEEE?</h3>
     <div class="row">
-    <h6 class="text row text card-text" style="font-weight: 400; padding-bottom: 40px; font-size: 16px; color: #546071; padding: 40px;">IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.When you join IEEE, you join a community of over 425,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate. IEEE Membership provides you with the resources and opportunities you need to keep on top of changes in technology; get involved in standards development; network with other professionals in your local area or within a specific technical interest; mentor the next generation of engineers and technologists, and so much more. <span style="overflow: visible;">For more info about IEEE <a href="https://www.ieee.org/" style="color: #49f;padding: 1px; ">visit ieee.org</a></span>
+    <h6 class="text row text card-text" style="font-weight: 400; padding-bottom: 40px; font-size: 16px; color: #546071; padding: 40px;">IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.When you join IEEE, you join a community of over 425,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate. IEEE Membership provides you with the resources and opportunities you need to keep on top of changes in technology; get involved in standards development; network with other professionals in your local area or within a specific technical interest; mentor the next generation of engineers and technologists, and so much more. <span style="overflow: visible;">For more info about IEEE <a href="https://www.ieee.org/" target="_blank" style="color: #49f;padding: 1px; ">visit ieee.org</a></span>
 
     </h6>
 
@@ -5240,12 +5277,12 @@ section.stats-ieee{
         <h2 class="title" style="border-bottom: 1px solid; padding: 10px 0px;
             font-size: 1.6em;
             margin-bottom: 20px;">IEEE Membership</h2>
-        To join this community of over 425,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate <a href="https://www.ieee.org/membership/join/index.html" style="color: #49f;">visit ieee/membership</a> and obtain your membership at the earliest.</div>
+        To join this community of over 425,000 technology and engineering professionals united by a common desire to continuously learn, interact, collaborate, and innovate <a href="https://www.ieee.org/membership/join/index.html" target="_blank" style="color: #49f;">visit ieee/membership</a> and obtain your membership at the earliest.</div>
       <div class="col-lg-5" style="padding: 30px;box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.05); font-size: 16px;margin: 10px;">
         <h2 class="title" style="border-bottom: 1px solid;padding: 10px 0px;
             font-size: 1.6em;
             margin-bottom: 20px; ">IEEE Societies</h2>
-        IEEE Society members stay technically current, network with colleagues locally and abroad, and collaborate on research and projects with leading experts -- all while taking advantage of specialized opportunities.To know about the various IEEE societies <a href="https://www.ieee.org/communities/societies/index.html?WT.mc_id=com_lp_soc" style="color: #49f;">visit ieee/societies</a> </div>    
+        IEEE Society members stay technically current, network with colleagues locally and abroad, and collaborate on research and projects with leading experts -- all while taking advantage of specialized opportunities.To know about the various IEEE societies <a href="https://www.ieee.org/communities/societies/index.html?WT.mc_id=com_lp_soc" target="_blank" style="color: #49f;">visit ieee/societies</a> </div>    
     </div>
     </div>
     
@@ -5338,8 +5375,8 @@ section.stats-ieee{
        </h2>
      <p class="thecontent" style="font-size: 16px;margin-bottom: 15px; color: #546071; padding-top: 20px; ">IEEE COMPUTER SOCIETY SYP MGAB in collaboration with IEEE SB NIT Durgapur and IEEE SB Jadavpur University hosted the IEEE TechX Congress 2020: Eastern India Techno-Management Leadership Summit on 28th Feb - 1st March 2020, where it assimilated all students  and Young Professionals from various IEEE Sections and students branches.</p>
      <div style="font-size: 16px;padding-top: 40px;">
-     <a class="btn btn-link" href="https://ieee-techx.com/" style="float: left; padding-top: 0px;">Visit Website</a>
-     <span class="event-date btn btn-link" style="float: right;padding-top: 0px;margin-top: -4px;"><a href="https://www.facebook.com/nitdgpieeesociety/" style="color: inherit;font-style: normal; text-decoration: unset;">Visit FB page</a></span></div>
+     <a class="btn btn-link" href="https://ieee-techx.com/" target="_blank" style="float: left; padding-top: 0px;">Visit Website</a>
+     <span class="event-date btn btn-link" style="float: right;padding-top: 0px;margin-top: -4px;"><a href="https://www.facebook.com/nitdgpieeesociety/" target="_blank" style="color: inherit;font-style: normal; text-decoration: unset;">Visit FB page</a></span></div>
      </div>
      </div>
    </div>
@@ -5404,19 +5441,24 @@ section.stats-ieee{
 
 
 
-<section class="blog-section" style=" background: #f9f9f9;">
+<section class="blog-section" style=" background: url('http://i.xp.io/1yyMrXlv.png'); background-size: 60%; background-repeat: no-repeat;">
   
-  <div class="row">
-    <div class="col-lg-8" style="padding: 10% 2rem;">
+  <div class="row" style="background:linear-gradient(to left,rgba(250,250,250,0.95),rgba(250,250,250,0.95));">
+    <div class="col-lg-8" style="padding: 15% 2rem;">
       <h4 style="margin-left: 80px; overflow: visible;font-weight: 400;">
-      <font style="">We Presents you</font>
-          <br><font style="padding-left: 50px; font-size: 1.3em;">our official blog <a href="https://insight.ieeesbnitdgp.com"> <font style="font-family: 'Jomolhari', serif; font-size: 1.4em; color: #f24;">insight </font></a>!</font></h4>
+      <font style="line-height: 1.4em">Learning has no limit and curiosity has no bound. So on this staycation read, learn and enjoy our blog <a href="https://insight.ieeesbnitdgp.com" target="_blank"> <font style="font-family: 'Jomolhari', serif; font-size: 1.4em; color: #49f;">Insight </font></a> and unleash the ingenious within you.</font>
+         </h4>
     </div>
-    <div class="col-lg-4" style="padding: 30px;">
-      <div class="card shadow" style="border: none; margin: 0 auto;margin-top: 30px;
-    margin-right: 20px;">
-        <div class="card-img" style="">
-          <img width="100%" src="http://i.xp.io/1uuMUNnp.jpg">
+    <div class="col-lg-4" style="padding:0px 50px;">
+      <div class="card" style="border: none; margin: 0 auto;margin-top: 30px;
+    margin-right: 20px;background: unset;">
+        <div class="card-img" style="background: unset;">
+          <img width="100%" src="http://i.xp.io/1z6dRTnl.png">
+          <!--notch style screen http://i.xp.io/1z5tW8kG.png
+              only screenshots http://i.xp.io/1z67zU9Q.png
+
+          -->
+          
         </div>
       </div>
     </div>
@@ -5536,9 +5578,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Chair</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/animeshdatts" class="text fab fa-facebook"></a></li>
-                        <li><a href="https://www.instagram.com/animesh.suman98/" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/animesh-datta-60770115b/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/animeshdatts" target="_blank" class="text fab fa-facebook"></a></li>
+                        <li><a href="https://www.instagram.com/animesh.suman98/" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/animesh-datta-60770115b/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
                 </div>
             </div>
@@ -5557,9 +5599,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Vice Chair</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/Abhish3kSunny" class="text fab fa-facebook"></a></li>                        
-                        <li><a href="https://instagram.com/abhish3k_sunny/" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/zer-0-ne/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/Abhish3kSunny" target="_blank" class="text fab fa-facebook"></a></li>                        
+                        <li><a href="https://instagram.com/abhish3k_sunny/" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/zer-0-ne/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
             </div>
           </div>
@@ -5577,9 +5619,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Secretary</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/monsij98" class="text fab fa-facebook"></a></li>                        
-                        <li><a href="https://instagram.com/monsij98/" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/monsijb/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/monsij98" target="_blank" class="text fab fa-facebook"></a></li>                        
+                        <li><a href="https://instagram.com/monsij98/" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/monsijb/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
             </div>
           </div>
@@ -5598,9 +5640,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Treasurer</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/profile.php?id=100006949692977" class="text fab fa-facebook"></a></li>
-                        <li><a href="https://instagram.com/amitav.507/" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/amitava-das-77b411155/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100006949692977" target="_blank" class="text fab fa-facebook"></a></li>
+                        <li><a href="https://instagram.com/amitav.507/" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/amitava-das-77b411155/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
             </div>
           </div>
@@ -5618,9 +5660,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Convenor</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/Prateekee" class="text fab fa-facebook"></a></li>
-                        <li><a href="https://instagram.com/granger2423" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/prateekee-chatterjee/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/Prateekee" target="_blank" class="text fab fa-facebook"></a></li>
+                        <li><a href="https://instagram.com/granger2423" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/prateekee-chatterjee/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
             </div>
 
@@ -5638,9 +5680,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Webmaster</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/warriorsubha" class="text fab fa-facebook"></a></li>
-                        <li><a href="https://instagram.com/subha_kulukulu" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/subhadeep-chandra-707680132/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/warriorsubha" target="_blank" class="text fab fa-facebook"></a></li>
+                        <li><a href="https://instagram.com/subha_kulukulu" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/subhadeep-chandra-707680132/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
             </div>
           </div>
@@ -5657,9 +5699,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Sponsorship chair</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/tamoghnod" class="text fab fa-facebook"></a></li>
-                        <li><a href="https://instagram.com/adorshobadi_chokra" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/tamoghnodas/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/tamoghnod" target="_blank" class="text fab fa-facebook"></a></li>
+                        <li><a href="https://instagram.com/adorshobadi_chokra" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/tamoghnodas/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
             </div>
           </div>
@@ -5676,9 +5718,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Co-convenor</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/anumoy.ganguly" class="text fab fa-facebook"></a></li>
-                        <li><a href="https://instagram.com/anumoyganguly/" class="text fab fa-instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/in/anumoy-ganguly-0bb91616a/" class="text fab fa-linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/anumoy.ganguly" target="_blank" class="text fab fa-facebook"></a></li>
+                        <li><a href="https://instagram.com/anumoyganguly/" target="_blank" class="text fab fa-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/anumoy-ganguly-0bb91616a/" target="_blank" class="text fab fa-linkedin"></a></li>
                     </ul>
             </div>
           </div>
@@ -5696,8 +5738,8 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                     <span class="text post">Events Chair</span>
                 </div>
                 <ul class="text social">
-                        <li><a href="https://www.facebook.com/ishani.nag.75" class="text fab fa-facebook"></a></li>
-                        <li><a href="mailto:nagishani2@gmail.com" class="text fas fa-envelope-open"></a></li>
+                        <li><a href="https://www.facebook.com/ishani.nag.75" target="_blank" class="text fab fa-facebook"></a></li>
+                        <li><a href="mailto:nagishani2@gmail.com" target="_blank" class="text fas fa-envelope-open"></a></li>
                     </ul>
             </div>
           </div>
@@ -5815,25 +5857,25 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
   <div class="spns-container" style="padding: 80px;">
     <div class="row" style="padding-bottom: 30px;">
                 <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron">
-                    <figure class="image"><a href="http://ewh.ieee.org/r10/calcutta/"><img src="media/images/IEEE_kol_logo.png" width="100"  alt="IEEE Kolkata Section"></a></figure>
+                    <figure class="image"><a href="http://ewh.ieee.org/r10/calcutta/" target="_blank"><img src="media/images/IEEE_kol_logo.png" width="100"  alt="IEEE Kolkata Section"></a></figure>
                 </div>
                 <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://www.computer.org/"><img src="media/images/cs-logo-2.png" width="100"  alt="IEEE Computer Society"></a></figure>
+                    <figure class="image"><a href="https://www.computer.org/" target="_blank"><img src="media/images/cs-logo-2.png" width="100"  alt="IEEE Computer Society"></a></figure>
                 </div>
                
                 <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://ieee.jaduniv.org/"><img src="media/images/sb1.png" width="100"  alt="IEEE SB JU"></a></figure>
+                    <figure class="image"><a href="https://ieee.jaduniv.org/" target="_blank"><img src="media/images/sb1.png" width="100"  alt="IEEE SB JU"></a></figure>
                 </div>
                 <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://unity.com/"><img src="media/images/Official_unity_logo.png" width="100"  alt="Unity"></a></figure>
+                    <figure class="image"><a href="https://unity.com/" target="_blank"><img src="media/images/Official_unity_logo.png" width="100"  alt="Unity"></a></figure>
                 </div>
                 <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://gdgkolkata.org/"><img src="media/images/gdg_kolkata.png" width="100" alt="GDG Kolkata"></a></figure>
+                    <figure class="image"><a href="https://gdgkolkata.org/" target="_blank"><img src="media/images/gdg_kolkata.png" width="100" alt="GDG Kolkata"></a></figure>
                 </div>
 
 
                 <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
-                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="media/images/global.png" width="100" style="" alt="Globalshapers"></a></figure>
+                    <figure class="image"><a href="https://www.globalshapers.org/" target="_blank"><img src="media/images/global.png" width="100" style="" alt="Globalshapers"></a></figure>
                 </div>
                 
                  <div class="client-logo col-lg-2 col-md-6 col-sm-12 shadow jumbotron" style="">
@@ -5939,8 +5981,9 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
         <p><i class="text fa fa-phone" aria-hidden="true" style="padding-right: 5px;"></i>
         8584970760</p>
         <div class="socila-sec" style="display: flex;flex-wrap: nowrap;">
-        <p style="margin-right: 20px;"> <a href="https://www.facebook.com/nitdgpieeesociety/" style="text-decoration: none; color: #fff;"><i class="text fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i></a></p>
-        <p><a href="https://www.instagram.com/ieeesb_nitdgp/" style="text-decoration: none; color: #fff;"><i class="text fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i></a></p>
+        <p style="margin-right: 20px;"> <a href="https://www.facebook.com/nitdgpieeesociety/" target="_blank" style="text-decoration: none; color: #fff;"><i class="text fa fa-facebook-f" aria-hidden="true" style="padding-right: 5px;"></i></a></p>
+        <p style="margin-right: 20px;"><a href="https://www.instagram.com/ieeesb_nitdgp/" target="_blank" style="text-decoration: none; color: #fff;"><i class="text fa fa-instagram" aria-hidden="true" style="padding-right: 5px;"></i></a></p>
+        <p><a href="https://www.linkedin.com/company/ieeesbnitdgp/about/" target="_blank" style="text-decoration: none; color: #fff;"><i class="text fa fa-linkedin" aria-hidden="true" style="padding-right: 5px;"></i></a></p>
   </div>
         
       </div>
