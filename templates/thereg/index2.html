@@ -4668,7 +4668,7 @@ section.stats-ieee{
   padding: 0px!important;
 }
 .thestats .card .card-title{
-   font-family: 'Playfair Display', serif;
+   font-family: monospace;
    font-weight: 500!important;
    color: #49f;
    font-size: 36px;
@@ -4911,7 +4911,7 @@ section.stats-ieee{
           <li><a class="text " href="#home">Home</a></li>
 			    <li class="text"><a href="#about-us">About Us</a></li>
           <li class="text "><a href="#ieee-team">Team</a></li>
-	<li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
+          <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
 
           
                
@@ -5336,10 +5336,10 @@ section.stats-ieee{
        <h2 class="title" style="font-weight: 300; overflow: visible; border-bottom: 1px solid ; padding-bottom: 10px;">TechX 2020
         
        </h2>
-     <p class="thecontent" style="font-size: 16px;margin-bottom: 15px; color: #546071; padding-top: 20px; ">TechX Congress is the Eastern Indian Techno-Management Leadership Summit hosted by the IEEE computer society SYP MGAB, where it assimilates all IEEE student members, professionals and student chapters associated with the society. </p>
+     <p class="thecontent" style="font-size: 16px;margin-bottom: 15px; color: #546071; padding-top: 20px; ">IEEE COMPUTER SOCIETY SYP MGAB in collaboration with IEEE SB NIT Durgapur and IEEE SB Jadavpur University hosted the IEEE TechX Congress 2020: Eastern India Techno-Management Leadership Summit on 28th Feb - 1st March 2020, where it assimilated all students  and Young Professionals from various IEEE Sections and students branches.</p>
      <div style="font-size: 16px;padding-top: 40px;">
      <a class="btn btn-link" href="https://ieee-techx.com/" style="float: left; padding-top: 0px;">Visit Website</a>
-     <span class="event-date" style="float: right;">February 28, 2020</span></div>
+     <span class="event-date btn btn-link" style="float: right;padding-top: 0px;margin-top: -4px;"><a href="https://www.facebook.com/nitdgpieeesociety/" style="color: inherit;font-style: normal; text-decoration: unset;">Visit FB page</a></span></div>
      </div>
      </div>
    </div>
@@ -5367,7 +5367,7 @@ section.stats-ieee{
             
               IntelliSys:Machine Learning Symposium was a huge success with a colossal turnout of over 150 enthusiasts who were too eager to learn and explore.IEEE SB NIT Durgapur extends its heartfelt gratitude to our guest speakers, Dr. Fakhral Yusoff and Mr. Shivam Abhilash for leaving us all dazzled and especially to all the participants for their overwhelming response.
               <div style="font-size: 16px;padding-top: 30px;">
-                <a class="btn btn-link" href="{% url 'thereg:events' %}" style="float: left; padding-top: 0px;">Read more</a>
+                <a class="btn btn-link" href="{% url 'thereg:event_detail' 'intellisys'  %}" style="float: left; padding-top: 0px;">Read more</a>
                 <span class="event-date" style="float: right;">October 19, 2019</span>
               </div>
         </div>
@@ -5390,7 +5390,7 @@ section.stats-ieee{
         <div class="card-title title" style=" font-size: 2.4rem;padding-bottom: 10px; border-bottom: 1px solid ;">SDV 2.0</div>
         <div class="card-text thecontent" style="font-size: 16px; color: #546071;">In this era of advancement and competing efficiency where society expects autonomous vehicles to be held to a higher standard than human drivers,we in collaboration with the Society of Automotive Engineers organized a two-day workshop to introduce students to the world of autonomous driving.
         <div style="font-size: 16px;padding-top: 30px;">
-                <a class="btn btn-link" href="{% url 'thereg:events' %}" style="float: left; padding-top: 0px;">Read more</a>
+                <a class="btn btn-link" href="{% url 'thereg:event_detail' 'sdv-20'  %}" style="float: left; padding-top: 0px;">Read more</a>
                 <span class="event-date" style="float: right;color: #546071;">August 31, 2019</span>
         </div>
         </div>
@@ -5714,7 +5714,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
   
   </div>
 
-   <h6 class="text text card-text" style="font-weight: 400;text-align: right; overflow:visible;padding-bottom: 70px; padding-top: 50px;margin-bottom: 0px; margin-right: 5px;" ><a href="{% url 'thereg:members' %}" style="border-radius:0.333rem!important;background-color: transparent; text-decoration: none;  color: #4090f0; padding: 1rem 2rem; border-radius: 0px;">All Members <font style="font-size: 1.1em;">→</font></a></h6>
+
 
 </section>
 
@@ -5874,7 +5874,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
         <h2 class="title" style="padding: 15px 5rem;
                 margin-top: 120px;
                 color: #49f;
-                font-family: 'Playfair Display', serif;">
+                ">
               Leave a Message</h2>
               <p class="text thecontent" style="font-size: 16px; font-weight: 400;margin-left: 100px; padding: 10px 5rem;">Your message means a lot!</p>
       </div>
