@@ -921,7 +921,28 @@ header .logo img{
   width: 100%;
   justify-content: center;
 }
+.img-loader-container{
+  overflow: visible;
+}
+.img-loader-container img{
+  animation: pop-up 2s infinite ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes pop-up{
+  0%{
+    transform: scale(1);
+     filter: saturate(0.3);
+  }
+  50%{
+    transform: scale(1.4);
+    filter: saturate(1);
+  }
+  100%{
+    transform: scale(1);
+     filter: saturate(0.3);
+  }
 
+}
 
 </style>
 
