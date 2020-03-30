@@ -577,6 +577,9 @@
 
 @media only screen and (max-width:980px) {
 
+.img-loader-container{
+    margin-top: 96%!important;
+  }
 .facad-adv .card.shadow{
     max-width: 100%!important;
     width: unset!important;
@@ -1625,6 +1628,17 @@
       </section>
     </div>
 
+	  
+	  
+	  
+<div class="loading-start" style="height: 100vh;width: 100vw; position: fixed; top: 0; left: 0; z-index: 8888888888888888; background-color: #000; ">
+  <div class="img-loader-container" style="max-width: 200px;margin-left: 50%;margin-top: 25%;transform: translate(-50%,-50%);">
+    <img src="http://i.xp.io/1zaaDD0W.png" width="190">
+  
+  </div>
+</div>
+	  
+	  
     <footer style="height: auto;padding:10px;padding-left: 18px;background-color: rgb(1, 54, 100); background-size: 90%;
     background-repeat: no-repeat;
     background-position: 70% 50%;">
@@ -1733,12 +1747,20 @@
 		
 	
 </script>
+	   
 
 <!--end theme-->
+
+	    <script type="text/javascript">
+	     jQuery(document).ready(function($) {
+	    		setTimeout(function(){ $(".loading-start").css("display","none"); }, 5000);
+	    });
+	    </script>
 
 
   <script type="text/javascript">
     jQuery(document).ready(function($) {
+	     
       var teamcardWidth = document.getElementById("targetCard").offsetWidth;
       var rowWidth = document.getElementById("row").offsetWidth;
       var card_num = rowWidth / teamcardWidth;
