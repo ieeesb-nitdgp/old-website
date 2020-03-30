@@ -464,7 +464,7 @@ header .logo{
         font-size: 1.2em!important;
       }
       .contact_info p a{
-        font-size: 1.2em !important;
+        font-size: 1.1em !important;
       }
       .contact_info .contact-details div, .contact_info .about-contact-details div{
         margin-left: 30px !important;
@@ -498,6 +498,10 @@ header ul{
 background-color: #202692;
 
 }
+  
+  .img-loader-container{
+    margin-top: 96%!important;
+  }
 header ul li{
  font-size: 9px;
  float: right;
@@ -639,7 +643,7 @@ header{
   margin: 0;
   letter-spacing: 0;
   position: relative;
-  height: 200px;
+  height: 100px;
   transition: height 0.5s ease-in-out;
 }
 
@@ -698,6 +702,9 @@ header .logo{
 
 
 @media only screen and (max-width: 990px){
+  .contact_info .social-sec p{
+  font-size: 0.8em!important;
+  }
 #members-heading{
   font-size: 67px !important;
 }
@@ -938,6 +945,13 @@ header .logo img{
            <li><a class="" href="{% url 'index' %}#contact-us">Contact us</a></li>
     </ul>
 </header>
+  
+  <div class="loading-start" style="height: 100vh;width: 100vw; position: fixed; top: 0; left: 0; z-index: 8888888888888888; background-color: #000; ">
+  <div class="img-loader-container" style="max-width: 200px;margin-left: 50%;margin-top: 25%;transform: translate(-50%,-50%);">
+    <img src="http://i.xp.io/1zaaDD0W.png" width="190">
+  
+  </div>
+  </div>
 
   <span id="members-heading theitem" class="jumbotron" style=" 
    
@@ -1048,6 +1062,14 @@ header .logo img{
 </script>
 
 
+<script type="text/javascript">
+    
+  jQuery(document).ready(function ($){
+    
+      setTimeout(function(){ $(".loading-start").css("display","none"); }, 5000);
+      });
+      
+      </script>
 
 
 
