@@ -11,17 +11,17 @@
   flex-wrap: wrap;
 }
 .container-main{
-  flex: 65.5%;
+  flex: 64%;
   width: 68%;
 
 }
 .container-sidebar{
- flex: 32%;
+ flex: 34%;
  width: 28%;
 }
   .list-item{
     width: 95%;
-    height: 130px;
+    /*height: 130px;*/
     border: 1px solid #dedede;
     margin: 4px;
     color: #000;
@@ -29,7 +29,7 @@
     flex-direction: column;
   }
   .list-header{
-    height: 60px;
+    /*height: 60px;*/
     display:flex;
     flex-direction: row;
   }
@@ -45,8 +45,24 @@
  
 
   }
+  #listhead.title{
+    margin-top: 10px;
+    margin-right: 50%;
+    font-size: large;
+    
+  }
+  #list.card-text{
+    font-size: 18px;
+  }
+  .title{
+    font-size:xx-large;
+    }
   .card-text{
-    color: #546071
+    color: #546071;
+    font-size: 20px;
+  }
+  #create.card-text{
+    font-size: 17px;
   }
    .list-title{
     padding-left: 10px;
@@ -89,8 +105,25 @@
     color: #fff;
   }
 
-   @media only screen and (max-width: 800px){
-      
+   @media only screen and (max-width: 1200px){
+      .card-text{
+        font-size: 30px;
+      }
+      #create.card-text{
+        font-size: 26px;
+      }
+      #list.card-text{
+        font-size: 28px;
+      }
+      .title{
+        font-size:xxx-large;
+      }
+      #listhead.title{
+        margin-top: 12px;
+        font-size:x-large;
+        margin-right: 50%;
+      }
+
        .img-fluid{
       max-width: 45.5%;
       margin: 5px;
@@ -105,6 +138,7 @@
 
 }
 .container-sidebar{
+  padding-top: 8%;
  flex: 100%;
  width: 100%;
 }
@@ -128,8 +162,8 @@
     <div class="card left  top">
       <div class="card-body" style="overflow: hidden;">
         <h2 class="title" style="font-weight: 550; overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;">{% block title %} {{ object.title }} {% endblock title %}</h2>
-        <p class=" text-muted" style="font-size: 13px;">IEEE SB NIT Dgp  | {{ post.created_on }}</p>
-        <p class="card-text" style="font-size: 16px;margin-bottom: 15px; ; padding-top: 20px; ">{{ object.content | safe }}</p>
+        <p class="card-text text-muted" id="create">IEEE SB NIT Dgp  | {{ post.created_on }}</p>
+        <p class="card-text" style="margin-bottom: 15px; ; padding-top: 20px; ">{{ object.content | safe }}</p>
         <div class="card-img-bottom">
          {% if not post.image.isempty %}
                      
@@ -159,7 +193,7 @@
   </div>
 </div>
 <div class="container-sidebar">
-    
+
     {% for event in post_list %}
     
       <div class="list-item">
@@ -169,16 +203,16 @@
              <img class="list-img" style="opacity: 0.8;" src="{{ MEDIA_URL }}{{ event.image.url }}" alt="img" style="">
              </div>
         {% endif %}
-        <a class="list-title" href="{% url 'thereg:event_detail' event.slug  %}" style="text-decoration: none; color: #000; padding: 0; margin: 0; text-align: unset;"><h5 class="title" style="text-align: center; font-weight: 400; font-size:larger">{{event.title }}</h5></a>
+        <a class="list-title" href="{% url 'thereg:event_detail' event.slug  %}" style=" color: #000; padding: 0; margin: 0;"><h5 class="title" id="listhead" style="text-align: center;">{{event.title }}</h5></a>
       </div>
         <div class="list-content">
         
-        <p class="card-text" style="font-size:medium"><small class="text-muted"><i class="fa fa-pencil"></i> {{event.content|slice:":100" }}...</small></p>
+        <p class="card-text" id="list" ><small class="text-muted"><i class="fa fa-pencil"></i> {{event.content|slice:":100" }}...</small></p>
         </div>
     
     
   </div>
-  
+  <br>
   {% endfor %}
 </div>
 </div>
