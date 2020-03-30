@@ -917,8 +917,8 @@ header ul li a{
     transform: translate(-50%,-50%) rotate(-90deg);
     color: #fff;
     background-color: #000;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     z-index: 3333;
     white-space: nowrap;
     border-bottom-right-radius: 20px;
@@ -934,7 +934,7 @@ header ul li a{
 }
 .side_bar ul li{
 	list-style: none;
-    font-size: 13px;
+    font-size: 11px;
 	margin-right: 13px;
 	float: left;
 	display: block;
@@ -4910,15 +4910,15 @@ section.stats-ieee{
 
 
 @media screen and (max-width: 800px) {
-	
-	  .contact_ieee h2.title{
+  .contact_ieee h2.title{
     padding: 15px 2rem!important;
 
   }
   .contact_ieee .thecontent{
     margin-left: 0px!important;
   }
-	.blog-section h4{
+
+  .blog-section h4{
     margin-left: 0px!important;
     padding: 10px!important;
   }
@@ -4955,7 +4955,9 @@ section.stats-ieee{
 			    <li class="text"><a href="#about-us">About Us</a></li>
           <li class="text "><a href="#ieee-team">Team</a></li>
           <li><a class="" href="{% url 'thereg:alumni' %}">Alumni</a></li>
-         
+
+
+          
 
 
           
@@ -4987,14 +4989,16 @@ section.stats-ieee{
 <aside class="text side_bar" id="sidebar" style="display: block;">
 	<ul>
     <li class="text side_bar_contacts"><a href="#contact-us">Contact us</a></li>
+    <li class="text side_bar_sponsors"><a href="#sponsors">Collaborations</a></li>
+    <li class="text side_bar_testinomial"><a href="#testinomials">Testinomials</a></li>
 		
 		
-		<li class="text side_bar_members"><a href="#ieee-team">members</a></li>
+		<li class="text side_bar_members"><a href="#ieee-team">Members</a></li>
     <!--<li class="text side_bar_glimps"><a href="#gallery-event">glimpses</a></li>-->
     
-    <li class="text side_bar_activities"><a href="#side_bar_activities">activities</a></li>
-		<li class="text side_bar_join"><a href="#joinieee">about-IEEE</a></li>
-    <li class="text side_bar_about"><a class="text active_side_bar" href="#about-us">about-us</a></li>
+    <li class="text side_bar_activities"><a href="#activities">Activities</a></li>
+		<li class="text side_bar_join"><a href="#joinieee">About-IEEE</a></li>
+    <li class="text side_bar_about"><a class="text active_side_bar" href="#about-us">About-us</a></li>
 		
 	</ul>
 </aside>
@@ -5453,7 +5457,7 @@ section.stats-ieee{
 
 
 
-<section class="blog-section" style=" background: url('http://i.xp.io/1yyMrXlv.png'); background-size: 60%; background-repeat: no-repeat;">
+<section class="blog-section" id="blog-section" style=" background: url('http://i.xp.io/1yyMrXlv.png'); background-size: 60%; background-repeat: no-repeat;">
   
   <div class="row" style="background:linear-gradient(to left,rgba(250,250,250,0.95),rgba(250,250,250,0.95));">
     <div class="col-lg-8" style="padding: 15% 2rem;">
@@ -5780,7 +5784,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
 
 
 
-<section class="testinomials">
+<section class="testinomials" id="testinomials">
   <!--<div class="testimonials-slider owl-carousel owl-loaded owl-drag owl-theme owl-center">
     
     <div class="owl-stage-outer">
@@ -6453,20 +6457,26 @@ function clockUpdate() {
 			var offsetHeight_2 = document.getElementById('about-us').offsetHeight;
 			var offsetHeight_3 = 0; 
       var offsetHeight_4 = document.getElementById('ieee-team').offsetHeight; 
-      var offsetHeight_7 = 0; //document.getElementById('gallery-event').offsetHeight; 
-			var offsetHeight_5 = document.getElementById('activities').offsetHeight;
+      //document.getElementById('blog-section').offsetHeight; 
+			var offsetHeight_5 = document.getElementById('activities').offsetHeight +document.getElementById('blog-section').offsetHeight;
 			var offsetHeight_6 = document.getElementById('joinieee').offsetHeight;
+      var offsetHeight_7 = document.getElementById('testinomials').offsetHeight;
+      
+      var offsetHeight_8 = document.getElementById('sponsors').offsetHeight;
 			var scrollTop = $(window).scrollTop();
 
 
 
             var events_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_6 ;
-            var team_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_7 + offsetHeight_6 + offsetHeight_5;
+            var team_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5;
 
-            var glimpse_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_6 + offsetHeight_7 ;
+            var glimpse_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_6 ;
             var join_height = offsetHeight_1 + offsetHeight_2;
-            var contact_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_4 + offsetHeight_5 + offsetHeight_6 +offsetHeight_7 ;
-			
+            var contact_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5 + offsetHeight_4 + offsetHeight_7 + offsetHeight_8 ;
+			     var testinomial_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5 + offsetHeight_4 ;
+           var sponsors_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5 + offsetHeight_4 + offsetHeight_7 ;
+
+
 
 
       if(scrollTop < offsetHeight_1){
@@ -6559,30 +6569,38 @@ box-shadow: 23px 3px 7px -14px rgba(85,85,85,0.35);*/
             
            
               
-             
-            if(scrollTop>join_height-50){
+             if(scrollTop>offsetHeight_1-250 && scrollTop<join_height){
+             $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_about a").addClass("active_side_bar"); 
+             }
+            if(scrollTop>join_height-0){
               $(".side_bar ul li a").removeClass("active_side_bar");
               $(".side_bar_join a").addClass("active_side_bar");
 
             }
-             if(scrollTop>glimpse_height-200){
+             if(scrollTop>glimpse_height-100){
               $(".side_bar ul li a").removeClass("active_side_bar");
               $(".side_bar_activities a").addClass("active_side_bar");
             }
-               if(scrollTop>team_height-300){
+               if(scrollTop>team_height-50){
               $(".side_bar ul li a").removeClass("active_side_bar");
               $(".side_bar_members a").addClass("active_side_bar");
               
             }
-            if(scrollTop>contact_height-250){
+            
+            if(scrollTop>testinomial_height-50){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_testinomial a").addClass("active_side_bar");
+            }
+            if(scrollTop>sponsors_height-0){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_sponsors a").addClass("active_side_bar");
+            }
+           if(scrollTop>contact_height-100){
               $(".side_bar ul li a").removeClass("active_side_bar");
               $(".side_bar_contacts a").addClass("active_side_bar");
             }
-           
-             else if(scrollTop<commu_Height-250){
-             $(".side_bar ul li a").removeClass("active_side_bar");
-            	$(".side_bar_about a").addClass("active_side_bar");	
-             }
+            
 			
 		})
 		
@@ -6712,42 +6730,61 @@ jQuery(document).ready(function ($){
               $(".content_main_container").css("opacity",1);
               
             }
+      var offsetHeight_1 = document.getElementById('home').offsetHeight; 
+      var offsetHeight_2 = document.getElementById('about-us').offsetHeight;
+      var offsetHeight_3 = 0; 
+      var offsetHeight_4 = document.getElementById('ieee-team').offsetHeight; 
+      //document.getElementById('blog-section').offsetHeight; 
+      var offsetHeight_5 = document.getElementById('activities').offsetHeight +document.getElementById('blog-section').offsetHeight;
+      var offsetHeight_6 = document.getElementById('joinieee').offsetHeight;
+      var offsetHeight_7 = document.getElementById('testinomials').offsetHeight;
+      
+      var offsetHeight_8 = document.getElementById('sponsors').offsetHeight;
+      var scrollTop = $(window).scrollTop();
 
 
+
+            var events_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_6 ;
+            var team_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5;
+
+            var glimpse_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_6 ;
+            var join_height = offsetHeight_1 + offsetHeight_2;
+            var contact_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5 + offsetHeight_4 + offsetHeight_7 + offsetHeight_8 ;
+           var testinomial_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5 + offsetHeight_4 ;
+           var sponsors_height = offsetHeight_1 + offsetHeight_2  + offsetHeight_6 + offsetHeight_5 + offsetHeight_4 + offsetHeight_7 ;
             
-            var events_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 ;
-            var team_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_5 ;
-            var glimpse_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_6 ;
-            var join_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_4 + offsetHeight_5 + offsetHeight_6 ;
-            var contact_height = offsetHeight_1 + offsetHeight_2 + offsetHeight_3 + offsetHeight_4 + offsetHeight_5 + offsetHeight_6 +offsetHeight_7 ;
-
-              if(scrollTop>events_height-250){
-              $(".side_bar ul li a").removeClass("active_side_bar");
-              $(".side_bar_events a").addClass("active_side_bar");
-            }
-            
-              if(scrollTop>team_height-300){
-              $(".side_bar ul li a").removeClass("active_side_bar");
-              $(".side_bar_members a").addClass("active_side_bar");
-            }
-            if(scrollTop>glimpse_height-200){
-              $(".side_bar ul li a").removeClass("active_side_bar");
-              $(".side_bar_activities a").addClass("active_side_bar");
-            }
-              if(scrollTop>join_height-50){
-              $(".side_bar ul li a").removeClass("active_side_bar");
-              $(".side_bar_join a").addClass("active_side_bar");
-
-
-            }
-             if(scrollTop>contact_height-250){
-              $(".side_bar ul li a").removeClass("active_side_bar");
-              $(".side_bar_contacts a").addClass("active_side_bar");
-            }
-             else if(scrollTop<commu_Height-250){
+            if(scrollTop>offsetHeight_1-250 && scrollTop<join_height){
              $(".side_bar ul li a").removeClass("active_side_bar");
               $(".side_bar_about a").addClass("active_side_bar"); 
              }
+           if(scrollTop>join_height-0){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_join a").addClass("active_side_bar");
+
+            }
+             if(scrollTop>glimpse_height-100){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_activities a").addClass("active_side_bar");
+            }
+               if(scrollTop>team_height-50){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_members a").addClass("active_side_bar");
+              
+            }
+            
+            if(scrollTop>testinomial_height-50){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_testinomial a").addClass("active_side_bar");
+            }
+            if(scrollTop>sponsors_height-0){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_sponsors a").addClass("active_side_bar");
+            }
+           if(scrollTop>contact_height-100){
+              $(".side_bar ul li a").removeClass("active_side_bar");
+              $(".side_bar_contacts a").addClass("active_side_bar");
+            }
+            
 
            })
 </script>
