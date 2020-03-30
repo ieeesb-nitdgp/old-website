@@ -32,7 +32,6 @@ body{
     }
     .card-title{
         font-size: 28px;
-        text-transform: uppercase;
     }
     .card-text{
         font-size: 18px;
@@ -63,14 +62,27 @@ body{
         color: #fff;
     }
     @media only screen and (max-width: 1200px){
-      .card{
+        .card{
         flex: 48%;
         margin-top: 22px;
         max-width: 48% !important;
     }
+    .title{
+        font-size: xxx-large;
     }
+    #dateloc.card-text{
+        font-size: 23px;
+    }
+    #content.card-text{
+        font-size: 29px ;
+    }
+    #read.card-text{
+        font-size: 27px;
+    }
+    }
+
     @media only screen and (min-width: 800px) and (max-width: 1200px){
-      .card{
+        .card{
         flex: 100%;
         margin-top: 40px;
         max-width: 100% !important;
@@ -91,23 +103,22 @@ body{
         {% if not post.image.isempty %}
         <div style="overflow: hidden;max-height: 100%;">
              <img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image.url }}" alt="img" style="">
-             </div>
+            </div>
         {% endif %}
     
     <div class="card-body">
-        <h2 class="title" style="font-weight: 500; font-size:xxx-large; overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;">{{post.title }}</h2>
-      <p class="card-text" ><small class="text-muted"><i class="fa fa-calendar-check-o fa-lg" style="padding-right: 3px;"></i>  {{ post.event_date}}</small></p>
-      <p class="card-text"><small class="text-muted"><i class="fa fa-map-marker" style="padding-right: 5px;"></i>    NIT Durgapur,India</small></p>
+        <h2 class="title" style="font-weight: 500;overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;"><a href="{% url 'thereg:event_detail' post.slug  %}" style="color: #000;" >{{post.title }}</a></h2>
+      <p class="card-text text-muted" id="dateloc"><i class="fa fa-calendar-check-o fa-lg" style="padding-right: 3px;"></i>  {{ post.event_date}}</p>
+      <p class="card-text text-muted" id="dateloc"><i class="fa fa-map-marker fa-lg" style="padding-right: 5px;"></i>    NIT Durgapur,India</p>
       
-      <p class="card-text">{{post.content|slice:":200" }}...</p>
-      
-      <p class="card-text"><small class="text-muted"><a href="{% url 'thereg:event_detail' post.slug  %}" class="text-secondary" style="color: #fff !important;background-color: #363dc2; font-weight: 200; font-size: 14px; padding: 5px; border: 1px solid #363dc2; border-radius: 0.333rem;">Read More<i class="fa fa-arrow">
-                </i></a></small></p>
-      
+      <p class="card-text" id="content">{{post.content|slice:":200" }}...</p>
+      <br>
+      <p class="card-text text-muted" id="read"><a href="{% url 'thereg:event_detail' post.slug  %}" class="text-secondary" style="color: #fff !important;background-color: #363dc2; font-weight: 200; padding: 5px; border: 1px solid #363dc2; border-radius: 0.333rem;">Read More<i class="fa fa-arrow">
+                </i></a></p>
       
     </div>
   </div>
-  {% endfor %}
+{% endfor %}
 </div>
     
 {%endblock%}
