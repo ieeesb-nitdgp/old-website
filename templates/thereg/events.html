@@ -107,7 +107,7 @@ body{
         {% endif %}
     
     <div class="card-body">
-        <h2 class="title" style="font-weight: 500;overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;"><a href="{% url 'thereg:event_detail' post.slug  %}" style="color: #000;" >{{post.title }}</a></h2>
+        <h2 class="title" style="font-weight: 500;overflow: visible; border-bottom: 1px solid #000; padding-bottom: 10px;"><a href="{% url 'thereg:event_detail' post.slug  %}" style="color: inherit;" >{{post.title }}</a></h2>
       <p class="card-text text-muted" id="dateloc"><i class="fa fa-calendar-check-o fa-lg" style="padding-right: 3px;"></i>  {{ post.event_date}}</p>
       <p class="card-text text-muted" id="dateloc"><i class="fa fa-map-marker fa-lg" style="padding-right: 5px;"></i>    NIT Durgapur,India</p>
       
