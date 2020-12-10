@@ -76,7 +76,7 @@ class Member1(models.Model):
     fb_link = models.URLField(blank=True)
     ln_link = models.URLField(blank=True)
     email = models.EmailField(blank=True)
-    image = models.ImageField(upload_to="members/images")
+    image = models.ImageField(upload_to="members/first/images")
 
     def __str__(self):
         return self.name
@@ -88,7 +88,7 @@ class Member2(models.Model):
     fb_link = models.URLField(blank=True)
     ln_link = models.URLField(blank=True)
     email = models.EmailField(blank=True)
-    image = models.ImageField(upload_to="members/images")
+    image = models.ImageField(upload_to="members/second/images")
 
     def __str__(self):
         return self.name
@@ -100,7 +100,7 @@ class Member3(models.Model):
     fb_link = models.URLField(blank=True)
     ln_link = models.URLField(blank=True)
     email = models.EmailField(blank=True)
-    image = models.ImageField(upload_to="members/images")
+    image = models.ImageField(upload_to="members/third/images")
 
     def __str__(self):
         return self.name
@@ -112,7 +112,7 @@ class Member4(models.Model):
     fb_link = models.URLField(blank=True)
     ln_link = models.URLField(blank=True)
     email = models.EmailField(blank=True)
-    image = models.ImageField(upload_to="members/images")
+    image = models.ImageField(upload_to="members/fourth/images")
     post = models.CharField(max_length=100)
 
     def __str__(self):
