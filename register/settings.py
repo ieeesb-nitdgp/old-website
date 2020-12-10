@@ -15,9 +15,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-STATIC_DIR = os.path.join(BASE_DIR,'static')
-MEDIA_DIR = os.path.join(BASE_DIR,'media')
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -27,7 +27,7 @@ SECRET_KEY = '@6qh3e)kdr0x-@xx!xb2r=8r@6-ypn2g)4=6!(&a!r%anx#)u2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ieeenitdgp.herokuapp.com','ieeesbnitdgp.com']
+ALLOWED_HOSTS = ['ieeenitdgp.herokuapp.com', 'ieeesbnitdgp.com']
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'register.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR,],
+        'DIRS': [TEMPLATE_DIR, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,13 +75,13 @@ TEMPLATES = [
 
 
 AUTHENTICATION_BACKENDS = (
-	'social_core.backends.open_id.OpenIdAuth',  # for Google authentication
-	'social_core.backends.google.GoogleOpenId',  # for Google authentication
-	'social_core.backends.google.GoogleOAuth2',  # for Google authentication
-	'social_core.backends.github.GithubOAuth2',  # for Github authentication
-	'social_core.backends.facebook.FacebookOAuth2',  # for Facebook authentication
-	'django.contrib.auth.backends.ModelBackend',
-	)
+    'social_core.backends.open_id.OpenIdAuth',  # for Google authentication
+    'social_core.backends.google.GoogleOpenId',  # for Google authentication
+    'social_core.backends.google.GoogleOAuth2',  # for Google authentication
+    'social_core.backends.github.GithubOAuth2',  # for Github authentication
+    'social_core.backends.facebook.FacebookOAuth2',  # for Facebook authentication
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 WSGI_APPLICATION = 'register.wsgi.application'
 
@@ -134,22 +134,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
+STATICFILES_DIRS = [STATIC_DIR, ]
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 LOGIN_URL = '/thereg/user_login/'
 LOGIN_REDIRECT_URL = 'index'
 
 
-
-
-
-
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='774588418937-6317jndfkp24okke523rof271f6th1rd.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '774588418937-6317jndfkp24okke523rof271f6th1rd.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'T2V8i0aZOb4vUjrD6OBH_8gj'
-
-
-
 
 
 EMAIL_HOST = 'smtp-mail.outlook.com'
