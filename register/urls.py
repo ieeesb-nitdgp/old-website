@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url,include
 from thereg import views
+from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$',views.index,name='index'),
@@ -28,7 +30,7 @@ urlpatterns = [
 
 
 from thereg import views
-from register import settings
+#from register import settings
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
  
