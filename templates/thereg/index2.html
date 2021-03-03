@@ -24,6 +24,12 @@
     -->
   </script>
   <link rel="icon" href="https://i.xp.io/LJNAk3w.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <meta name="description" content="">
   <meta name="IEEE-sb" content="">
 
@@ -5523,6 +5529,8 @@ opacity: 0;*/
 
 
 
+<!-- loader -------------------------------------------------------------- -->
+
 
     <div class="loading-start"
       style="height: 100vh;width: 100vw; position: fixed; top: 0; left: 0; z-index: 8888888888888888; background-color: #000; ">
@@ -6112,7 +6120,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
             <div class="text our-team">
               <div class="card shadow" style="max-width: 300px;margin: 0 auto; border: none;">
                 <div class="text pic">
-                  <img src="https://i.xp.io/hmwa7ED.jpg">
+                  <img src="/media/members/Rohan.jpg">
 
                 </div>
                 <div class="text team-content">
@@ -6193,7 +6201,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
             <div class="text our-team">
               <div class="card shadow" style="max-width: 300px;margin: 0 auto; border: none;">
                 <div class="text pic">
-                  <img src="https://i.xp.io/hlXaFKC.jpg">
+                  <img src="/media/members/arka.jpg">
 
                 </div>
                 <div class="text team-content">
@@ -6232,7 +6240,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
             <div class="text our-team">
               <div class="card shadow" style="max-width: 300px;margin: 0 auto; border: none;">
                 <div class="text pic">
-                  <img src="https://i.xp.io/hpdLLND.jpg">
+                  <img src="/media/members/Soumik.jpg">
 
                 </div>
                 <div class="text team-content">
@@ -6252,7 +6260,7 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
             <div class="text our-team">
               <div class="card shadow" style="max-width: 300px;margin: 0 auto; border: none;">
                 <div class="text pic">
-                  <img src="https://i.xp.io/hn4F6l4.jpg">
+                  <img src="/media/members/Sutirtha.jpg">
 
                 </div>
                 <div class="text team-content">
@@ -6267,7 +6275,6 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
               </div>
             </div>
           </div>
-          ...
         </div>
         <!-- If we need pagination -->
 
@@ -6292,17 +6299,6 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
 
 
     <section class="testinomials" id="testinomials">
-      <!--<div class="testimonials-slider owl-carousel owl-loaded owl-drag owl-theme owl-center">
-    
-    <div class="owl-stage-outer">
-      <div class="owl-stage">
-        <div class="owl-item cloned">hello</div>
-        <div class="owl-item cloned">go </div>
-        <div class="owl-item cloned">new</div>
-        <div class="owl-item cloned">now</div>
-      </div>
-    </div>
-  </div>-->
       <div class="swiper-container">
         <div class="swiper-wrapper" style="">
           <div class="swiper-slide" style=" padding: 10px; text-align: center;">
@@ -6354,14 +6350,10 @@ background: linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.6)),
                 </p>
               </div>
             </div>
+
+        <div class="text swiper-button-prev" style="overflow: unset;"></div>
+        <div class="text swiper-button-next" style="overflow: unset;"></div>
           </div>
-
-
-
-
-        </div>
-        <div class="text swiper-pagination"></div>
-      </div>
 
     </section>
 
@@ -8033,7 +8025,29 @@ box-shadow: 23px 3px 7px -14px rgba(85,85,85,0.35);*/
 
 
 
+<script>
+  const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
 
 
 
