@@ -12,7 +12,7 @@ django-audit-log==0.7.0
 django-auditlog==0.4.3
 django-countries==5.3.3
 django-crispy-forms==1.7.2
-django-debug-toolbar==1.10.1
+django-debug-toolbar==1.11.1
 django-heroku==0.3.1
 django-jsonfield==1.0.1
 django-sslserver==0.19
