@@ -1703,179 +1703,28 @@ padding-left: 0;
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-6 ignoreMe">
+                            {% for i in member4 %}
                             <div class="our-team ">
                                 <div class="pic ignoreMe">
-                                    <img class="ignoreMe " src="/media/members/Akhuli.jpg">
+                                    <img class="ignoreMe " src="{{i.image.url}}">
                                     <ul class="social">
-                                        <li><a href="https://www.facebook.com/subhayan.akhuli.316"
+                                        <li><a href="{{i.fb_link}}"
                                                 class="fab fa-facebook"></a></li>
-                                        <li><a href="mailto:subhayan.akhuli@gmail.com" class="fa fa-envelope"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/subhayanakhuli/"
+                                        <li><a href="{{i.email}}" class="fa fa-envelope"></a></li>
+                                        <li><a href="{{i.ln_link}}"
                                                 class="fab fa-linkedin"></a></li>
+                                        <li><a href="{{i.in_link}}"
+                                                    class="fab fa-instagram"></a></li>
                                     </ul>
                                 </div>
                                 <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Subhayan Akhuli </h3>
-                                    <span class="post ignoreMe">Chair</span>
+                                    <h3 class="title ignoreMe"> {{i.name}} </h3>
+                                    <span class="post ignoreMe"> {{i.post}}</span>
                                 </div>
                             </div>
+                            {% endfor %}
 
                         </div>
-
-
-
-
-
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="http://i.xp.io/hmwa7ED.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/rohuunn" class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/rohansees" class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/rohanc2000/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Rohan Chowdhury</h3>
-                                    <span class="post">Vice Chair</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team ">
-                                <div class="pic ignoreMe">
-                                    <img src="/media/members/Sugata.jpg" class="ignoreMe">
-                                    <ul class="social ignoreMe">
-                                        <li><a href="https://www.facebook.com/sugata.mondal.10"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="mailto:sugata.mondal@outlook.com" class="fa fa-envelope"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/sugata-mondal-24ab2a159/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Sugata Mondal</h3>
-                                    <span class="post ignoreMe">Secretary</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team">
-                                <div class="pic ignoreMe">
-                                    <img src="/media/members/Anurag.jpg" class="ignoreMe">
-                                    <ul class="social ignoreMe">
-                                        <li><a href="https://www.facebook.com/Orneyfish.12382"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/orneyfish" class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/anurag-sarkar-97127018a/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Anurag Sarkar</h3>
-                                    <span class="post ignoreMe">Convener</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/arka.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/arka.panda98" class="fab fa-facebook"></a>
-                                        </li>
-                                        <li><a href="https://instagram.com/arka.panda" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/in/arkabera/" class="fab fa-linkedin"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Arka Bera</h3>
-                                    <span class="post">Treasurer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team" id="targetCard">
-                                <div class="pic ignoreMe">
-                                    <img src="http://i.xp.io/hlXaFKC.jpg" class="ignoreMe">
-                                    <ul class="social ignoreMe">
-                                        <li><a href="https://www.facebook.com/william.derozio"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/neel_5972" class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/shantaneel-halder-9a0417160/"
-                                                class="fab fa-linkedin"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Shantaneel Halder</h3>
-                                    <span class="post ignoreMe">Webmaster</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Nag.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/sourav.nag.1422"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/_the_lost_guy___"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/sourav-nag-8007b416a/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Sourav Nag</h3>
-                                    <span class="post">Creative Head</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="http://i.xp.io/hpdLLND.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/soumik.paul.503"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/ig_paulsoumik" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/in/soumik-paul-6b46b2172/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Soumik Paul</h3>
-                                    <span class="post">Technical Head</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="http://i.xp.io/hn4F6l4.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/sayan.chowdhury1997"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/chowdhury_sutirtha"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="mailto:sutirthachow97@gmail.com" class="fa fa-envelope"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Sutirtha Chowdhury</h3>
-                                    <span class="post">Sponsorship Head</span>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
@@ -1902,202 +1751,29 @@ padding-left: 0;
                 <div class="container">
                     <div class="row thrd-years-row">
                         <div class="col-md-4 col-sm-6 ignoreMe">
+                            {% for i in member3 %}
                             <div class="our-team ">
                                 <div class="pic ignoreMe">
-                                    <img class="ignoreMe " src="/media/members/Mohit2nd.jpg">
+                                    <img class="ignoreMe " src="{{i.image.url}}">
                                     <ul class="social">
-                                        <li><a href="https://www.facebook.com/mohit.kochar.12"
+                                        <li><a href="{{i.fb_link}}"
                                                 class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/ambivert_it_depends/"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/mohit-kochar-2143aa179/"
+                                        <li><a href="{{i.email}}" class="fa fa-envelope"></a></li>
+                                        <li><a href="{{i.ln_link}}"
                                                 class="fab fa-linkedin"></a></li>
+                                        <li><a href="{{i.in_link}}"
+                                                    class="fab fa-instagram"></a></li>
                                     </ul>
                                 </div>
                                 <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Mohit Kochar</h3>
-                                    <span class="post ignoreMe">Senior member</span>
+                                    <h3 class="title ignoreMe"> {{i.name}} </h3>
+                                    <span class="post ignoreMe"> {{i.post}}</span>
                                 </div>
                             </div>
+                            {% endfor %}
 
                         </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team ">
-                                <div class="pic ignoreMe">
-                                    <img src="/media/members/Pritish.jpg" class="ignoreMe">
-                                    <ul class="social ignoreMe">
-                                        <li><a href="https://www.facebook.com/pritish.singhal.5"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/pritishsinghal/"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/pritish-singhal-4a0b29169/"
-                                                class="fab fa-linkedin"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Pritish singhal</h3>
-                                    <span class="post ignoreMe">Senior member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team" id="targetCard">
-                                <div class="pic ignoreMe">
-                                    <img src="/media/members/gagan2nd.JPG" class="ignoreMe">
-                                    <ul class="social ignoreMe">
-                                        <li><a href="https://www.facebook.com/gagan.gautam.35380399"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="mailto:gagangautamaa@gmail.com" class="fa fa-envelope"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/gagan-gautam-92a22017a/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Gagan Gautam</h3>
-                                    <span class="post ignoreMe">Senior member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team ">
-                                <div class="pic ignoreMe">
-                                    <img class="ignoreMe " src="/media/members/Aman2nd.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/aman.agarwal.564813"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/aman._agarwal._/"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/aman-agarwal-42160b184/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Aman Agarwal</h3>
-                                    <span class="post ignoreMe">Senior member</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Atul.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100007864380067"
-                                                class="fab fa-facebook"></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/invites/contact/?i=6ksnk0ylmi5y&utm_content=3v8nesx"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/atul-tiwari-4b0083185"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Atul Tiwary</h3>
-                                    <span class="post">Senior member</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Shubhangee2nd.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://m.facebook.com/shubhangee.shubhangee.169"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/shubhangee_shrey/"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/shubhangee-shrey-27a905195"
-                                                class="fab fa-linkedin"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Subhangee</h3>
-                                    <span class="post">Senior member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team ">
-                                <div class="pic ignoreMe">
-                                    <img class="ignoreMe " src="/media/members/Soumya2nd.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/soumya.chatterjee.3388"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/soumya976" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/in/soumya-chatterjee-88520717b"
-                                                class="fab fa-linkedin"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Soumya Chatterjee</h3>
-                                    <span class="post ignoreMe">Senior member</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/khushi2nd.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/khushi.bansal.756"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/khushi_._bansal_"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/khushi-bansal-298849177/"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Khushi Bansal</h3>
-                                    <span class="post">Senior member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/vimal2nd.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/vimalkumar.dubey.982"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/vimal_1922" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="mailto:vimalkumardubey10@gmail.com" class="fa fa-envelope"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Vimal Dubey</h3>
-                                    <span class="post">Senior member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/dhrubajyoti.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/dhrubojyoti.roy.1485"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="mailto:dhrubajyotifermat@gmail.com" class="fa fa-envelope"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Dhrubajyoti Roy</h3>
-                                    <span class="post">Senior member</span>
-                                </div>
-                            </div>
-                        </div>
-
+                        
                     </div>
                 </div>
             </div>
@@ -2113,263 +1789,27 @@ padding-left: 0;
                 <div class="container">
                     <div class="row thrd-years-row">
                         <div class="col-md-4 col-sm-6 ignoreMe">
+                            {% for i in member2 %}
                             <div class="our-team ">
                                 <div class="pic ignoreMe">
-                                    <img class="ignoreMe " src="/media/members/aditi.jpeg">
+                                    <img class="ignoreMe " src="{{i.image.url}}">
                                     <ul class="social">
-                                        <li><a href="https://www.facebook.com/aditi.sengupta.50364"
+                                        <li><a href="{{i.fb_link}}"
                                                 class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/adicoded71" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="mailto:aditisengupta71@gmail.com" class="fa fa-envelope"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Aditi Sengupta </h3>
-                                    <span class="post ignoreMe">Junior Member</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team ">
-                                <div class="pic ignoreMe">
-                                    <img src="/media/members/Akshat1st.jpg" class="ignoreMe">
-                                    <ul class="social ignoreMe">
-                                        <li><a href="https://www.facebook.com/akshat.bhatnagar.3386"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://instagram.com/akshat12000" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/in/akshat-bhatnagar-22a11a19b/"
-                                                class="fab fa-linkedin"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Akshat Bhatnagar</h3>
-                                    <span class="post ignoreMe">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-4 col-sm-6 ignoreMe">
-                            <div class="our-team">
-                                <div class="pic ignoreMe">
-                                    <img src="/media/members/aman_kumar.jpg" class="ignoreMe">
-                                    <ul class="social ignoreMe">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100037520656634"
-                                                class="fab fa-facebook"></a>
-                                        </li>
-                                        <li><a href="http://Instagram.com/ak14aman" class="fab fa-instagram"></a></li>
-                                        <li><a href="ak14aman2002@gmail.com" class="fa fa-envelope"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content ignoreMe">
-                                    <h3 class="title ignoreMe">Aman Kumar</h3>
-                                    <span class="post ignoreMe">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Arka1st.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/ArkaSeth5" class="fab fa-facebook"></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/arka2000/" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/in/arkaseth" class="fab fa-linkedin"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Arka Seth</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/nophotomale.png">
-                                    <ul class="social">
-                                        <li><a href="https://instagram.com/da_neutrino" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="mailto:chetan.sheoran.09.08.2001@gmail.com"
-                                                class="fa fa-envelope"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Chetan Sheoran</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Disha1st.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100041229787528"
-                                                class="fab fa-facebook"></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/dshxx._/" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="mailto:kgpdishasharma@gmail.com" class="fa fa-envelope"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Disha Sharma</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Ishaan1st.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100009541036392"
-                                                class="fab fa-facebook"></a>
-                                        </li>
-                                        <li><a href="https://instagram.com/living_in_utopia"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="mailto:sinhaishaan46@gmail.com" class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Ishaun Sinha</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Payel1st.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.instagram.com/whimsical_viewfinder"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="mailto:payelbose.official@gmail.com" class="fa fa-envelope"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Payel Bose</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Sagar1st.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/sagar.agarwal.1612"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/sagar_agarwal05/"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="mailto:sagaragarwal612@gmail.com" class="fa fa-envelope"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Sagar Agarwal</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Santam Roy Choudhury.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/santam.roychoudhury"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/virtual_ghost_303/"
-                                                class="fab fa-instagram"></a></li>
-                                        <li><a href="https://www.linkedin.com/in/santam-roy-choudhury-31b37b168"
+                                        <li><a href="{{i.email}}" class="fa fa-envelope"></a></li>
+                                        <li><a href="{{i.ln_link}}"
                                                 class="fab fa-linkedin"></a></li>
+                                        <li><a href="{{i.in_link}}"
+                                                    class="fab fa-instagram"></a></li>
                                     </ul>
                                 </div>
-                                <div class="team-content">
-                                    <h3 class="title">Santam Roy Choudhury</h3>
-                                    <span class="post">Junior Member</span>
+                                <div class="team-content ignoreMe">
+                                    <h3 class="title ignoreMe"> {{i.name}} </h3>
+                                    <span class="post ignoreMe"> {{i.post}}</span>
                                 </div>
                             </div>
+                            {% endfor %}
                         </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Sayan1st.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/sayan.mondal.tech"
-                                                class="fab fa-facebook"></a></li>
-                                        <li><a href="https://www.instagram.com/dgp_sayan/" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="mailto:sayan.mondal.tech@gmail.com" class="fa fa-envelope"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Sayan Mondal</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/tanu.jpeg">
-                                    <ul class="social">
-                                        <li><a href="https://instagram.com/tanujitghosh" class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="mailto:tanujit0611@gmail.com" class="fa fa-envelope"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Tanujit Ghosh</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="/media/members/Vaishali1st.jpg">
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100009936368592"
-                                                class="fab fa-facebook"></a>
-                                        </li>
-                                        <li><a href="https://instagram.com/_vaishalibarua?igshid=u0nwh6dvr72f"
-                                                class="fab fa-instagram"></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/in/vaishali-barua-492980198"
-                                                class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Vaishali Barua</h3>
-                                    <span class="post">Junior Member</span>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
 
